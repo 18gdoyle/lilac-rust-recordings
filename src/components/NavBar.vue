@@ -1,21 +1,53 @@
 <template>
     <div id="navBar">
         <div id="title">
-            <a href="/">Lilac Rust Production</a>
+            <a href="/" class="hover-underline-animation">Lilac Rust Production</a>
         </div>
         <div id="pages">
-            <div class="pageOption"><a href="/about" style="cursor: pointer;">About</a></div>
             <div class="pageOption">
-                <a href="/instrumentals" style="cursor: pointer;">Instrumentals</a>
+                <a href="/about" class="hover-underline-animation">About</a>
             </div>
-            <div class="pageOption"><a href="/recording" style="cursor: pointer;">Recording</a></div>
-            <div class="pageOption"><a href="/mixingandmastering" style="cursor: pointer;">Mixing and Mastering</a></div>
-            <div class="pageOption"><a href="/webdesign" style="cursor: pointer;">Web Design</a></div>
+            <div class="pageOption">
+                <a href="/instrumentals" class="hover-underline-animation">Instrumentals</a>
+            </div>
+            <div class="pageOption">
+                <a href="/recording" class="hover-underline-animation">Recording</a>
+            </div>
+            <div class="pageOption">
+                <a href="/mixingandmastering" class="hover-underline-animation">Mixing and Mastering</a>
+            </div>
+            <div class="pageOption">
+                <a href="/webdesign" class="hover-underline-animation" style="cursor: pointer;">Web Design</a>
+            </div>
         </div>
     </div>
 </template>
 
 <style scoped>
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 #navBar {
     position: fixed;
     top: 0;
@@ -53,5 +85,4 @@
     padding: 1%;
     color: white;
     font-size: large;
-}
-</style>
+}</style>
