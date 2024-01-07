@@ -17,6 +17,9 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
+    padding: 2%;
+    justify-content: center;
+    text-align: center;
   }
 }
 </style>
