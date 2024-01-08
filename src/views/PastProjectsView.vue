@@ -83,4 +83,10 @@ import PastProject from '@/components/PastProject.vue';
 .pastProjects {
     width: 90%;
 }
+
+@media (max-width: 480px) {
+    .pastProjects {
+        width: 99%;
+    }
+}
 </style>

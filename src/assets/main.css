@@ -81,3 +81,15 @@ a {
   margin: 2%;
   padding: 2%;
 }
+
+@media (max-width: 480px) {
+  .glassDiv {
+    display: block;
+    padding: 5%;
+  }
+
+  .whiteGlassDiv {
+    width: 100%;
+    padding: 5%;
+  }
+}

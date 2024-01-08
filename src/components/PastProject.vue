@@ -80,7 +80,6 @@ export default {
     padding: 1%;
 }
 
-
 .projectInfo {
     color: white;
     width: 50%;
@@ -99,4 +98,33 @@ export default {
     min-height: 355px;
 }
 
+@media (max-width: 840px) {
+  .projectInfo {
+    width: 100%;
+  }
+
+  .projectInfo h1 {
+    line-height: 1;
+  }
+
+  .socialMediaButtonLong {
+    padding: 2%;
+  }
+
+  .iframePadding {
+    width: 100%;
+    min-height: 0px;
+  }
+
+  .whiteGlassDiv {
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+    .iframePadding {
+        width: 100%;
+        max-height: 80px;
+    }
+}
 </style>
