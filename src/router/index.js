@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import InstrumentalsView from '@/views/InstrumentalsView.vue'
-import RecordingView from '@/views/RecordingView.vue'
-import MixingAndMasteringView from '@/views/MixingAndMasteringView.vue'
+import StudioServicesView from '@/views/StudioServicesView.vue'
+import PastProjectsView from '@/views/PastProjectsView.vue'
 import WebDesignView from '@/views/WebDesignView.vue'
 
 const router = createRouter({
@@ -27,14 +27,14 @@ const router = createRouter({
       component: InstrumentalsView
     },
     {
-      path: '/recording',
-      name: 'recording',
-      component: RecordingView
+      path: '/studioservices',
+      name: 'studioservices',
+      component: StudioServicesView
     },
     {
-      path: '/mixingandmastering',
-      name: 'mixingandmastering',
-      component: MixingAndMasteringView
+      path: '/pastprojects',
+      name: 'pastprojects',
+      component: PastProjectsView
     },
     {
       path: '/webdesign',

@@ -1,52 +1,29 @@
 <template>
     <div id="navBar">
         <div id="title">
-            <a href="/" class="hover-underline-animation">Lilac Rust Production</a>
+            <a href="/" class="hover-underline-animation">Lilac Rust</a>
         </div>
         <div id="pages">
-            <div class="pageOption">
-                <a href="/about" class="hover-underline-animation">About</a>
-            </div>
             <div class="pageOption">
                 <a href="/instrumentals" class="hover-underline-animation">Instrumentals</a>
             </div>
             <div class="pageOption">
-                <a href="/recording" class="hover-underline-animation">Recording</a>
-            </div>
-            <div class="pageOption">
-                <a href="/mixingandmastering" class="hover-underline-animation">Mixing and Mastering</a>
+                <a href="/studioservices" class="hover-underline-animation">Studio Services</a>
             </div>
             <div class="pageOption">
                 <a href="/webdesign" class="hover-underline-animation" style="cursor: pointer;">Web Design</a>
+            </div>
+            <div class="pageOption">
+                <a href="/pastprojects" class="hover-underline-animation">Past Projects</a>
+            </div>
+            <div class="pageOption">
+                <a href="/about" class="hover-underline-animation">About</a>
             </div>
         </div>
     </div>
 </template>
 
 <style scoped>
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-}
-
-.hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
 
 #navBar {
     position: fixed;
@@ -56,10 +33,11 @@
     height: 8%;
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(500px);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
+    z-index: 10;
 }
 
 #title {
