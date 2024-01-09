@@ -205,9 +205,9 @@ export default {
         top: 0;
         left: 0;
         padding-top: 8vh;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.7);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(8px);
+        backdrop-filter: blur(15px);
         height: 100vh;
         width: 60vw;
         transform: translate(-150%);

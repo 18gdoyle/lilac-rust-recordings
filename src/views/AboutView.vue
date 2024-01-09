@@ -31,10 +31,12 @@
 </template>
 
 <style scoped>
+.glassDiv {
+  color: white;
+}
 @media (max-width: 825px) {
   .glassDiv h1 {
     font-size: large;
-    color: white;
   }
 }
 </style>
