@@ -4,6 +4,7 @@ import InstrumentalsView from '@/views/InstrumentalsView.vue'
 import StudioServicesView from '@/views/StudioServicesView.vue'
 import PastProjectsView from '@/views/PastProjectsView.vue'
 import WebDesignView from '@/views/WebDesignView.vue'
+import InstrumentalsParse from '@/views/InstrumentalsParse.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -41,6 +42,11 @@ const router = createRouter({
       name: 'webdesign',
       component: WebDesignView
     },
+    {
+      path: '/instrumentalsparse',
+      name: 'instrumentalsparse',
+      component: InstrumentalsParse
+    }
   ]
 })
 

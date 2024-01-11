@@ -17,7 +17,7 @@
             </div>
         </div>
         <div id="title">
-            <a href="/" class="hover-underline-animation">Lilac Rust</a>
+            <a href="/" class="hover-underline-animation" v-on:click.ctrl="$router.push('/instrumentalsparse');">Lilac Rust</a>
         </div>
         <div id="pages">
             <div class="pageOption">
