@@ -1,5 +1,5 @@
 <template>
-    <div class="glassDiv">
+    <div class="glassDiv" style="font-weight: normal !important;">
         <div class="projectInfo">
             <h1>{{ title }}</h1>
             <h4>{{ date }}</h4>

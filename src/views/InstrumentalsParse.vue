@@ -20,7 +20,10 @@ export default {
     stripEmbed(e) {
         console.dir(e.target.value);
         let url = e.target.value.split('src="')[1].split('"')[0];
-        let title = e.target.value.split('[FREE] ')[1].split(' |')[0].replaceAll('&#x27;', '').toUpperCase();
+        let title = e.target.value.split('title="')[2].split('"')[0].replaceAll('&#x27;', '').toUpperCase().replaceAll('[FREE] ', '').replaceAll(' - HMU TO COLLAB','');
+        if (title.includes('|')) {
+          title = title.split(' | ')[0];
+        }
         console.dir(url);
         console.dir(title);
         instrumentals.push({soundcloudLink: url, title: title});
