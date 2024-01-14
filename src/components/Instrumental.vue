@@ -1,11 +1,12 @@
 <template>
-    <div class="glassDiv" style="width: 40%; display: flex; justify-content: center; flex-direction: column;">
-        <div style="width: 100%; height: 100%; text-align: center;">
-            <div style="height: 90%; overflow:hidden; border-radius: 15px;">
-                <iframe width="100%" height="114%" style="position: relative; top: -3%;" scrolling="no" frameborder="no" allow="autoplay" :src="soundcloud" @click=""></iframe>
-            </div>
-        </div>
+    <div class="glassDiv" style="width: 40%; display: flex; justify-content: center; flex-direction: column; margin: 0;">
         <div style="width: 100%; text-align: center;">
+            <i v-if="!playing" class="fa-solid fa-play" @click="$emit('playPauseSoundCloud', soundcloud); playing = true;"
+                style="color: white;">
+            </i>
+            <i v-if="playing" class="fa-solid fa-pause" @click="$emit('playPauseSoundCloud', soundcloud); playing = false;"
+                style="color: white;">
+            </i>
             <a :href="soundcloud"><strong style="color: white;">{{ title }}</strong></a>
             <br />
             <br />
@@ -30,13 +31,15 @@
         </div>
         <br />
         <div style="width: 100%; height: fit-content; display: flex; justify-content: center; align-items: center;">
-            <a class="socialMediaButtonLong" :href=airbit target="_blank" style="justify-content: space-evenly;" v-if="airbit">
-                <img alt="Lilac Rust on AirBit" src="/airbit-image.webp" height="100%"/>
+            <a class="socialMediaButtonLong" :href=airbit target="_blank" style="justify-content: space-evenly;"
+                v-if="airbit">
+                <img alt="Lilac Rust on AirBit" src="/airbit-image.webp" height="100%" />
                 <div>BUY ON AIRBIT</div>
-                <img alt="Lilac Rust on AirBit" src="/airbit-image.webp" height="100%"/>
+                <img alt="Lilac Rust on AirBit" src="/airbit-image.webp" height="100%" />
             </a>
             <strong style="color: white; margin: 2%;" v-if="airbit">OR</strong>
-            <a class="socialMediaButtonLong" style="justify-content: space-evenly;" href="https://www.instagram.com/lilac_rust_music/" target="_blank">
+            <a class="socialMediaButtonLong" style="justify-content: space-evenly;"
+                href="https://www.instagram.com/lilac_rust_music/" target="_blank">
                 <i class="fa-brands fa-instagram socialMediaIcon"></i>
                 <div>DM ME TO BUY</div>
                 <i class="fa-brands fa-instagram socialMediaIcon"></i>
@@ -47,11 +50,16 @@
 
 <script>
 export default {
-  props: {
-    soundcloud: String,
-    title: String,
-    airbit: String,
-  }
+    data() {
+        return {
+            playing: false
+        };
+    },
+    props: {
+        soundcloud: String,
+        title: String,
+        airbit: String,
+    }
 }
 </script>
 
@@ -59,6 +67,7 @@ export default {
 .socialMediaIcon {
     font-size: 200%;
 }
+
 .socialMediaButtonLong {
     width: 30%;
     height: 50px;
@@ -73,5 +82,4 @@ export default {
     padding: 1%;
     margin: 2%;
     cursor: pointer;
-}
-</style>
+}</style>
