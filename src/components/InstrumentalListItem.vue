@@ -63,6 +63,8 @@ export default {
         soundcloud: String,
         title: String,
         airbit: String,
+        fileURL: String,
+        albumArt: String,
     },
     methods: {
         playTrack() {

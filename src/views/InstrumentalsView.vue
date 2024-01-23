@@ -7,6 +7,7 @@ import InstrumentalListItem from '@/components/InstrumentalListItem.vue';
     <div style="margin-top: 5%; display: flex; flex-direction: column; width: 100%; align-items: center;">
       <InstrumentalListItem v-for="instrumental in instrumentalsJSON.slice().reverse()"
         :soundcloud="instrumental.soundcloudLink" :title="instrumental.title" :airbit="instrumental.airbit || null"
+        :fileURL="instrumental.fileURL" :albumArt="instrumental.albumArt"
         @playPauseSoundCloud="playPauseSoundCloud"></InstrumentalListItem>
     </div>
     <div style="height: 15%; width: 100%; overflow:hidden; position: fixed; bottom: 0; left: 0;">

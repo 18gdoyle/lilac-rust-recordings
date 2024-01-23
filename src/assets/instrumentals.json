@@ -2,24 +2,34 @@
     {
         "soundcloudLink": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/883393978&color=%23141414&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
         "title": "LOGIC TYPE BEAT - SLAPPIN",
-        "airbit": "https://airbit.com/lilacrust#/slideout/beat/lilacrust/logic-type-beat-slappin-hard-boom-bap-trap-beat-mix-and-master-included-in-premium-package"
+        "airbit": "https://airbit.com/lilacrust#/slideout/beat/lilacrust/logic-type-beat-slappin-hard-boom-bap-trap-beat-mix-and-master-included-in-premium-package",
+        "fileURL": "/instrumentals/highExposureVolumeOne/slappin.mp3",
+        "albumArt": "/instrumentals/highExposureVolumeOne/albumArt.jpg"
     },
     {
         "soundcloudLink": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/883394695&color=%23141414&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
-        "title": "KANYE WEST TYPE BEAT - THANK YOU KANYE"
+        "title": "KANYE WEST TYPE BEAT - THANK YOU KANYE",
+        "fileURL": "/instrumentals/highExposureVolumeOne/thankYouKanye.mp3",
+        "albumArt": "/instrumentals/highExposureVolumeOne/albumArt.jpg"
     },
     {
         "soundcloudLink": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/883395706&color=%23141414&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
         "title": "JPEGMAFIA TYPE BEAT - POP",
-        "airbit": "https://airbit.com/lilacrust#/slideout/beat/lilacrust/jpegmafia-type-beat-pop-glitch-hop-experimental-beat-mix-and-master-included-in-premium-package"
+        "airbit": "https://airbit.com/lilacrust#/slideout/beat/lilacrust/jpegmafia-type-beat-pop-glitch-hop-experimental-beat-mix-and-master-included-in-premium-package",
+        "fileURL": "/instrumentals/highExposureVolumeOne/pop.mp3",
+        "albumArt": "/instrumentals/highExposureVolumeOne/albumArt.jpg"
     },
     {
         "soundcloudLink": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/883400014&color=%23141414&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
-        "title": "KENDRICK LAMAR/WILLIAM MONTGOMERY TYPE BEAT - CABOOSE"
+        "title": "KENDRICK LAMAR/WILLIAM MONTGOMERY TYPE BEAT - CABOOSE",
+        "fileURL": "/instrumentals/highExposureVolumeOne/caboose.mp3",
+        "albumArt": "/instrumentals/highExposureVolumeOne/albumArt.jpg"
     },
     {
         "soundcloudLink": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/883409296&color=%23141414&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
-        "title": "DENZEL CURRY TYPE BEAT - 55"
+        "title": "DENZEL CURRY TYPE BEAT - 55",
+        "fileURL": "/instrumentals/highExposureVolumeOne/55.mp3",
+        "albumArt": "/instrumentals/highExposureVolumeOne/albumArt.jpg"
     },
     {
         "soundcloudLink": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/884413174&color=%23141414&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
