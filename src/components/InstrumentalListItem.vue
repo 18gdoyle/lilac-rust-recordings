@@ -1,7 +1,7 @@
 <template>
     <div class="glassDiv" style="width: 90%; display: flex; justify-content: center; margin: 0; border-radius: 0;">
         <div style="width: 100%; text-align: center; display: flex;">
-            <div style="display: flex; align-items: center; width: 8%; justify-content: center;">
+            <div style="display: flex; align-items: center; width: 8%; justify-content: center; cursor: pointer;">
                 <i v-if="!playing" class="fa-solid fa-play" @click="playTrack()"
                     style="color: white; font-size: xx-large; cursor: pointer;">
                 </i>
@@ -69,11 +69,11 @@ export default {
     methods: {
         playTrack() {
             this.playing = true;
-            this.$emit('playPauseSoundCloud', this.soundcloud);
+            this.$emit('playPauseSoundCloud', {fileURL: this.fileURL, artwork: this.albumArt, title: this.title});
         },
         pauseTrack() {
             this.playing = false;
-            this.$emit('playPauseSoundCloud', this.soundcloud);
+            this.$emit('playPauseSoundCloud', {fileURL: this.fileURL, artwork: this.albumArt, title: this.title});
         }
     }
 }
