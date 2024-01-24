@@ -5,60 +5,67 @@ import InstrumentalListItem from '@/components/InstrumentalListItem.vue';
 <template>
   <div class="pageTopMargin instrumentalsPage">
     <div style="margin-top: 5%; display: flex; flex-direction: column; width: 100%; align-items: center;">
-      <InstrumentalListItem v-for="instrumental in instrumentalsJSON.slice().reverse()"
+      <InstrumentalListItem v-for="(instrumental, index) in instrumentalsJSON.slice().reverse()"
         :soundcloud="instrumental.soundcloudLink" :title="instrumental.title" :airbit="instrumental.airbit || null"
         :fileURL="instrumental.fileURL" :albumArt="instrumental.albumArt" @playPauseSoundCloud="playPauseTrack"
-        :ref="instrumental.title">
+        :trackId="index" :ref="index">
       </InstrumentalListItem>
     </div>
-    <div style="height: 50%; width: 100%; overflow:hidden; position: fixed; bottom: 0; left: 0;">
+    <div style="width: 100%; overflow:hidden; position: fixed; bottom: 0; left: 0;">
       <audio src="" id="audioPlayer"></audio>
       <div id="player02" class="player horizontal">
         <div class="wrapper">
-          <div class="info-wrapper">
-            <img id="artwork" :src="currentSong.artwork" alt="LogoMusicImage">
-            <div class="info" id="songInfo">
-              <h1>{{ currentSong.title }}</h1>
-              <p>Lilac Rust</p>
+          <div style="display: flex; align-items: center;">
+            <div class="info-wrapper" style="width: 25%;">
+              <img v-if="currentSong.artwork" id="artwork" :src="currentSong.artwork" alt="LogoMusicImage">
+              <div class="info" id="songInfo" v-if="currentSong.title">
+                <h1>{{ currentSong.title }}</h1>
+                <p>Lilac Rust</p>
+              </div>
+              <div v-else>
+                <h1>NO TRACK SELECTED</h1>
+              </div>
+            </div>
+            <div style="width: 50%;">
+              <div class="controls">
+                <div class="prev">
+                  <i @click="prevTrack()" class="fa-solid fa-backward"
+                    style="color: white; font-size: xx-large; cursor: pointer;"></i>
+                </div>
+                <div class="play" style="width: 5%; display: flex; align-items: center; justify-content: center;">
+                  <i v-if="!trackPlaying" class="fa-solid fa-play" @click="playPauseTrack(currentSong)"
+                    style="color: white; font-size: xx-large; cursor: pointer;">
+                  </i>
+                  <i v-if="trackPlaying" class="fa-solid fa-pause" @click="playPauseTrack(currentSong)"
+                    style="color: white; font-size: xx-large; cursor: pointer;">
+                  </i>
+                </div>
+                <div class="next">
+                  <i @click="nextTrack()" class="fa-solid fa-forward"
+                    style="color: white; font-size: xx-large; cursor: pointer;"></i>
+                </div>
+              </div>
+              <div class="track-time">
+                <div class="track">
+                  <div class="notPlayed"></div>
+                  <div id="playedBar" class="played"></div>
+                </div>
+                <div class="time">
+                  <div class="total-time">{{ currentTimeInSong }}</div>
+                  <div class="last-time">{{ currentSong.duration || "00:00" }}</div>
+                </div>
+              </div>
+            </div>
+            <div style="width: 25%;">
+              <a class="socialMediaButtonLong" style="justify-content: space-evenly;">
+                <i class="fa-solid fa-angle-up"></i>
+                <h1>MORE INFO</h1>
+                <i class="fa-solid fa-angle-up"></i>
+              </a>
             </div>
           </div>
-
-          <div class="controls">
-            <div class="prev">
-              <i @click="prevTrack()" class="fa-solid fa-backward" style="color: white; font-size: xx-large; cursor: pointer;"></i>
-            </div>
-            <div class="play">
-              <i v-if="!trackPlaying" class="fa-solid fa-play" @click="playPauseTrack(currentSong)"
-                style="color: white; font-size: xx-large; cursor: pointer;">
-              </i>
-              <i v-if="trackPlaying" class="fa-solid fa-pause" @click="playPauseTrack(currentSong)"
-                style="color: white; font-size: xx-large; cursor: pointer;">
-              </i>
-            </div>
-            <div class="next">
-              <i @click="nextTrack()" class="fa-solid fa-forward" style="color: white; font-size: xx-large; cursor: pointer;"></i>
-            </div>
-          </div>
-
-          <div class="track-time">
-            <div class="track">
-              <div class="notPlayed"></div>
-              <div id="playedBar" class="played"></div>
-            </div>
-            <div class="time">
-              <div class="total-time">{{ currentTimeInSong }}</div>
-              <div class="last-time">{{ currentSong.duration || "00:00" }}</div>
-            </div>
-          </div>
-
-
         </div>
       </div>
-      <!--
-      <iframe id="soundCloudIFrame" width="100%" height="123%" style="position: relative; top: -5%;" scrolling="no"
-        frameborder="no" allow="autoplay" :src=currentSoundCloudLink>
-      </iframe>
-      -->
     </div>
   </div>
 </template>
@@ -89,39 +96,52 @@ export default {
           durationSeconds = "0" + durationSeconds;
         }
         this.currentSong.duration = "0" + durationMinutes + ":" + durationSeconds;
-        playedBar.style.width = (currentTime/event.target.duration) * 100 + "%";
+        playedBar.style.width = (currentTime / event.target.duration) * 100 + "%";
       } else {
         this.currentSong.duration = "00:00"
         playedBar.style.width = "0%";
       }
-      
+
       let minutes = Math.floor(currentTime / 60);
       let seconds = currentTime % 60
       if (seconds < 10) {
         seconds = "0" + seconds;
       }
       this.currentTimeInSong = "0" + minutes + ":" + seconds;
+
+      if (this.currentTimeInSong !== "00:00" && this.currentTimeInSong === this.currentSong.duration) {
+        this.$refs[this.currentSong.trackId][0].stopTrack();
+        if (this.$refs[this.currentSong.trackId + 1]) this.$refs[this.currentSong.trackId + 1][0].playTrack();
+        this.trackPlaying = false;
+      }
     });
   },
   methods: {
     playPauseTrack(trackInfo) {
-      if (!trackInfo.fileURL) {
+      if (!trackInfo.title) {
         return;
       }
 
+      const audioPlayer = document.getElementById('audioPlayer');
       if (this.currentSong.title && trackInfo.title !== this.currentSong.title) {
-        console.dir(this.$refs[trackInfo.title][0])
-        this.$refs[this.currentSong.title][0].stopTrack()
+        this.$refs[this.currentSong.trackId][0].stopTrack();
+        audioPlayer.pause();
+      }
+      this.currentSong = trackInfo;
+
+      if (!trackInfo.fileURL) {
+        return
       }
 
-      this.currentSong = trackInfo;
-      const audioPlayer = document.getElementById('audioPlayer');
+      
       const fileURL = trackInfo.fileURL;
       if (fileURL === this.currentFileURL && this.trackPlaying) {
         audioPlayer.pause();
+        this.$refs[this.currentSong.trackId][0].stopTrack();
         this.trackPlaying = false;
       } else if (fileURL === this.currentFileURL && !this.trackPlaying) {
         audioPlayer.play();
+        this.$refs[this.currentSong.trackId][0].startTrack();
         this.trackPlaying = true;
       } else if (fileURL !== this.currentFileURL) {
         audioPlayer.currentTime = 0;
@@ -136,16 +156,31 @@ export default {
       if (audioPlayer.currentTime > 5) {
         audioPlayer.currentTime = 0;
       } else {
-
+        if (this.$refs[this.currentSong.trackId - 1]) this.$refs[this.currentSong.trackId - 1][0].playTrack();
       }
     },
     nextTrack() {
-
+      if (this.$refs[this.currentSong.trackId + 1]) this.$refs[this.currentSong.trackId + 1][0].playTrack();
     }
   }
 }
 </script>
 <style scoped>
+.socialMediaButtonLong {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 100vh;
+  background-color: #ffffff26;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  padding: 1%;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
 #artwork {
   margin-right: 2%;
 }
@@ -155,6 +190,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 20%;
 }
 
 #boxes * {
@@ -215,7 +251,7 @@ export default {
 .player {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(25px);
-  padding: 28px;
+  padding: 1%;
 }
 
 .player img {
@@ -241,20 +277,18 @@ export default {
 }
 
 .player h1 {
-  font-size: 27px;
-  color: #E1E1E6;
-  padding-bottom: 7px;
+  font-size: large;
+  color: white;
 }
 
 
 .controls {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
 }
 
 .track {
-  padding-top: 28px;
+  padding-top: 2%;
   position: relative;
 
 }
