@@ -11,8 +11,8 @@ import InstrumentalListItem from '@/components/InstrumentalListItem.vue';
         :trackId="index" :ref="index">
       </InstrumentalListItem>
     </div>
-    <div style="width: 100%; overflow:hidden; position: fixed; bottom: 0; left: 0;">
-      <audio src="" id="audioPlayer"></audio>
+    <audio src="" id="audioPlayer"></audio>
+    <div style="width: 100%; overflow:hidden; position: fixed; bottom: 0; left: 0;" v-if="currentSong.title">
       <div id="player02" class="player horizontal">
         <div class="wrapper">
           <div style="display: flex; align-items: center;">
@@ -47,8 +47,7 @@ import InstrumentalListItem from '@/components/InstrumentalListItem.vue';
               </div>
               <div class="track-time">
                 <div class="track">
-                  <div class="notPlayed"></div>
-                  <div id="playedBar" class="played"></div>
+                  <input @change=setTrackTime($event) class="customRange" type="range" id="volume" name="volume" min="0" max="100" :value="currentSongPercentage" style="width: 100%; color: black;" />
                 </div>
                 <div class="time">
                   <div class="total-time">{{ currentTimeInSong }}</div>
@@ -56,7 +55,11 @@ import InstrumentalListItem from '@/components/InstrumentalListItem.vue';
                 </div>
               </div>
             </div>
-            <div style="width: 25%;">
+            <div style="width: 25%; display: flex;">
+              <div class="track" style="margin-left: 5%; width: 50%; display: flex; align-items: center;">
+                <i class="fa-solid fa-volume-high" style="color: white; font-size: large; margin-right: 5%;"></i>
+                <input class="customRange" @change="setVolume($event)" type="range" id="volume" name="volume" min="0" max="100" value="100" style="width: 100%; color: black;" />
+              </div>
               <a class="socialMediaButtonLong" style="justify-content: space-evenly;">
                 <i class="fa-solid fa-angle-up"></i>
                 <h1>MORE INFO</h1>
@@ -82,13 +85,13 @@ export default {
       trackPlaying: false,
       widget: null,
       currentTimeInSong: '0:00',
+      currentSongPercentage: 0
     };
   },
   mounted() {
     const audioPlayer = document.getElementById('audioPlayer');
     audioPlayer.addEventListener('timeupdate', (event) => {
       const currentTime = parseInt(event.target.currentTime);
-      const playedBar = document.getElementById('playedBar');
       let durationMinutes = Math.floor(audioPlayer.duration / 60);
       if (durationMinutes) {
         let durationSeconds = Math.floor(audioPlayer.duration % 60);
@@ -96,10 +99,10 @@ export default {
           durationSeconds = "0" + durationSeconds;
         }
         this.currentSong.duration = "0" + durationMinutes + ":" + durationSeconds;
-        playedBar.style.width = (currentTime / event.target.duration) * 100 + "%";
+        this.currentSongPercentage = (currentTime / event.target.duration) * 100;
       } else {
         this.currentSong.duration = "00:00"
-        playedBar.style.width = "0%";
+        this.currentSongPercentage = 0;
       }
 
       let minutes = Math.floor(currentTime / 60);
@@ -161,11 +164,63 @@ export default {
     },
     nextTrack() {
       if (this.$refs[this.currentSong.trackId + 1]) this.$refs[this.currentSong.trackId + 1][0].playTrack();
+    },
+    setVolume(event) {
+      const audioPlayer = document.getElementById('audioPlayer');
+      audioPlayer.volume = event.target.value / 100;
+      console.dir(audioPlayer.volume);
+    },
+    setTrackTime(event) {
+      const sliderValue = event.target.value;
+      const audioPlayer = document.getElementById('audioPlayer');
+      audioPlayer.currentTime = audioPlayer.duration * (sliderValue / 100);
     }
   }
 }
 </script>
 <style scoped>
+.customRange {
+  -webkit-appearance: none;
+  appearance: none; 
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.customRange::-webkit-slider-runnable-track {
+  height: 10px;
+  background: #3b3a3a;
+  border-radius: 16px;
+}
+
+.customRange::-moz-range-track {
+  height: 10px;
+  background: #D9D9D9;
+  border-radius: 16px;
+}
+
+.customRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none; 
+  height: 10px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 30%;
+  border: 2px solid white;
+  box-shadow: -407px 0 0 400px white;
+}
+
+.customRange::-moz-range-thumb {
+  height: 10px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 30%;
+  border: 1px solid #f50;
+  box-shadow: -407px 0 0 400px #f50;
+}
+
 .socialMediaButtonLong {
   height: 50px;
   display: flex;
@@ -308,6 +363,14 @@ export default {
   content: '';
   height: 6px;
   width: 0%;
+  display: block;
+  background: #D9D9D9;
+  border-radius: 10px;
+}
+
+.currentVolume {
+  content: '';
+  height: 6px;
   display: block;
   background: #D9D9D9;
   border-radius: 10px;

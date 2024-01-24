@@ -21,7 +21,8 @@
             </div>
         </div>
         <div v-if="showInfo">
-            <div style="display: flex; justify-content: space-between; color: rgb(185, 184, 184);">
+            <hr style="margin-top: 2%;" />
+            <div style="display: flex; justify-content: space-between; color: rgb(185, 184, 184); margin-top: 2%; width: 60%;">
                 <div style="display: flex; align-items: center; flex-direction: column;">
                     <strong>BASIC</strong>
                     <div>$15.00</div>
