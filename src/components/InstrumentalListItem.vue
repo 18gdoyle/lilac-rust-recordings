@@ -74,6 +74,9 @@ export default {
         pauseTrack() {
             this.playing = false;
             this.$emit('playPauseSoundCloud', {fileURL: this.fileURL, artwork: this.albumArt, title: this.title});
+        },
+        stopTrack() {
+            this.playing = false;
         }
     }
 }
