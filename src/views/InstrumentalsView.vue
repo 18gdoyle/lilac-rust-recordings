@@ -1,14 +1,22 @@
 <script setup>
 import InstrumentalListItem from '@/components/InstrumentalListItem.vue';
+import BasicLicensingTerms from '@/components/LicensingTerms/BasicLicensingTerms.vue'
+import PremiumLicensingTerms from '@/components/LicensingTerms/PremiumLicensingTerms.vue'
+import UnlimitedLicensingTerms from '@/components/LicensingTerms/UnlimitedLicensingTerms.vue'
 </script>
 
 <template>
   <div class="pageTopMargin instrumentalsPage">
+    <BasicLicensingTerms @close="showBasicLicensingTerms = !showBasicLicensingTerms" v-if="showBasicLicensingTerms"></BasicLicensingTerms>
+    <PremiumLicensingTerms @close="showPremiumLicensingTerms = !showPremiumLicensingTerms" v-if="showPremiumLicensingTerms"></PremiumLicensingTerms>
+    <UnlimitedLicensingTerms @close="showUnlimitedLicensingTerms = !showUnlimitedLicensingTerms" v-if="showUnlimitedLicensingTerms"></UnlimitedLicensingTerms>
     <div style="margin-top: 5%; display: flex; flex-direction: column; width: 100%; align-items: center;">
       <InstrumentalListItem v-for="(instrumental, index) in instrumentalsJSON.slice().reverse()"
         :soundcloud="instrumental.soundcloudLink" :title="instrumental.title" :airbit="instrumental.airbit || null"
         :fileURL="instrumental.fileURL" :albumArt="instrumental.albumArt" @playPauseSoundCloud="playPauseTrack"
-        :trackId="index" :ref="index">
+        :trackId="index" :ref="index"
+        @showBasicLicenseTerms="showBasicLicensingTerms = !showBasicLicensingTerms" @showPremiumLicenseTerms="showPremiumLicensingTerms = !showPremiumLicensingTerms"
+        @showUnlimitedLicenseTerms="showUnlimitedLicensingTerms = !showUnlimitedLicensingTerms">
       </InstrumentalListItem>
     </div>
     <audio src="" id="audioPlayer"></audio>
@@ -17,7 +25,7 @@ import InstrumentalListItem from '@/components/InstrumentalListItem.vue';
         <div class="wrapper">
           <div style="display: flex; align-items: center;">
             <div class="info-wrapper" style="width: 25%;">
-              <img v-if="currentSong.artwork" id="artwork" :src="currentSong.artwork" alt="LogoMusicImage">
+              <img v-if="currentSong.artwork" id="artwork" :src="currentSong.artwork" alt="LogoMusicImage" style="height: 84px;">
               <div class="info" id="songInfo" v-if="currentSong.title">
                 <h1>{{ currentSong.title }}</h1>
                 <p>Lilac Rust</p>
@@ -47,7 +55,8 @@ import InstrumentalListItem from '@/components/InstrumentalListItem.vue';
               </div>
               <div class="track-time">
                 <div class="track">
-                  <input @change=setTrackTime($event) class="customRange" type="range" id="volume" name="volume" min="0" max="100" :value="currentSongPercentage" style="width: 100%; color: black;" />
+                  <input @change=setTrackTime($event) class="customRange" type="range" id="volume" name="volume" min="0"
+                    max="100" :value="currentSongPercentage" style="width: 100%; color: black;" />
                 </div>
                 <div class="time">
                   <div class="total-time">{{ currentTimeInSong }}</div>
@@ -58,13 +67,59 @@ import InstrumentalListItem from '@/components/InstrumentalListItem.vue';
             <div style="width: 25%; display: flex;">
               <div class="track" style="margin-left: 5%; width: 50%; display: flex; align-items: center;">
                 <i class="fa-solid fa-volume-high" style="color: white; font-size: large; margin-right: 5%;"></i>
-                <input class="customRange" @change="setVolume($event)" type="range" id="volume" name="volume" min="0" max="100" value="100" style="width: 100%; color: black;" />
+                <input class="customRange" @change="setVolume($event)" type="range" id="volume" name="volume" min="0"
+                  max="100" value="100" style="width: 100%; color: black;" />
               </div>
-              <a class="socialMediaButtonLong" style="justify-content: space-evenly;">
+              <a class="socialMediaButtonLong" style="justify-content: space-evenly; padding: 2%; margin-left: 5%;"
+                @click="showMoreInfoOnCurrentTrack = !showMoreInfoOnCurrentTrack" v-if="!showMoreInfoOnCurrentTrack">
                 <i class="fa-solid fa-angle-up"></i>
-                <h1>MORE INFO</h1>
+                <p style="margin: 2%;">MORE INFO</p>
                 <i class="fa-solid fa-angle-up"></i>
               </a>
+              <a class="socialMediaButtonLong" style="justify-content: space-evenly; padding: 2%; margin-left: 5%;"
+                @click="showMoreInfoOnCurrentTrack = !showMoreInfoOnCurrentTrack" v-if="showMoreInfoOnCurrentTrack">
+                <i class="fa-solid fa-angle-down"></i>
+                <p style="margin: 2%;">LESS INFO</p>
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+            </div>
+          </div>
+          <div v-if="showMoreInfoOnCurrentTrack" style="display: flex; justify-content: center;">
+            <div style="width: 60%;">
+              <div
+                style="display: flex; justify-content: space-between; color: rgb(185, 184, 184); margin-top: 2%; width: 100%;">
+                <div style="display: flex; align-items: center; flex-direction: column;">
+                  <strong>BASIC</strong>
+                  <div>$15.00</div>
+                </div>
+                <div style="display: flex; align-items: center; flex-direction: column;">
+                  <strong>PREMIUM</strong>
+                  <div>$20.00</div>
+                </div>
+                <div style="display: flex; align-items: center; flex-direction: column;">
+                  <strong>UNLIMITED</strong>
+                  <div>$30.00</div>
+                </div>
+                <div style="display: flex; align-items: center; flex-direction: column;">
+                  <strong>EXCLUSIVE</strong>
+                  <div>DM FOR INFO</div>
+                </div>
+              </div>
+              <div style="width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 2%;">
+                    <a class="socialMediaButtonLong" :href=currentSong.airbit target="_blank"
+                        style="justify-content: space-evenly; width: 20%;" v-if="currentSong.airbit">
+                        <img alt="Lilac Rust on AirBit" src="/airbit-image.webp" style="height: 4vh;" />
+                        <div style="margin: 2%;">BUY ON AIRBIT</div>
+                        <img alt="Lilac Rust on AirBit" src="/airbit-image.webp" style="height: 4vh;" />
+                    </a>
+                    <strong style="color: white; margin: 2%;" v-if="currentSong.airbit">OR</strong>
+                    <a class="socialMediaButtonLong" style="justify-content: space-evenly; width: 20%;"
+                        href="https://www.instagram.com/lilac_rust_music/" target="_blank">
+                        <i class="fa-brands fa-instagram socialMediaIcon" style="font-size: xx-large;"></i>
+                        <div style="margin: 2%;">DM TO BUY</div>
+                        <i class="fa-brands fa-instagram socialMediaIcon" style="font-size: xx-large;"></i>
+                    </a>
+                </div>
             </div>
           </div>
         </div>
@@ -85,7 +140,11 @@ export default {
       trackPlaying: false,
       widget: null,
       currentTimeInSong: '0:00',
-      currentSongPercentage: 0
+      currentSongPercentage: 0,
+      showMoreInfoOnCurrentTrack: false,
+      showBasicLicensingTerms: false,
+      showPremiumLicensingTerms: false,
+      showUnlimitedLicensingTerms: false,
     };
   },
   mounted() {
@@ -125,6 +184,8 @@ export default {
         return;
       }
 
+      console.dir(trackInfo);
+
       const audioPlayer = document.getElementById('audioPlayer');
       if (this.currentSong.title && trackInfo.title !== this.currentSong.title) {
         this.$refs[this.currentSong.trackId][0].stopTrack();
@@ -136,7 +197,7 @@ export default {
         return
       }
 
-      
+
       const fileURL = trackInfo.fileURL;
       if (fileURL === this.currentFileURL && this.trackPlaying) {
         audioPlayer.pause();
@@ -181,7 +242,7 @@ export default {
 <style scoped>
 .customRange {
   -webkit-appearance: none;
-  appearance: none; 
+  appearance: none;
   width: 100%;
   cursor: pointer;
   outline: none;
@@ -203,7 +264,7 @@ export default {
 
 .customRange::-webkit-slider-thumb {
   -webkit-appearance: none;
-  appearance: none; 
+  appearance: none;
   height: 10px;
   width: 15px;
   background-color: #fff;
@@ -222,7 +283,6 @@ export default {
 }
 
 .socialMediaButtonLong {
-  height: 50px;
   display: flex;
   justify-content: center;
   border-radius: 100vh;
@@ -232,7 +292,6 @@ export default {
   align-items: center;
   color: #fff;
   padding: 1%;
-  margin-left: 10%;
   cursor: pointer;
 }
 
@@ -310,8 +369,6 @@ export default {
 }
 
 .player img {
-  width: 84px;
-  height: 84px;
   object-fit: cover;
   border-radius: 10px;
 }
