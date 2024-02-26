@@ -1,32 +1,38 @@
 <template>
-    <div class="glassDiv" style="font-weight: normal !important;">
-        <div class="projectInfo">
-            <h1>{{ title }}</h1>
-            <h4>{{ date }}</h4>
-            <div style="display: flex;">
-                <a v-if="tikTokButton !== undefined" class="socialMediaButton" :href=tikTokButton target="_blank"><i class="fa-brands fa-tiktok socialMediaIcon"></i></a>
-                <a v-if="youtubeButton !== undefined" class="socialMediaButton" :href=youtubeButton target="_blank"><i class="fa-brands fa-youtube socialMediaIcon"></i></a>
-                <a v-if="instagramButton !== undefined" class="socialMediaButton" :href=instagramButton target="_blank"><i class="fa-brands fa-instagram socialMediaIcon"></i></a>
-                <a v-if="spotifyButton !== undefined" class="socialMediaButton" :href="spotifyButton" target="_blank"><i class="fa-brands fa-spotify socialMediaIcon"></i></a>
-                <a v-if="streamingServices !== undefined" class="socialMediaButtonLong" :href="streamingServices" target="_blank">ALL STREAMING SERVICES</a>
-            </div>
-            <div class="whiteGlassDiv" v-if="description !== undefined">
-                <h4>From Lilac</h4>
-                <h3 v-html="description"></h3>
-            </div>
-            <div class="whiteGlassDiv" v-if="review !== undefined">
-                <h4>From the Artist</h4>
-                <h3>"{{ review }}"</h3>
-            </div>
+  <div class="glassDiv" style="font-weight: normal !important; width: 45%;">
+    <div class="projectInfo">
+      <div style="display: flex; justify-content: space-between; margin-bottom: 5%; align-items: center;">
+        <div>
+          <h1>{{ title }}</h1>
+          <h4>{{ date }}</h4>
+          <div style="display: flex;">
+            <a v-if="tikTokButton !== undefined" class="socialMediaButton" :href=tikTokButton target="_blank"><i
+                class="fa-brands fa-tiktok socialMediaIcon"></i></a>
+            <a v-if="youtubeButton !== undefined" class="socialMediaButton" :href=youtubeButton target="_blank"><i
+                class="fa-brands fa-youtube socialMediaIcon"></i></a>
+            <a v-if="instagramButton !== undefined" class="socialMediaButton" :href=instagramButton target="_blank"><i
+                class="fa-brands fa-instagram socialMediaIcon"></i></a>
+            <a v-if="spotifyButton !== undefined" class="socialMediaButton" :href="spotifyButton" target="_blank"><i
+                class="fa-brands fa-spotify socialMediaIcon"></i></a>
+            <a v-if="streamingServices !== undefined" class="socialMediaButtonLong" :href="streamingServices"
+              target="_blank">ALL STREAMING SERVICES</a>
+          </div>
         </div>
-        <div class="iframePadding">
-            <iframe style="border-radius:12px"
-                :src=spotifyIframe width="100%"
-                height="100%" frameBorder="0" allowfullscreen="false"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-            </iframe>
+        <div style="margin: 2%; width: 50%; display: flex; justify-content: center; align-items: center;">
+          <img :src="albumArt" width="60%" style="border-radius: 15px;"/>
         </div>
+      </div>
+
+      <div class="whiteGlassDiv" v-if="description !== undefined">
+        <h4>From Lilac</h4>
+        <h3 v-html="description"></h3>
+      </div>
+      <div class="whiteGlassDiv" style="margin-top: 2%;" v-if="review !== undefined">
+        <h4>From the Artist</h4>
+        <h3>"{{ review }}"</h3>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -41,61 +47,62 @@ export default {
     spotifyButton: String,
     streamingServices: String,
     description: String,
-    review: String
+    review: String,
+    albumArt: String
   }
 }
 </script>
 
 <style scoped>
 .socialMediaIcon {
-    font-size: 200%;
-    margin: auto;
+  font-size: 200%;
+  margin: auto;
 }
+
 .socialMediaButton {
-    height: 5vh;
-    width: 5vh;
-    display: flex;
-    justify-content: center;
-    border-radius: 100vh;
-    background-color: #ffffff26;
-    backdrop-filter: blur(5px);
-    text-align: center;
-    color: #fff;
-    margin-right: 1%;
-    margin-bottom: 2%;
+  height: 5vh;
+  width: 5vh;
+  display: flex;
+  justify-content: center;
+  border-radius: 100vh;
+  background-color: #ffffff26;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  color: #fff;
+  margin-right: 1%;
+  margin-bottom: 2%;
 }
 
 .socialMediaButtonLong {
-    height: 5vh;
-    display: flex;
-    justify-content: center;
-    border-radius: 100vh;
-    background-color: #ffffff26;
-    backdrop-filter: blur(5px);
-    text-align: center;
-    align-items: center;
-    color: #fff;
-    margin-right: 1%;
-    margin-bottom: 2%;
-    padding: 1%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  border-radius: 100vh;
+  background-color: #ffffff26;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  margin-right: 1%;
+  margin-bottom: 2%;
+  padding: 1%;
 }
 
 .projectInfo {
-    color: white;
-    width: 50%;
+  color: white;
 }
 
 .projectInfo h4 {
-    color: var(--color-text);;
-    padding-bottom: 2%;
+  color: var(--color-text);
+  padding-bottom: 2%;
 }
 
 .iframePadding {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    height: auto;
-    min-height: 355px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+  min-height: 355px;
 }
 
 @media (max-width: 840px) {
@@ -122,9 +129,9 @@ export default {
 }
 
 @media (max-width: 480px) {
-    .iframePadding {
-        width: 100%;
-        max-height: 80px;
-    }
+  .iframePadding {
+    width: 100%;
+    max-height: 80px;
+  }
 }
 </style>

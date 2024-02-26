@@ -10,7 +10,10 @@ import UnlimitedLicensingTerms from '@/components/LicensingTerms/UnlimitedLicens
     <BasicLicensingTerms @close="showBasicLicensingTerms = !showBasicLicensingTerms" v-if="showBasicLicensingTerms"></BasicLicensingTerms>
     <PremiumLicensingTerms @close="showPremiumLicensingTerms = !showPremiumLicensingTerms" v-if="showPremiumLicensingTerms"></PremiumLicensingTerms>
     <UnlimitedLicensingTerms @close="showUnlimitedLicensingTerms = !showUnlimitedLicensingTerms" v-if="showUnlimitedLicensingTerms"></UnlimitedLicensingTerms>
-    <div style="margin-top: 5%; display: flex; flex-direction: column; width: 100%; align-items: center;">
+    <div class="glassDiv" style="margin-top: 2%; margin-bottom: 0%; width: fit-content; color: white; justify-content: center;">
+      <h3>A collection of instrumentals produced by yours truly</h3>
+    </div>
+    <div style="margin-top: 2%; display: flex; flex-direction: column; width: 100%; align-items: center;">
       <InstrumentalListItem v-for="(instrumental, index) in instrumentalsJSON.slice().reverse()"
         :soundcloud="instrumental.soundcloudLink" :title="instrumental.title" :airbit="instrumental.airbit || null"
         :fileURL="instrumental.fileURL" :albumArt="instrumental.albumArt" @playPauseSoundCloud="playPauseTrack"
