@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <div class="glassDiv" style="margin: 0%; margin-top: 8vh; border-radius: 0px;">
+  <div class="about pageTopMargin">
+    <div class="glassDiv" style="margin: 2%;">
       <div>
         Hey there!
         My name is Greg, but I go by Lilac Rust online. I've been making music for almost 10 years now and I've
