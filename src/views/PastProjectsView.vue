@@ -6,13 +6,13 @@ import PastProject from '@/components/PastProject.vue';
         <div class="pastProjects">
             <div class="glassDiv" style="flex-direction: column; height: fit-content; justify-content: center; align-items: center;">
                 <div style="width: 100%; height: 50vh">
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0ulTgeAmBJgjt9y959z2px?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0"
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0ulTgeAmBJgjt9y959z2px?utm_source=generator" width="100%" height="100%" frameBorder="0"
                         allowfullscreen="false"
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
                     </iframe>
                 </div>
                 <div class="whiteGlassDiv" style="margin-top: 2%; color: white; text-align: center; width: fit-content;">
-                    <h3>A collection of songs that I wrote, recorded, produced, mixed, and or mastered.</h3>
+                    <h3>A collection of songs that I wrote, recorded, produced, mixed, and/or mastered.</h3>
                 </div>
             </div>
             <div style="display: flex; justify-content: space-evenly;">

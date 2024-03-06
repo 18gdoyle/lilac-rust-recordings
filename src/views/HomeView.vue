@@ -11,9 +11,13 @@
           something that will be perfect for your next project.
         </div>
         <br />
+        <hr />
+        <br />
         <a href="/instrumentals" class="hover-underline-animation" data-v-c3ceb15a=""
-          style="font-size: large; width: fit-content;"><strong>Browse Instrumentals <i
-              class="fa-solid fa-caret-right"></i></strong></a>
+          style="font-size: large; width: fit-content;">
+          Browse Instrumentals
+          <i class="fa-solid fa-caret-right"></i>
+        </a>
       </div>
       <div style="width: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <div style="display: flex; justify-content: center;">
@@ -49,18 +53,24 @@
         <h1 style="font-size: xx-large;">STUDIO SERVICES</h1>
         <br />
         <div style="font-size: large;">
-
-          Welcome to a tailored music experience where you have the flexibility to collaborate in-person at the studio
-          or seamlessly connect remotely. As a comprehensive music professional, I handle the entire production process
-          - from composing and writing the music to meticulous production, mixing, and mastering. Whether it's a
-          face-to-face session or a virtual collaboration, I'm dedicated to delivering a polished and personalized
-          musical journey for every artist. Let's create something extraordinary together, tailored to your vision and
-          preferences.
+          Whether you thrive in the dynamic energy of in-person collaboration at the studio or prefer the flexibility of
+          remote
+          working, rest assured that I can provide the expertise and support needed to elevate your musical endeavors.
+          With more than ten years immersed in the art of music making, I can turn your musical ideas into reality as I
+          have experience
+          with every step in the songwriting, recording, mixing, and mastering process.
         </div>
         <br />
-        <a href="/instrumentals" class="hover-underline-animation" data-v-c3ceb15a=""
-          style="font-size: large; width: fit-content;"><strong>Browse Instrumentals <i
-              class="fa-solid fa-caret-right"></i></strong></a>
+        <hr />
+        <br />
+        <a href="/studioservices" class="hover-underline-animation" style="font-size: large; width: fit-content;">
+          More Info
+          <i class="fa-solid fa-caret-right"></i>
+        </a>
+        <a href="/pastprojects" class="hover-underline-animation" style="font-size: large; width: fit-content; padding-top: 1%;">
+          Past Projects
+          <i class="fa-solid fa-caret-right"></i>
+        </a>
       </div>
     </div>
   </div>

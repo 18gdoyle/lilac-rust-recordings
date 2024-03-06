@@ -3,8 +3,8 @@
         <li><a href="/">Home</a></li>
         <li><a href="/instrumentals">Instrumentals</a></li>
         <li><a href="/studioservices">Studio Services</a></li>
-        <li><a href="/webdesign">Web Design</a></li>
         <li><a href="/pastprojects">Past Projects</a></li>
+        <li><a href="/webdesign">Web Design</a></li>
         <li><a href="/about">About</a></li>
     </div>
     <div id="navBar" class="navbar">
@@ -27,10 +27,10 @@
                 <a href="/studioservices" class="hover-underline-animation">Studio Services</a>
             </div>
             <div class="pageOption">
-                <a href="/webdesign" class="hover-underline-animation" style="cursor: pointer;">Web Design</a>
+                <a href="/pastprojects" class="hover-underline-animation">Past Projects</a>
             </div>
             <div class="pageOption">
-                <a href="/pastprojects" class="hover-underline-animation">Past Projects</a>
+                <a href="/webdesign" class="hover-underline-animation">Web Design</a>
             </div>
             <div class="pageOption">
                 <a href="/about" class="hover-underline-animation">About</a>
