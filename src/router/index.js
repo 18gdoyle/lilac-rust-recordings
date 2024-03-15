@@ -5,6 +5,7 @@ import StudioServicesView from '@/views/StudioServicesView.vue'
 import PastProjectsView from '@/views/PastProjectsView.vue'
 import WebDesignView from '@/views/WebDesignView.vue'
 import InstrumentalsParse from '@/views/InstrumentalsParse.vue'
+import AirbitInstrumentalsView from '@/views/AirbitInstrumentalsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -25,7 +26,7 @@ const router = createRouter({
     {
       path: '/instrumentals',
       name: 'instrumentals',
-      component: InstrumentalsView
+      component: AirbitInstrumentalsView
     },
     {
       path: '/studioservices',
