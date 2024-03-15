@@ -1,5 +1,6 @@
 <template>
   <div style="width: 100%;">
+    <img src="/IMG_0583.jpg" style="position: relative; width: 100%; height: 90vh; object-fit: cover;" />
     <div class="glassDiv" style="color: white; margin: 2%; margin-top: 10vh;">
       <div style="width: 50%; display: flex; flex-direction: column; justify-content: center;">
         <h1 style="font-size: xx-large;">INSTRUMENTALS</h1>
