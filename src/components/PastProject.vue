@@ -1,11 +1,11 @@
 <template>
-  <div class="glassDiv" style="font-weight: normal !important; width: 45%;">
+  <div class="glassDiv" style="font-weight: normal !important;">
     <div class="projectInfo">
-      <div style="display: flex; justify-content: space-between; margin-bottom: 5%; align-items: center;">
-        <div>
+      <div class="titleAndImage" style="display: flex; margin-bottom: 5%; align-items: center;">
+        <div class="title">
           <h1>{{ title }}</h1>
           <h4>{{ date }}</h4>
-          <div style="display: flex;">
+          <div class="iconsRow" style="display: flex;">
             <a v-if="tikTokButton !== undefined" class="socialMediaButton" :href=tikTokButton target="_blank"><i
                 class="fa-brands fa-tiktok socialMediaIcon"></i></a>
             <a v-if="youtubeButton !== undefined" class="socialMediaButton" :href=youtubeButton target="_blank"><i
@@ -14,12 +14,12 @@
                 class="fa-brands fa-instagram socialMediaIcon"></i></a>
             <a v-if="spotifyButton !== undefined" class="socialMediaButton" :href="spotifyButton" target="_blank"><i
                 class="fa-brands fa-spotify socialMediaIcon"></i></a>
-            <a v-if="streamingServices !== undefined" class="socialMediaButtonLong" :href="streamingServices"
-              target="_blank">ALL STREAMING SERVICES</a>
+            <a v-if="streamingServices !== undefined" class="socialMediaButton" :href="streamingServices" target="_blank"><i 
+              class="fa-solid fa-globe socialMediaIcon"></i></a>
           </div>
         </div>
-        <div style="margin: 2%; width: 50%; display: flex; justify-content: center; align-items: center;">
-          <img :src="albumArt" width="60%" style="border-radius: 15px;"/>
+        <div class="albumArtContainer" style="margin: 2%; display: flex; justify-content: center; align-items: center;">
+          <img :src="albumArt" class="albumArt" width="60%" style="border-radius: 15px;"/>
         </div>
       </div>
 
@@ -106,8 +106,40 @@ export default {
 }
 
 @media (max-width: 840px) {
+  .socialMediaButtonLong {
+    padding: 50%;
+  }
+
+  .titleAndImage {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1vh
+  }
+
+  .albumArtContainer {
+    width: 100%;
+  }
+
+  .albumArt {
+    width: 100%;
+  }
+
   .projectInfo {
     width: 100%;
+  }
+
+  .iconsRow {
+    width: 100%;
+    gap: 2vw;
+    justify-content: center;
   }
 
   .projectInfo h1 {
@@ -115,7 +147,7 @@ export default {
   }
 
   .socialMediaButtonLong {
-    padding: 2%;
+    padding: 5%;
   }
 
   .iframePadding {
