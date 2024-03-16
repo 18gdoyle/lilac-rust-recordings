@@ -24,12 +24,12 @@
       </div>
 
       <div class="whiteGlassDiv" v-if="description !== undefined">
-        <h4>From Lilac</h4>
-        <h3 v-html="description"></h3>
+        <p class="fromTitle">From Lilac</p>
+        <p v-html="description" class="note"></p>
       </div>
       <div class="whiteGlassDiv" style="margin-top: 2%;" v-if="review !== undefined">
-        <h4>From the Artist</h4>
-        <h3>"{{ review }}"</h3>
+        <p class="fromTitle">From the Artist</p>
+        <p class="note">"{{ review }}"</p>
       </div>
     </div>
   </div>
@@ -54,6 +54,28 @@ export default {
 </script>
 
 <style scoped>
+.fromTitle {
+  font-size: large;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.glassDiv {
+  width: 50%;
+}
+
+.titleAndImage {
+  justify-content: center;
+}
+
+.title {
+  flex-basis: 100%;
+}
+
+.albumArtContainer {
+  flex-basis: 100%;
+}
+
 .socialMediaIcon {
   font-size: 200%;
   margin: auto;
@@ -90,6 +112,14 @@ export default {
 
 .projectInfo {
   color: white;
+}
+
+.fromTitle {
+  font-size: larger;
+}
+
+.note {
+  font-size: large;
 }
 
 .projectInfo h4 {

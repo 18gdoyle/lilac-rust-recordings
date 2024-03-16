@@ -13,9 +13,8 @@ import PastProject from '@/components/PastProject.vue';
                         loading="lazy">
                     </iframe>
                 </div>
-                <div class="whiteGlassDiv"
-                    style="margin-top: 2%; color: white; text-align: center; width: fit-content;">
-                    <h3>A collection of songs that I wrote, recorded, produced, mixed, and/or mastered.</h3>
+                <div class="whiteGlassDiv">
+                    <p class="pageDescription">A collection of songs that I wrote, recorded, produced, mixed, and/or mastered.</p>
                 </div>
             </div>
             <div class="pastProjectsRow">
@@ -88,17 +87,44 @@ import PastProject from '@/components/PastProject.vue';
     </div>
 </template>
 
-<style>
+<style scoped>
 #pastProjectsPage {
     display: flex;
     justify-content: center;
+}
+
+.pageDescription {
+    font-size: x-large;
 }
 
 .pastProjects {
     width: 100%;
 }
 
+.pastProjectsRow {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+.whiteGlassDiv {
+    margin-top: 2%;
+    color: white;
+    text-align: center;
+    width: fit-content;
+}
+
+.glassDiv {
+    flex-direction: column;
+    align-items: center;
+}
+
 @media only screen and (max-width: 768px) {
+    .whiteGlassDiv {
+        width: 100%;
+        background: rgba(0, 0, 0, 0);
+    }
+
     .pastProjectRow {
         display: flex;
         justify-content: space-evenly;
