@@ -135,9 +135,13 @@ export default {
   min-height: 355px;
 }
 
-@media (max-width: 840px) {
+@media only screen and (max-width: 768px) {
   .socialMediaButtonLong {
     padding: 50%;
+  }
+
+  .glassDiv {
+    margin-top: 0;
   }
 
   .titleAndImage {

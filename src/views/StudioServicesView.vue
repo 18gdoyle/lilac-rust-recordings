@@ -2,15 +2,18 @@
     <div class="pageTopMargin">
         <div style="display: flex; align-items: center; justify-content: center;">
             <div class="glassDiv"
-                style="color: white; margin: 2%; margin-bottom: 0; justify-content: center; width: fit-content;">
+                style="color: white; margin-bottom: 0; justify-content: center; width: fit-content;">
                 <h1>STUDIO SERVICES</h1>
             </div>
         </div>
-        <div class="glassDiv" style="color: white; margin: 2%;">
-            <div style="width: 50%; display: flex; flex-direction: column; justify-content: center;">
-                <h1 style="font-size: xx-large;">INSTRUMENTAL PRODUCTION AND SONG WRITING</h1>
+        <div class="glassDiv" style="color: white;">
+            <div class="mobileImage">
+                <img class="slide" src="/myStudio.jpg">
+            </div>
+            <div class="description" style="display: flex; flex-direction: column; justify-content: center;">
+                <h2>INSTRUMENTAL PRODUCTION AND SONG WRITING</h2>
                 <br />
-                <div style="font-size: large;">
+                <div style="font-size: medium;">
                     After a decade of work, I've made quite a few instrumentals. I've produced everything from acoustic
                     ballads to trap bangers, soulful R&B to heavy metal.
                     If you can't find an instrumental in my catalogue that works with your artistic
@@ -19,48 +22,59 @@
                 <br />
                 <hr />
                 <br />
-                <a href="/instrumentals" class="hover-underline-animation"
-                    style="font-size: large; width: fit-content;">
-                    Browse Instrumentals
-                    <i class="fa-solid fa-caret-right"></i>
-                </a>
-                <a href="/about" class="hover-underline-animation" style="font-size: large; width: fit-content; padding-top: 1%;">
-                    Contact Me
-                    <i class="fa-solid fa-caret-right"></i>
-                </a>
+                <div class="linkContainer">
+                    <a href="/instrumentals" class="hover-underline-animation"
+                        style="font-size: large; width: fit-content;">
+                        Browse Instrumentals
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <a href="/about" class="hover-underline-animation"
+                        style="font-size: large; width: fit-content; padding-top: 1%;">
+                        Contact Me
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                </div>
             </div>
-            <div
-                style="width: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <div class="image"
+                style="width: 50%; flex-direction: column; justify-content: center; align-items: center;">
                 <img src="/instrumentals/whiteWizard/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
             </div>
         </div>
         <div class="glassDiv" style="color: white; margin: 2%;">
-            <div
-                style="width: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <div class="image"
+                style="width: 50%; flex-direction: column; justify-content: center; align-items: center;">
                 <img src="/instrumentals/whiteWizard/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
             </div>
-            <div style="width: 50%; display: flex; flex-direction: column; justify-content: center;">
-                <h1 style="font-size: xx-large;">RECORDING</h1>
+            <div class="mobileImage">
+                <img class="slide" src="/micPic.jpg">
+            </div>
+            <div class="description" style="display: flex; flex-direction: column; justify-content: center;">
+                <h2>RECORDING</h2>
                 <br />
-                <div style="font-size: large;">
-                    With an extensive collection of microphones, instruments, and VST Plug-Ins at the studio, we're
+                <div style="font-size: medium;">
+                    With an extensive collection of microphones, instruments, and VST Plug-Ins at the studio, I'm
                     equipped to capture your artistry in its purest form. If you lean towards remote collaboration, I'm
                     readily available to offer guidance on microphone selection, optimal recording techniques, and more.
                 </div>
                 <br />
                 <hr />
                 <br />
-                <a href="/about" class="hover-underline-animation" style="font-size: large; width: fit-content;">
-                    Contact Me
-                    <i class="fa-solid fa-caret-right"></i>
-                </a>
+                <div class="linkContainer">
+                    <a href="/about" class="hover-underline-animation" style="font-size: large; width: fit-content;">
+                        Contact Me
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="glassDiv" style="color: white; margin: 2%; margin-bottom: 10%;">
-            <div style="width: 50%; display: flex; flex-direction: column; justify-content: center;">
-                <h1 style="font-size: xx-large;">MIXING AND MASTERING</h1>
+            <div class="mobileImage">
+                <img class="slide" src="/mixingBoard.jpg">
+            </div>
+            <div class="description" style="display: flex; flex-direction: column; justify-content: center;">
+                <h2>MIXING AND MASTERING</h2>
                 <br />
-                <div style="font-size: large;">
+                <div style="font-size: medium;">
                     With a ton of mixing and mastering know-how under my belt, I'm here to give your project that slick
                     and pro-level sound.
                     Over the years, I have
@@ -70,19 +84,70 @@
                 <br />
                 <hr />
                 <br />
-                <a href="/pastprojects" class="hover-underline-animation" style="font-size: large; width: fit-content;">
-                    Past Projects
-                    <i class="fa-solid fa-caret-right"></i>
-                </a>
-                <a href="/about" class="hover-underline-animation" style="font-size: large; width: fit-content; padding-top: 1%;">
-                    Contact Me
-                    <i class="fa-solid fa-caret-right"></i>
-                </a>
+                <div class="linkContainer">
+                    <a href="/pastprojects" class="hover-underline-animation"
+                        style="font-size: large; width: fit-content;">
+                        Past Projects
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <a href="/about" class="hover-underline-animation"
+                        style="font-size: large; width: fit-content; padding-top: 1%;">
+                        Contact Me
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                </div>
             </div>
-            <div
-                style="width: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <div class="image"
+                style="width: 50%; flex-direction: column; justify-content: center; align-items: center;">
                 <img src="/instrumentals/whiteWizard/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
             </div>
         </div>
     </div>
 </template>
+
+<style scoped>
+.description {
+    width: 50%;
+}
+
+.image {
+    display: flex;
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .slide {
+        width: 100%;
+        flex-shrink: 0;
+        padding: 5%;
+        border-radius: 50px;
+    }
+
+    .description {
+        width: 100%;
+        text-align: center;
+    }
+
+    .glassDiv {
+        background-color: rgba(0, 0, 0, 0);
+        flex-direction: column;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+        padding-top: 2%;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .linkContainer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+</style>

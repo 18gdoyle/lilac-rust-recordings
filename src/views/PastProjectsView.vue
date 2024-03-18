@@ -5,6 +5,9 @@ import PastProject from '@/components/PastProject.vue';
     <div id="pastProjectsPage" class="pageTopMargin">
         <div class="pastProjects">
             <div class="glassDiv">
+                <div class="whiteGlassDiv">
+                    <h1>PAST PROJECTS</h1>
+                </div>
                 <div style="width: 100%; height: 50vh">
                     <iframe style="border-radius:12px"
                         src="https://open.spotify.com/embed/playlist/0ulTgeAmBJgjt9y959z2px?utm_source=generator"
@@ -13,10 +16,8 @@ import PastProject from '@/components/PastProject.vue';
                         loading="lazy">
                     </iframe>
                 </div>
-                <div class="whiteGlassDiv">
-                    <p class="pageDescription">A collection of songs that I wrote, recorded, produced, mixed, and/or mastered.</p>
-                </div>
             </div>
+            <br />
             <div class="pastProjectsRow">
                 <PastProject :title="'Funky Lamp - On My Knees'" :date="'December 2023'"
                     :spotifyIframe="'https://open.spotify.com/embed/album/233oHAtm4vs707QfKppDp7?utm_source=generator'"
@@ -123,9 +124,10 @@ import PastProject from '@/components/PastProject.vue';
     .whiteGlassDiv {
         width: 100%;
         background: rgba(0, 0, 0, 0);
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
     }
 
-    .pastProjectRow {
+    .pastProjectsRow {
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
@@ -136,6 +138,7 @@ import PastProject from '@/components/PastProject.vue';
         margin: 0%;
         border-radius: 0;
         background: rgba(0, 0, 0, 0);
+        padding: 0;
     }
 }
 </style>
