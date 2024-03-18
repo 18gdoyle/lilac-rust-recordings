@@ -53,7 +53,7 @@
         <hr />
         <br />
         <div class="linkContainer">
-          <a href="/instrumentals" class="hover-underline-animation mobileButtonLink" data-v-c3ceb15a=""
+          <a href="/instrumentals" class="mobileButtonLink" data-v-c3ceb15a=""
             style="font-size: large; width: fit-content;">
             Browse Instrumentals
             <i class="fa-solid fa-caret-right"></i>
@@ -106,7 +106,7 @@
         <hr />
         <br />
         <div class="linkContainer">
-          <a href="/studioservices" class="hover-underline-animation mobileButtonLink"
+          <a href="/studioservices" class="mobileButtonLink"
             style="font-size: large; width: fit-content;">
             Studio Services Info Page
             <i class="fa-solid fa-caret-right"></i>
@@ -132,7 +132,7 @@
         <hr />
         <br />
         <div class="linkContainer">
-          <a href="/pastprojects" class="hover-underline-animation mobileButtonLink"
+          <a href="/pastprojects" class="mobileButtonLink"
             style="font-size: large; width: fit-content;">
             Past Projects
             <i class="fa-solid fa-caret-right"></i>
@@ -149,6 +149,9 @@
         </div>
       </div>
     </div>
+    <br />
+    <br />
+    <br />
   </div>
 </template>
 
@@ -286,8 +289,6 @@ export default {
   backdrop-filter: blur(5px);
   text-align: center;
   color: #fff;
-  margin-right: 1%;
-  margin-bottom: 2%;
 }
 
 .socialMediaIcon {
@@ -305,8 +306,6 @@ export default {
   backdrop-filter: blur(5px);
   text-align: center;
   color: #fff;
-  margin-right: 1%;
-  margin-bottom: 2%;
   cursor: pointer;
 }
 
