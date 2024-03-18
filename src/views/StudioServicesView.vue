@@ -1,10 +1,7 @@
 <template>
     <div class="pageTopMargin">
-        <div style="display: flex; align-items: center; justify-content: center;">
-            <div class="glassDiv"
-                style="color: white; margin-bottom: 0; justify-content: center; width: fit-content;">
+        <div style="display: flex; align-items: center; justify-content: center;" class="pageTitle">
                 <h1>STUDIO SERVICES</h1>
-            </div>
         </div>
         <div class="glassDiv" style="color: white;">
             <div class="mobileImage">
@@ -23,27 +20,27 @@
                 <hr />
                 <br />
                 <div class="linkContainer">
-                    <a href="/instrumentals" class="hover-underline-animation"
+                    <a href="/instrumentals" class="mobileButtonLink"
                         style="font-size: large; width: fit-content;">
                         Browse Instrumentals
                         <i class="fa-solid fa-caret-right"></i>
                     </a>
-                    <a href="/about" class="hover-underline-animation"
-                        style="font-size: large; width: fit-content; padding-top: 1%;">
+                    <a href="/about" class="mobileButtonLink"
+                        style="font-size: large; width: fit-content;">
                         Contact Me
                         <i class="fa-solid fa-caret-right"></i>
                     </a>
                 </div>
             </div>
             <div class="image"
-                style="width: 50%; flex-direction: column; justify-content: center; align-items: center;">
-                <img src="/instrumentals/whiteWizard/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
+                style="flex-direction: column; justify-content: center; align-items: center;">
+                <img src="/myStudio.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
             </div>
         </div>
         <div class="glassDiv" style="color: white; margin: 2%;">
             <div class="image"
-                style="width: 50%; flex-direction: column; justify-content: center; align-items: center;">
-                <img src="/instrumentals/whiteWizard/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
+                style="flex-direction: column; justify-content: center; align-items: center;">
+                <img src="/micPic.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
             </div>
             <div class="mobileImage">
                 <img class="slide" src="/micPic.jpg">
@@ -60,7 +57,7 @@
                 <hr />
                 <br />
                 <div class="linkContainer">
-                    <a href="/about" class="hover-underline-animation" style="font-size: large; width: fit-content;">
+                    <a href="/about" class="mobileButtonLink" style="font-size: large; width: fit-content;">
                         Contact Me
                         <i class="fa-solid fa-caret-right"></i>
                     </a>
@@ -85,43 +82,78 @@
                 <hr />
                 <br />
                 <div class="linkContainer">
-                    <a href="/pastprojects" class="hover-underline-animation"
+                    <a href="/pastprojects" class="mobileButtonLink"
                         style="font-size: large; width: fit-content;">
                         Past Projects
                         <i class="fa-solid fa-caret-right"></i>
                     </a>
-                    <a href="/about" class="hover-underline-animation"
-                        style="font-size: large; width: fit-content; padding-top: 1%;">
+                    <a href="/about" class="mobileButtonLink"
+                        style="font-size: large; width: fit-content;">
                         Contact Me
                         <i class="fa-solid fa-caret-right"></i>
                     </a>
                 </div>
             </div>
             <div class="image"
-                style="width: 50%; flex-direction: column; justify-content: center; align-items: center;">
-                <img src="/instrumentals/whiteWizard/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
+                style="flex-direction: column; justify-content: center; align-items: center;">
+                <img src="/mixingBoard.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
             </div>
         </div>
     </div>
 </template>
 
 <style scoped>
+.pageTitle {
+    color: white;
+    margin-top: 2%;
+}
+
 .description {
-    width: 50%;
+    width: 70%;
 }
 
 .image {
     display: flex;
+    width: 30%;
+    padding: 2%;
 }
 
 .linkContainer {
     display: flex;
-    flex-direction: column;
-    gap: 1vh;
 }
 
+.slide {
+    display: none;
+}
+
+.glassDiv {
+    padding: 2%
+}
+
+.mobileButtonLink {
+        height: 5vh;
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+        border-radius: 100vh;
+        background-color: #ffffff26;
+        backdrop-filter: blur(5px);
+        text-align: center;
+        color: #fff;
+        margin-right: 1%;
+        margin-bottom: 2%;
+    }
+
 @media only screen and (max-width: 768px) {
+    .mobileButtonLink {
+        padding: 5%;
+        gap: 2vw;
+    }
+
     .slide {
+        display: block;
         width: 100%;
         flex-shrink: 0;
         padding: 5%;
@@ -137,7 +169,7 @@
         background-color: rgba(0, 0, 0, 0);
         flex-direction: column;
         box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
-        padding-top: 2%;
+        padding: 2%;
     }
 
     .image {
@@ -148,6 +180,8 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        flex-direction: column;
+        gap: 2vh;
     }
 }
 </style>

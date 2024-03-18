@@ -4,12 +4,12 @@ import PastProject from '@/components/PastProject.vue';
 <template>
     <div id="pastProjectsPage" class="pageTopMargin">
         <div class="pastProjects">
-            <div class="glassDiv">
-                <div class="whiteGlassDiv">
-                    <h1>PAST PROJECTS</h1>
-                </div>
+            <div class="pastProjectSpotifyDiv centered">
+                <h1 class="pageTitle">PAST PROJECTS</h1>
+                <p class="pageDescription">A collection of songs that I wrote, recorded, produced, mixed, and/or
+                    mastered.</p>
                 <div style="width: 100%; height: 50vh">
-                    <iframe style="border-radius:12px"
+                    <iframe class="spotifyIframe"
                         src="https://open.spotify.com/embed/playlist/0ulTgeAmBJgjt9y959z2px?utm_source=generator"
                         width="100%" height="100%" frameBorder="0" allowfullscreen="false"
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -18,6 +18,7 @@ import PastProject from '@/components/PastProject.vue';
                 </div>
             </div>
             <br />
+            <h1 class="pageTitle centered">PAST PROJECTS TIMELINE</h1>
             <div class="pastProjectsRow">
                 <PastProject :title="'Funky Lamp - On My Knees'" :date="'December 2023'"
                     :spotifyIframe="'https://open.spotify.com/embed/album/233oHAtm4vs707QfKppDp7?utm_source=generator'"
@@ -89,6 +90,25 @@ import PastProject from '@/components/PastProject.vue';
 </template>
 
 <style scoped>
+.pastProjectSpotifyDiv {
+    padding: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.pageTitle {
+    color: white;
+}
+
+.centered {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
 #pastProjectsPage {
     display: flex;
     justify-content: center;
@@ -96,6 +116,8 @@ import PastProject from '@/components/PastProject.vue';
 
 .pageDescription {
     font-size: x-large;
+    color: var(--color-text);
+    margin-bottom: 2%;
 }
 
 .pastProjects {
@@ -103,10 +125,10 @@ import PastProject from '@/components/PastProject.vue';
 }
 
 .pastProjectsRow {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-    }
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
 
 .whiteGlassDiv {
     margin-top: 2%;
@@ -118,6 +140,7 @@ import PastProject from '@/components/PastProject.vue';
 .glassDiv {
     flex-direction: column;
     align-items: center;
+    padding: 2%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -125,6 +148,21 @@ import PastProject from '@/components/PastProject.vue';
         width: 100%;
         background: rgba(0, 0, 0, 0);
         box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+        padding: 5%;
+        margin-top: 0;
+    }
+
+    .pageDescription {
+        font-size: medium;
+        margin-bottom: 5%;
+    }
+
+    .pageTitle {
+        padding: 5%;
+    }
+
+    .spotifyIframe {
+        height: 106%;
     }
 
     .pastProjectsRow {
@@ -138,7 +176,7 @@ import PastProject from '@/components/PastProject.vue';
         margin: 0%;
         border-radius: 0;
         background: rgba(0, 0, 0, 0);
-        padding: 0;
+        padding: 5%;
     }
 }
 </style>

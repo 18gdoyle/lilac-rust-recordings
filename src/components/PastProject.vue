@@ -135,9 +135,20 @@ export default {
   min-height: 355px;
 }
 
+.whiteGlassDiv {
+  padding: 2%;
+}
+
 @media only screen and (max-width: 768px) {
   .socialMediaButtonLong {
     padding: 50%;
+  }
+
+  .socialMediaButton {
+    height: 8vh;
+    width: 8vh;
+    max-height: 50px;
+    max-width: 50px;
   }
 
   .glassDiv {
@@ -164,10 +175,15 @@ export default {
 
   .albumArt {
     width: 100%;
+    margin-bottom: 2%;
   }
 
   .projectInfo {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .iconsRow {
@@ -191,13 +207,7 @@ export default {
 
   .whiteGlassDiv {
     line-height: 1.5;
-  }
-}
-
-@media (max-width: 480px) {
-  .iframePadding {
-    width: 100%;
-    max-height: 80px;
+    padding: 4%
   }
 }
 </style>

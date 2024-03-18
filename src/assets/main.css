@@ -4,6 +4,7 @@
   width: 100%;
   margin: 0 auto;
   font-weight: normal;
+  color: white;
 }
 
 a {
@@ -66,7 +67,6 @@ a {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  padding: 2%;
   width: 95%;
 }
 
@@ -78,17 +78,4 @@ a {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   margin: 2%;
-  padding: 2%;
-}
-
-@media (max-width: 480px) {
-  .glassDiv {
-    display: block;
-    padding: 5%;
-  }
-
-  .whiteGlassDiv {
-    width: 100%;
-    padding: 5%;
-  }
 }

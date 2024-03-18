@@ -1,6 +1,37 @@
 <template>
-  <div style="width: 100%;">
-    <div class="glassDiv" style="color: white; margin-top: 10vh;">
+  <div style="width: 100%;" class="pageTopMargin">
+    <div class="centered bigWelcomeContainer">
+      <img class="backgroundImage" src="/lilacProfile.jpg" />
+      <div class="overImage">
+        <div class="glassDiv bigWelcomeGlass">
+          <div style="margin-top: -8vh;">
+            <h1 class="hugeWelcome">WELCOME</h1>
+            <br />
+            <p class="welcomeDescription">My name is Lilac. I'm a multi-instrumentalist music producer and audio
+              engineer. I've been making music for almost 10 years now and I've
+              produced everything from acoustic ballads to trap bangers, cinematic atmospheres to indie funk.
+              I can produce instrumentals for a myriad of genres, as well as record, mix, master, really whatever
+              you need! So take a look around and if you like what you see/hear, hit me up!
+            </p>
+            <br />
+            <div class="iconsRow" style="display: flex;">
+              <a class="socialMediaButton" href="https://www.tiktok.com/@lilac_rust" target="_blank"><i
+                  class="fa-brands fa-tiktok socialMediaIcon"></i></a>
+              <a class="socialMediaButton" href="https://www.youtube.com/@lilacrust8805" target="_blank"><i
+                  class="fa-brands fa-youtube socialMediaIcon"></i></a>
+              <a class="socialMediaButton" href="mailto:lilac.rust@gmail.com" target="_blank"><i
+                  class="fa-regular fa-envelope socialMediaIcon"></i></a>
+              <a class="socialMediaButton" href="https://www.instagram.com/lilac_rust_music/" target="_blank"><i
+                  class="fa-brands fa-instagram socialMediaIcon"></i></a>
+              <a class="socialMediaButton"
+                href="https://open.spotify.com/artist/1YT4RD3frRo0r9jVY9mBB5?si=jTH5pF9NRJKeDGDx5sNNuw"
+                target="_blank"><i class="fa-brands fa-spotify socialMediaIcon"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="glassDiv">
       <div class="carousel-container">
         <div class="instrumentalCarousel">
           <img class="slide" v-for="(image, index) in instrumentalImages" :key="index" :src="image"
@@ -12,7 +43,8 @@
         <h1 style="font-size: xx-large;">INSTRUMENTALS & BEATS</h1>
         <br />
         <div style="font-size: large;">
-          I've got everything from laid-back jazz vibes to energetic electronic beats, cinematic atmospheres, and funky
+          I've got everything from laid-back jazz vibes to energetic electronic beats, cinematic atmospheres to indie
+          funk
           grooves. Whether
           you're a singer, rapper, filmmaker, or content creator, chances are I've got
           something that will be perfect for your next project.
@@ -30,23 +62,26 @@
       </div>
       <div class="allImagesContainer">
         <div class="imageRow">
-          <img data-v-414485a4="" src="/instrumentals/whiteWizard/albumArt.jpg" width="25%"
-            style="border-radius: 15px; margin: 2%;">
-          <img data-v-414485a4="" src="/instrumentals/waterviewVolumeOne/albumArt.jpg" width="25%"
+          <img src="/instrumentals/whiteWizard/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
+          <img src="/instrumentals/waterviewVolumeOne/albumArt.jpg" width="25%"
             style="border-radius: 15px; margin: 2%;">
         </div>
         <div class="imageRow">
-          <img data-v-414485a4="" src="/instrumentals/popularKidsVolumeOne/albumArt.jpg" width="25%"
+          <img src="/instrumentals/popularKidsVolumeOne/albumArt.jpg" width="25%"
             style="border-radius: 15px; margin: 2%;">
-          <img data-v-414485a4="" src="/instrumentals/highExposureVolumeOne/albumArt.jpg" width="25%"
+          <img src="/instrumentals/highExposureVolumeOne/albumArt.jpg" width="25%"
             style="border-radius: 15px; margin: 2%;">
         </div>
       </div>
     </div>
     <div class="glassDiv" style="color: white;">
       <div class="allImagesContainer">
-        <div style="display: flex; justify-content: center;">
-          <img data-v-414485a4="" src="/mixingBoard.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
+        <div class="imageRow">
+          <img src="/mixingBoard.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
+          <img src="/micPic.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
+        </div>
+        <div class="imageRow">
+          <img src="/myStudio.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
         </div>
       </div>
       <div class="carousel-container">
@@ -71,7 +106,8 @@
         <hr />
         <br />
         <div class="linkContainer">
-          <a href="/studioservices" class="hover-underline-animation mobileButtonLink" style="font-size: large; width: fit-content;">
+          <a href="/studioservices" class="hover-underline-animation mobileButtonLink"
+            style="font-size: large; width: fit-content;">
             Studio Services Info Page
             <i class="fa-solid fa-caret-right"></i>
           </a>
@@ -96,10 +132,20 @@
         <hr />
         <br />
         <div class="linkContainer">
-          <a href="/pastprojects" class="hover-underline-animation mobileButtonLink" style="font-size: large; width: fit-content;">
+          <a href="/pastprojects" class="hover-underline-animation mobileButtonLink"
+            style="font-size: large; width: fit-content;">
             Past Projects
             <i class="fa-solid fa-caret-right"></i>
           </a>
+        </div>
+      </div>
+      <div class="allImagesContainer">
+        <div class="imageRow">
+          <img src="/songs/gardenOfEden/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
+          <img src="/songs/slappin/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
+        </div>
+        <div class="imageRow">
+          <img src="/songs/onMyKnees/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
         </div>
       </div>
     </div>
@@ -132,6 +178,65 @@ export default {
 </script>
 
 <style scoped>
+.welcomeDescription {
+  font-size: x-large;
+}
+
+.bigWelcomeGlass {
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  margin: 0 !important;
+  border-radius: 0;
+  backdrop-filter: blur(10px) !important;
+  flex-direction: column;
+}
+
+.bigWelcomeContainer {
+  position: relative;
+}
+
+.overImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72vh;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.iconsRow {
+  width: 100%;
+  gap: 2vw;
+  justify-content: center;
+}
+
+.hugeWelcome {
+  font-size: 5vw;
+}
+
+.backgroundImage {
+  position: relative;
+  top: -8vh;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 80vh;
+}
+
+.centered {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .allImagesContainer {
   width: 50%;
   display: flex;
@@ -150,11 +255,13 @@ export default {
 .imageRow {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .glassDiv {
   margin: 2%;
   color: white;
+  padding: 2%;
 }
 
 .carousel-container {
@@ -167,22 +274,66 @@ export default {
   gap: 1vh;
 }
 
+.mobileButtonLink {
+  height: 5vh;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  border-radius: 100vh;
+  background-color: #ffffff26;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  color: #fff;
+  margin-right: 1%;
+  margin-bottom: 2%;
+}
+
+.socialMediaIcon {
+  font-size: 300%;
+  margin: auto;
+}
+
+.socialMediaButton {
+  height: 10vh;
+  width: 10vh;
+  display: flex;
+  justify-content: center;
+  border-radius: 100vh;
+  background-color: #ffffff26;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  color: #fff;
+  margin-right: 1%;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
-  .mobileButtonLink {
-    height: 5vh;
-    padding: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2vw;
-    border-radius: 100vh;
-    background-color: #ffffff26;
-    backdrop-filter: blur(5px);
-    text-align: center;
-    color: #fff;
-    margin-right: 1%;
-    margin-bottom: 2%;
+  .socialMediaIcon {
+    font-size: 200%;
+    margin: auto;
   }
+  .socialMediaButton {
+    max-height: 50px;
+    max-width: 50px;
+  }
+  .welcomeDescription {
+    font-size: medium;
+  }
+  .bigWelcomeGlass {
+    padding: 5% !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+  }
+  .hugeWelcome {
+    font-size: 300%;
+  }
+  .mobileButtonLink {
+    padding: 5%;
+    gap: 2vw;
+  }
+
   .glassDiv {
     width: 100%;
     margin: 0%;
@@ -190,6 +341,8 @@ export default {
     margin-top: 0%;
     border-radius: 0;
     background: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
   }
 
   .glassDiv .description {
