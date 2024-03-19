@@ -1,40 +1,158 @@
 <template>
     <div class="pageTopMargin">
-        <div style="display: flex; width: 100%;">
-            <div class="glassDiv" style="height: 80vh; width: 50%; display: flex;">
-                <div style="width: 60%;">
-                <div class="whiteGlassDiv" style="color: white;">
-                    Still playing around with this idea
+        <div class="centered">
+            <h1 class="pageTitle">WEB DESIGN</h1>
+            <br />
+            <p class="pageDescription">
+                If you've been making and releasing music for as long as I have, then you understand the importance of
+                having your own website. A centralized location where listeners can find new music, learn about
+                upcoming gigs, and buy merch. If you're ready to take the next step with your music career, creating a
+                professional website is a great place to start. If this sounds like something you're ready to do, hit me up.
+            </p>
+            <br />
+            <a href="/about" class="mobileButtonLink">
+                <strong>CONTACT INFO</strong>
+            </a>
+            <br />
+            <br />
+            <h1 class="pageSubtitle">PAST WORK</h1>
+            <div class="websiteContainer">
+                <div class="imgContainer">
+                    <img src="/lilacRustWebsite.png" @click="openNewTab('https://lilacrust.com/')"
+                        class="websiteImage" />
                 </div>
-                </div>
-                <div style="width: 40%; position: relative;">
-                    <a href="https://lilacrust.com/" target="_blank"></a>
-                    <iframe src="https://lilacrust.com/" class="iframe" height="100%" width="100%"></iframe>
+                <div class="glassDiv">
+                    <a href="https://lilacrust.com/" target="_blank"
+                        class="hover-underline-animation largeLink"><strong>lilacrust.com</strong></a>
+                    <br />
+                    <p class="websiteDescription">The website linked within the same website. Website-ception. Very
+                        cool. A great example of what I can do for a musical brand.
+                    </p>
                 </div>
             </div>
-            <div class="glassDiv" style="height: 80vh; width: 50%; display: flex;">
-                <div style="width: 60%;"></div>
-                <div style="width: 40%; position: relative;">
-                    <a href="https://gregoryvincentdoyle.com/" target="_blank"></a>
-                    <iframe src="https://gregoryvincentdoyle.com/" class="iframe" height="100%" width="100%"></iframe>
+            <div class="websiteContainer">
+                <div class="imgContainer">
+                    <img src="/gregDoyleWebsite.png" @click="openNewTab('https://gregoryvincentdoyle.com/')"
+                        class="websiteImage" />
+                </div>
+                <div class="glassDiv">
+                    <a href="https://gregoryvincentdoyle.com/" target="_blank"
+                        class="hover-underline-animation largeLink"><strong>gregoryvincentdoyle.com</strong></a>
+                    <br />
+                    <p class="websiteDescription">
+                        A website I made for my corporate work life alter ego
+                    </p>
+                </div>
+            </div>
+            <div class="websiteContainer">
+                <div class="imgContainer">
+                    <img src="/cPC.png" @click="openNewTab('https://catherines-pet-care.uk.r.appspot.com/')"
+                        class="websiteImage" />
+                </div>
+                <div class="glassDiv">
+                    <a href="https://catherines-pet-care.uk.r.appspot.com/" target="_blank"
+                        class="hover-underline-animation largeLink"><strong>catherines-pet-care.uk.r.appspot.com</strong></a>
+                    <br />
+                    <p class="websiteDescription">
+                        A website I made for a pet care business
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </template>
-  
+
+<script>
+export default {
+    methods: {
+        openNewTab(url) {
+            window.open(url, '_blank').focus();
+        }
+    }
+}
+</script>
+
 <style scoped>
-.iframe {
-    border: 0px;
-    border-radius: 16px;
-    position: absolute;
-    z-index: -1;
+.mobileButtonLink {
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    border-radius: 100vh;
+    background-color: #ffffff26;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    color: #fff;
+    font-size: large;
 }
 
-a {
-    position: absolute;
-    z-index: 1;
-    height: 100%;
+.pageTitle {
+    font-size: 4vw;
+}
+
+.pageSubtitle {
+    font-size: 2.5vw;
+}
+
+.pageDescription {
+    text-align: center;
+    font-size: x-large;
+    width: 80%;
+}
+
+.websiteDescription {
+    text-align: center;
+    font-size: large;
+}
+
+.glassDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin: 2%;
+    flex-direction: column;
+}
+
+.largeLink {
+    font-size: x-large;
+}
+
+.glassDivsRow {
+    display: flex;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.websiteContainer {
+    padding: 2%;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.centered {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.imgContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.websiteImage {
+    border-radius: 16px;
+    width: 100%;
+    cursor: pointer;
 }
 </style>

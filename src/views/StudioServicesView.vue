@@ -1,7 +1,7 @@
 <template>
     <div class="pageTopMargin">
         <div style="display: flex; align-items: center; justify-content: center;" class="pageTitle">
-                <h1>STUDIO SERVICES</h1>
+            <h1>STUDIO SERVICES</h1>
         </div>
         <div class="glassDiv" style="color: white;">
             <div class="mobileImage">
@@ -11,7 +11,7 @@
                 <h2>INSTRUMENTAL PRODUCTION AND SONG WRITING</h2>
                 <br />
                 <div style="font-size: medium;">
-                    After a decade of work, I've made quite a few instrumentals. I've produced everything from acoustic
+                    After a decade of work, I've made quite a few songs. I've produced everything from acoustic
                     ballads to trap bangers, soulful R&B to heavy metal.
                     If you can't find an instrumental in my catalogue that works with your artistic
                     vision, I'm more than happy to tailor-make something exclusively for you.
@@ -20,26 +20,22 @@
                 <hr />
                 <br />
                 <div class="linkContainer">
-                    <a href="/instrumentals" class="mobileButtonLink"
-                        style="font-size: large; width: fit-content;">
+                    <a href="/instrumentals" class="mobileButtonLink" style="font-size: large; width: fit-content;">
                         Browse Instrumentals
                         <i class="fa-solid fa-caret-right"></i>
                     </a>
-                    <a href="/about" class="mobileButtonLink"
-                        style="font-size: large; width: fit-content;">
+                    <a href="/about" class="mobileButtonLink" style="font-size: large; width: fit-content;">
                         Contact Me
                         <i class="fa-solid fa-caret-right"></i>
                     </a>
                 </div>
             </div>
-            <div class="image"
-                style="flex-direction: column; justify-content: center; align-items: center;">
+            <div class="image" style="flex-direction: column; justify-content: center; align-items: center;">
                 <img src="/myStudio.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
             </div>
         </div>
         <div class="glassDiv" style="color: white; margin: 2%;">
-            <div class="image"
-                style="flex-direction: column; justify-content: center; align-items: center;">
+            <div class="image" style="flex-direction: column; justify-content: center; align-items: center;">
                 <img src="/micPic.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
             </div>
             <div class="mobileImage">
@@ -82,20 +78,17 @@
                 <hr />
                 <br />
                 <div class="linkContainer">
-                    <a href="/pastprojects" class="mobileButtonLink"
-                        style="font-size: large; width: fit-content;">
+                    <a href="/pastprojects" class="mobileButtonLink" style="font-size: large; width: fit-content;">
                         Past Projects
                         <i class="fa-solid fa-caret-right"></i>
                     </a>
-                    <a href="/about" class="mobileButtonLink"
-                        style="font-size: large; width: fit-content;">
+                    <a href="/about" class="mobileButtonLink" style="font-size: large; width: fit-content;">
                         Contact Me
                         <i class="fa-solid fa-caret-right"></i>
                     </a>
                 </div>
             </div>
-            <div class="image"
-                style="flex-direction: column; justify-content: center; align-items: center;">
+            <div class="image" style="flex-direction: column; justify-content: center; align-items: center;">
                 <img src="/mixingBoard.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
             </div>
         </div>
@@ -131,20 +124,20 @@
 }
 
 .mobileButtonLink {
-        height: 5vh;
-        padding: 2%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1vw;
-        border-radius: 100vh;
-        background-color: #ffffff26;
-        backdrop-filter: blur(5px);
-        text-align: center;
-        color: #fff;
-        margin-right: 1%;
-        margin-bottom: 2%;
-    }
+    height: 5vh;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    border-radius: 100vh;
+    background-color: #ffffff26;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    color: #fff;
+    margin-right: 1%;
+    margin-bottom: 2%;
+}
 
 @media only screen and (max-width: 768px) {
     .mobileButtonLink {
