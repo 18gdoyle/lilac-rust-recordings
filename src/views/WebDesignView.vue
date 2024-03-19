@@ -7,18 +7,13 @@
                 If you've been making and releasing music for as long as I have, then you understand the importance of
                 having your own website. A centralized location where listeners can find new music, learn about
                 upcoming gigs, and buy merch. If you're ready to take the next step with your music career, creating a
-                professional website is a great place to start. If this sounds like something you're ready to do, hit me up.
+                professional website is a great place to start. If this sounds like something you're ready to do, hit me
+                up.
             </p>
             <br />
             <a href="/about" class="mobileButtonLink">
                 <strong>CONTACT INFO</strong>
             </a>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
             <h1 class="pageSubtitle">PAST WORK</h1>
             <div class="websiteContainer">
                 <div class="imgContainer">
@@ -157,5 +152,24 @@ export default {
     border-radius: 16px;
     width: 100%;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .pageTitle {
+        font-size: 10vw;
+    }
+
+    .pageDescription {
+        font-size: medium;
+    }
+
+    .mobileButtonLink {
+        padding: 5%;
+    }
+
+    .pageSubtitle {
+        font-size: 6vw;
+        margin-top: 15%;
+    }
 }
 </style>

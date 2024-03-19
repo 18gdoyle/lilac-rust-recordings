@@ -4,29 +4,25 @@
       <img class="backgroundImage" src="/lilacProfile.jpg" />
       <div class="overImage">
         <div class="glassDiv bigWelcomeGlass">
-          <div style="margin-top: -8vh;">
-            <h1 class="hugeWelcome">WELCOME</h1>
-            <br />
-            <p class="welcomeDescription">My name is Lilac. I'm a multi-instrumentalist music producer and audio
-              engineer. I've been making music for almost 10 years now and I've
-              produced everything from acoustic ballads to trap bangers, cinematic atmospheres to indie funk.
-              I can produce instrumentals for a myriad of genres, as well as record, mix, master, really whatever
-              you need! So take a look around and if you like what you see/hear, hit me up!
-            </p>
-            <br />
-            <div class="iconsRow" style="display: flex;">
-              <a class="socialMediaButton" href="https://www.tiktok.com/@lilac_rust" target="_blank"><i
-                  class="fa-brands fa-tiktok socialMediaIcon"></i></a>
-              <a class="socialMediaButton" href="https://www.youtube.com/@lilacrust8805" target="_blank"><i
-                  class="fa-brands fa-youtube socialMediaIcon"></i></a>
-              <a class="socialMediaButton" href="mailto:lilac.rust@gmail.com" target="_blank"><i
-                  class="fa-regular fa-envelope socialMediaIcon"></i></a>
-              <a class="socialMediaButton" href="https://www.instagram.com/lilac_rust_music/" target="_blank"><i
-                  class="fa-brands fa-instagram socialMediaIcon"></i></a>
-              <a class="socialMediaButton"
-                href="https://open.spotify.com/artist/1YT4RD3frRo0r9jVY9mBB5?si=jTH5pF9NRJKeDGDx5sNNuw"
-                target="_blank"><i class="fa-brands fa-spotify socialMediaIcon"></i></a>
-            </div>
+          <h1 class="hugeWelcome">WELCOME</h1>
+          <p class="welcomeDescription">My name is Lilac. I'm a multi-instrumentalist music producer and audio
+            engineer. I've been making music for almost 10 years now and I've
+            produced everything from acoustic ballads to trap bangers, cinematic atmospheres to indie funk.
+            I can produce instrumentals for a myriad of genres, as well as record, mix, master, really whatever
+            you need! So take a look around and if you like what you see/hear, hit me up!
+          </p>
+          <div class="iconsRow" style="display: flex;">
+            <a class="socialMediaButton" href="https://www.tiktok.com/@lilac_rust" target="_blank"><i
+                class="fa-brands fa-tiktok socialMediaIcon"></i></a>
+            <a class="socialMediaButton" href="https://www.youtube.com/@lilacrust8805" target="_blank"><i
+                class="fa-brands fa-youtube socialMediaIcon"></i></a>
+            <a class="socialMediaButton" href="mailto:lilac.rust@gmail.com" target="_blank"><i
+                class="fa-regular fa-envelope socialMediaIcon"></i></a>
+            <a class="socialMediaButton" href="https://www.instagram.com/lilac_rust_music/" target="_blank"><i
+                class="fa-brands fa-instagram socialMediaIcon"></i></a>
+            <a class="socialMediaButton"
+              href="https://open.spotify.com/artist/1YT4RD3frRo0r9jVY9mBB5?si=jTH5pF9NRJKeDGDx5sNNuw" target="_blank"><i
+                class="fa-brands fa-spotify socialMediaIcon"></i></a>
           </div>
         </div>
       </div>
@@ -106,8 +102,7 @@
         <hr />
         <br />
         <div class="linkContainer">
-          <a href="/studioservices" class="mobileButtonLink"
-            style="font-size: large; width: fit-content;">
+          <a href="/studioservices" class="mobileButtonLink" style="font-size: large; width: fit-content;">
             Studio Services Info Page
             <i class="fa-solid fa-caret-right"></i>
           </a>
@@ -132,8 +127,7 @@
         <hr />
         <br />
         <div class="linkContainer">
-          <a href="/pastprojects" class="mobileButtonLink"
-            style="font-size: large; width: fit-content;">
+          <a href="/pastprojects" class="mobileButtonLink" style="font-size: large; width: fit-content;">
             Past Projects
             <i class="fa-solid fa-caret-right"></i>
           </a>
@@ -193,6 +187,7 @@ export default {
   border-radius: 0;
   backdrop-filter: blur(10px) !important;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .bigWelcomeContainer {
@@ -314,20 +309,26 @@ export default {
     font-size: 200%;
     margin: auto;
   }
+
   .socialMediaButton {
     max-height: 50px;
     max-width: 50px;
   }
+
   .welcomeDescription {
-    font-size: medium;
+    font-size: large;
   }
+
   .bigWelcomeGlass {
     padding: 5% !important;
     background: rgba(0, 0, 0, 0.5) !important;
+    justify-content: space-evenly;
   }
+
   .hugeWelcome {
     font-size: 300%;
   }
+
   .mobileButtonLink {
     padding: 5%;
     gap: 2vw;

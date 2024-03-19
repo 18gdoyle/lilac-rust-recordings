@@ -107,9 +107,32 @@
   flex-direction: column;
 }
 
-@media (max-width: 825px) {
+@media only screen and (max-width: 768px) {
   .glassDiv h1 {
     font-size: large;
+  }
+
+  .glassDiv {
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  .contactCard-img {
+    width: 80%;
+  }
+
+  .aboutDescription {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .imgAndText {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>

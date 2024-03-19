@@ -93,6 +93,7 @@
                 <img src="/mixingBoard.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
             </div>
         </div>
+        <br />
     </div>
 </template>
 
@@ -175,6 +176,10 @@
         align-items: center;
         flex-direction: column;
         gap: 2vh;
+    }
+
+    .pageTitle {
+        font-size: 10vw;
     }
 }
 </style>

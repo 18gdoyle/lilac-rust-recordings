@@ -159,11 +159,17 @@ import PastProject from '@/components/PastProject.vue';
 
     .pageDescription {
         font-size: medium;
-        margin-bottom: 5%;
+        margin-bottom: 10%;
     }
 
     .pageTitle {
         padding: 5%;
+        font-size: 10vw;
+    }
+
+    .pageSubtitle {
+        padding-top: 5%;
+        font-size: 6vw;
     }
 
     .spotifyIframe {
