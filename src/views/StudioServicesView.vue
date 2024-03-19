@@ -1,7 +1,8 @@
 <template>
     <div class="pageTopMargin">
-        <div style="display: flex; align-items: center; justify-content: center;" class="pageTitle">
-            <h1>STUDIO SERVICES</h1>
+        <br />
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <h1 class="pageTitle">STUDIO SERVICES</h1>
         </div>
         <div class="glassDiv" style="color: white;">
             <div class="mobileImage">
@@ -97,8 +98,7 @@
 
 <style scoped>
 .pageTitle {
-    color: white;
-    margin-top: 2%;
+    font-size: 4vw;
 }
 
 .description {

@@ -1,8 +1,8 @@
 <template>
     <div class="pageTopMargin">
         <div class="centered">
-            <h1 class="pageTitle">WEB DESIGN</h1>
             <br />
+            <h1 class="pageTitle">WEB DESIGN</h1>
             <p class="pageDescription">
                 If you've been making and releasing music for as long as I have, then you understand the importance of
                 having your own website. A centralized location where listeners can find new music, learn about
@@ -13,6 +13,10 @@
             <a href="/about" class="mobileButtonLink">
                 <strong>CONTACT INFO</strong>
             </a>
+            <br />
+            <br />
+            <br />
+            <br />
             <br />
             <br />
             <h1 class="pageSubtitle">PAST WORK</h1>
@@ -141,7 +145,6 @@ export default {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 2%;
 }
 
 .imgContainer {

@@ -5,6 +5,7 @@ import PastProject from '@/components/PastProject.vue';
     <div id="pastProjectsPage" class="pageTopMargin">
         <div class="pastProjects">
             <div class="pastProjectSpotifyDiv centered">
+                <br />
                 <h1 class="pageTitle">PAST PROJECTS</h1>
                 <p class="pageDescription">A collection of songs that I wrote, recorded, produced, mixed, and/or
                     mastered.</p>
@@ -18,7 +19,7 @@ import PastProject from '@/components/PastProject.vue';
                 </div>
             </div>
             <br />
-            <h1 class="pageTitle centered">PAST PROJECTS TIMELINE</h1>
+            <h1 class="pageSubtitle centered">PAST PROJECTS TIMELINE</h1>
             <div class="pastProjectsRow">
                 <PastProject :title="'Funky Lamp - On My Knees'" :date="'December 2023'"
                     :spotifyIframe="'https://open.spotify.com/embed/album/233oHAtm4vs707QfKppDp7?utm_source=generator'"
@@ -92,12 +93,16 @@ import PastProject from '@/components/PastProject.vue';
 <style scoped>
 .pastProjectSpotifyDiv {
     padding: 5%;
-    padding-top: 2%;
+    padding-top: 0;
     padding-bottom: 2%;
 }
 
 .pageTitle {
-    color: white;
+    font-size: 4vw;
+}
+
+.pageSubtitle {
+    font-size: 2.5vw;
 }
 
 .centered {
