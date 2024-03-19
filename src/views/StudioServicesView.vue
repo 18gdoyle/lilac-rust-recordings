@@ -59,7 +59,7 @@
                 </div>
             </div>
         </div>
-        <div class="glassDiv" style="color: white; margin: 2%; margin-bottom: 10%;">
+        <div class="glassDiv">
             <div class="mobileImage">
                 <img class="slide" src="/mixingBoard.jpg">
             </div>

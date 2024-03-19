@@ -13,7 +13,7 @@ a {
 
 .pageTopMargin {
   position: relative;
-  top: 8vh;
+  top: max(8vh, 50px);
 }
 
 /* custom scrollbar */

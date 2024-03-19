@@ -20,6 +20,7 @@
                 <div class="imgContainer">
                     <img src="/lilacRustWebsite.png" @click="openNewTab('https://lilacrust.com/')"
                         class="websiteImage" />
+                    <img src="/lilacRustWebsiteMobile.png" @click="openNewTab('https://lilacrust.com/')" class="websiteImageMobile" />
                 </div>
                 <div class="glassDiv">
                     <a href="https://lilacrust.com/" target="_blank"
@@ -34,6 +35,7 @@
                 <div class="imgContainer">
                     <img src="/gregDoyleWebsite.png" @click="openNewTab('https://gregoryvincentdoyle.com/')"
                         class="websiteImage" />
+                    <img src="/gregDoyleWebsiteMobile.png" @click="openNewTab('https://gregoryvincentdoyle.com/')" class="websiteImageMobile" />
                 </div>
                 <div class="glassDiv">
                     <a href="https://gregoryvincentdoyle.com/" target="_blank"
@@ -48,6 +50,7 @@
                 <div class="imgContainer">
                     <img src="/cPC.png" @click="openNewTab('https://catherines-pet-care.uk.r.appspot.com/')"
                         class="websiteImage" />
+                        <img src="/cPCMobile.png" @click="openNewTab('https://catherines-pet-care.uk.r.appspot.com/')" class="websiteImageMobile" />
                 </div>
                 <div class="glassDiv">
                     <a href="https://catherines-pet-care.uk.r.appspot.com/" target="_blank"
@@ -156,6 +159,13 @@ export default {
     justify-content: center;
 }
 
+.websiteImageMobile {
+    display: none;
+    border-radius: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
 .websiteImage {
     border-radius: 16px;
     width: 100%;
@@ -165,6 +175,14 @@ export default {
 @media only screen and (max-width: 768px) {
     .pageTitle {
         font-size: 10vw;
+    }
+
+    .websiteImage {
+        display: none;
+    }
+
+    .websiteImageMobile {
+        display: block;
     }
 
     .pageDescription {

@@ -1,10 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import InstrumentalsView from '@/views/InstrumentalsView.vue'
 import StudioServicesView from '@/views/StudioServicesView.vue'
 import PastProjectsView from '@/views/PastProjectsView.vue'
 import WebDesignView from '@/views/WebDesignView.vue'
-import InstrumentalsParse from '@/views/InstrumentalsParse.vue'
 import AirbitInstrumentalsView from '@/views/AirbitInstrumentalsView.vue'
 
 const router = createRouter({
@@ -42,11 +40,6 @@ const router = createRouter({
       path: '/webdesign',
       name: 'webdesign',
       component: WebDesignView
-    },
-    {
-      path: '/instrumentalsparse',
-      name: 'instrumentalsparse',
-      component: InstrumentalsParse
     }
   ]
 })

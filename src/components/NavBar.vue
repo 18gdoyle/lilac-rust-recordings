@@ -70,12 +70,12 @@ export default {
     width: 100%;
     height: 8%;
     background: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
     z-index: 10;
+    min-height: 50px;
 }
 
 #title {
@@ -204,7 +204,7 @@ export default {
         position: fixed;
         top: 0;
         left: 0;
-        padding-top: 8vh;
+        padding-top: max(8vh, 50px);
         background: rgba(0, 0, 0, 0.7);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(15px);
