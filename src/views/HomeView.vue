@@ -4,26 +4,26 @@
       <img class="backgroundImage" src="/lilacProfile.jpg" />
       <div class="overImage">
         <div class="glassDiv bigWelcomeGlass">
-          <h1 class="hugeWelcome">WELCOME</h1>
-          <p class="welcomeDescription">My name is Lilac. I'm a multi-instrumentalist music producer and audio
-            engineer. I've been making music for almost 10 years now and I've
-            produced everything from acoustic ballads to trap bangers, cinematic atmospheres to indie funk.
-            I can produce instrumentals for a myriad of genres, as well as record, mix, master, really whatever
-            you need! So take a look around and if you like what you see/hear, hit me up!
-          </p>
-          <div class="iconsRow" style="display: flex;">
-            <a class="socialMediaButton" href="https://www.tiktok.com/@lilac_rust" target="_blank"><i
-                class="fa-brands fa-tiktok socialMediaIcon"></i></a>
-            <a class="socialMediaButton" href="https://www.youtube.com/@lilacrust8805" target="_blank"><i
-                class="fa-brands fa-youtube socialMediaIcon"></i></a>
-            <a class="socialMediaButton" href="mailto:lilac.rust@gmail.com" target="_blank"><i
-                class="fa-regular fa-envelope socialMediaIcon"></i></a>
-            <a class="socialMediaButton" href="https://www.instagram.com/lilac_rust_music/" target="_blank"><i
-                class="fa-brands fa-instagram socialMediaIcon"></i></a>
-            <a class="socialMediaButton"
-              href="https://open.spotify.com/artist/1YT4RD3frRo0r9jVY9mBB5?si=jTH5pF9NRJKeDGDx5sNNuw" target="_blank"><i
-                class="fa-brands fa-spotify socialMediaIcon"></i></a>
-          </div>
+            <h1 class="hugeWelcome">WELCOME</h1>
+            <p class="welcomeDescription">My name is Lilac. I'm a multi-instrumentalist music producer and audio
+              engineer. I've been making music for almost 10 years now and I've
+              produced everything from acoustic ballads to trap bangers, cinematic atmospheres to indie funk.
+              I can produce instrumentals for a myriad of genres, as well as record, mix, master, really whatever
+              you need! So take a look around and if you like what you see/hear, hit me up!
+            </p>
+            <div class="iconsRow" style="display: flex;">
+              <a class="socialMediaButton" href="https://www.tiktok.com/@lilac_rust" target="_blank"><i
+                  class="fa-brands fa-tiktok socialMediaIcon"></i></a>
+              <a class="socialMediaButton" href="https://www.youtube.com/@lilacrust8805" target="_blank"><i
+                  class="fa-brands fa-youtube socialMediaIcon"></i></a>
+              <a class="socialMediaButton" href="mailto:lilac.rust@gmail.com" target="_blank"><i
+                  class="fa-regular fa-envelope socialMediaIcon"></i></a>
+              <a class="socialMediaButton" href="https://www.instagram.com/lilac_rust_music/" target="_blank"><i
+                  class="fa-brands fa-instagram socialMediaIcon"></i></a>
+              <a class="socialMediaButton"
+                href="https://open.spotify.com/artist/1YT4RD3frRo0r9jVY9mBB5?si=jTH5pF9NRJKeDGDx5sNNuw"
+                target="_blank"><i class="fa-brands fa-spotify socialMediaIcon"></i></a>
+            </div>
         </div>
       </div>
     </div>
@@ -36,8 +36,7 @@
         </div>
       </div>
       <div class="description">
-        <h1 style="font-size: xx-large;">INSTRUMENTALS & BEATS</h1>
-        <br />
+        <h1 class="sectionTitle">INSTRUMENTALS & BEATS</h1>
         <div style="font-size: large;">
           I've got everything from laid-back jazz vibes to energetic electronic beats, cinematic atmospheres to indie
           funk
@@ -88,8 +87,7 @@
         </div>
       </div>
       <div class="description">
-        <h1 style="font-size: xx-large;">STUDIO SERVICES</h1>
-        <br />
+        <h1 class="sectionTitle">STUDIO SERVICES</h1>
         <div style="font-size: large;">
           Whether you thrive in the dynamic energy of in-person collaboration at the studio or prefer the flexibility of
           remote
@@ -102,7 +100,8 @@
         <hr />
         <br />
         <div class="linkContainer">
-          <a href="/studioservices" class="mobileButtonLink" style="font-size: large; width: fit-content;">
+          <a href="/studioservices" class="mobileButtonLink"
+            style="font-size: large; width: fit-content;">
             Studio Services Info Page
             <i class="fa-solid fa-caret-right"></i>
           </a>
@@ -118,8 +117,7 @@
         </div>
       </div>
       <div class="description">
-        <h1 style="font-size: xx-large;">PAST PROJECTS</h1>
-        <br />
+        <h1 class="sectionTitle">PAST PROJECTS</h1>
         <div style="font-size: large;">
           If you want to hear my work in action, give some of my past projects a listen
         </div>
@@ -127,7 +125,8 @@
         <hr />
         <br />
         <div class="linkContainer">
-          <a href="/pastprojects" class="mobileButtonLink" style="font-size: large; width: fit-content;">
+          <a href="/pastprojects" class="mobileButtonLink"
+            style="font-size: large; width: fit-content;">
             Past Projects
             <i class="fa-solid fa-caret-right"></i>
           </a>
@@ -175,6 +174,10 @@ export default {
 </script>
 
 <style scoped>
+.sectionTitle {
+  font-size: xx-large;
+  margin-bottom: 1%;
+}
 .welcomeDescription {
   font-size: x-large;
 }
@@ -309,26 +312,21 @@ export default {
     font-size: 200%;
     margin: auto;
   }
-
   .socialMediaButton {
     max-height: 50px;
     max-width: 50px;
   }
-
   .welcomeDescription {
     font-size: large;
   }
-
   .bigWelcomeGlass {
     padding: 5% !important;
     background: rgba(0, 0, 0, 0.5) !important;
     justify-content: space-evenly;
   }
-
   .hugeWelcome {
     font-size: 300%;
   }
-
   .mobileButtonLink {
     padding: 5%;
     gap: 2vw;

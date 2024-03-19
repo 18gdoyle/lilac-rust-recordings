@@ -14,6 +14,7 @@
             <a href="/about" class="mobileButtonLink">
                 <strong>CONTACT INFO</strong>
             </a>
+            <hr class="lineBreak" />
             <h1 class="pageSubtitle">PAST WORK</h1>
             <div class="websiteContainer">
                 <div class="imgContainer">
@@ -90,6 +91,11 @@ export default {
     font-size: 4vw;
 }
 
+.lineBreak {
+    margin: 5%;
+    width: 90%;
+}
+
 .pageSubtitle {
     font-size: 2.5vw;
 }
@@ -110,8 +116,10 @@ export default {
     justify-content: center;
     align-items: center;
     padding: 2%;
-    margin: 2%;
+    margin: 0;
     flex-direction: column;
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 }
 
 .largeLink {

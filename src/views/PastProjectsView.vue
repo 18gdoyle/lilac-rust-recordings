@@ -148,7 +148,7 @@ import PastProject from '@/components/PastProject.vue';
     padding: 2%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
     .whiteGlassDiv {
         width: 100%;
         background: rgba(0, 0, 0, 0);

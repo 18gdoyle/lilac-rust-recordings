@@ -9,8 +9,7 @@
                 <img class="slide" src="/myStudio.jpg">
             </div>
             <div class="description" style="display: flex; flex-direction: column; justify-content: center;">
-                <h2>INSTRUMENTAL PRODUCTION AND SONG WRITING</h2>
-                <br />
+                <h1 class="subTitle">INSTRUMENTAL PRODUCTION AND SONG WRITING</h1>
                 <div style="font-size: medium;">
                     After a decade of work, I've made quite a few songs. I've produced everything from acoustic
                     ballads to trap bangers, soulful R&B to heavy metal.
@@ -43,8 +42,7 @@
                 <img class="slide" src="/micPic.jpg">
             </div>
             <div class="description" style="display: flex; flex-direction: column; justify-content: center;">
-                <h2>RECORDING</h2>
-                <br />
+                <h1 class="subTitle">RECORDING</h1>
                 <div style="font-size: medium;">
                     With an extensive collection of microphones, instruments, and VST Plug-Ins at the studio, I'm
                     equipped to capture your artistry in its purest form. If you lean towards remote collaboration, I'm
@@ -66,8 +64,7 @@
                 <img class="slide" src="/mixingBoard.jpg">
             </div>
             <div class="description" style="display: flex; flex-direction: column; justify-content: center;">
-                <h2>MIXING AND MASTERING</h2>
-                <br />
+                <h1 class="subTitle">MIXING AND MASTERING</h1>
                 <div style="font-size: medium;">
                     With a ton of mixing and mastering know-how under my belt, I'm here to give your project that slick
                     and pro-level sound.
@@ -100,6 +97,11 @@
 <style scoped>
 .pageTitle {
     font-size: 4vw;
+}
+
+.subTitle {
+    font-size: xx-large;
+    margin-bottom: 1%;
 }
 
 .description {

@@ -58,6 +58,7 @@
 .aboutDescription {
   padding: 2%;
   font-size: x-large;
+  text-align: center;
 }
 
 .iconsRow {
@@ -76,6 +77,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .socialMediaButton {
@@ -105,18 +107,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 }
 
 @media only screen and (max-width: 768px) {
-  .glassDiv h1 {
-    font-size: large;
-  }
-
-  .glassDiv {
-    background: rgba(0, 0, 0, 0);
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
-  }
-
   .contactCard-img {
     width: 80%;
   }

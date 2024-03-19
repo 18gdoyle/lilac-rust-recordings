@@ -18,8 +18,8 @@
               class="fa-solid fa-globe socialMediaIcon"></i></a>
           </div>
         </div>
-        <div class="albumArtContainer" style="margin: 2%; display: flex; justify-content: center; align-items: center;">
-          <img :src="albumArt" class="albumArt" width="60%" style="border-radius: 15px;"/>
+        <div class="albumArtContainer">
+          <img :src="albumArt" class="albumArt" width="80%" style="border-radius: 15px;"/>
         </div>
       </div>
 
@@ -74,6 +74,9 @@ export default {
 
 .albumArtContainer {
   flex-basis: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
 }
 
 .socialMediaIcon {
