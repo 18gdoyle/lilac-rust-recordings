@@ -68,14 +68,13 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
-    height: 8%;
+    height: max(8vh, 50px);
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
     z-index: 10;
-    min-height: 50px;
 }
 
 #title {

@@ -187,6 +187,7 @@ export default {
   justify-content: center;
   height: 100%;
   margin: 0 !important;
+  padding-top: max(8vh, 50px) !important;
   border-radius: 0;
   backdrop-filter: blur(10px) !important;
   flex-direction: column;
@@ -199,10 +200,10 @@ export default {
 
 .overImage {
   position: absolute;
-  top: 0;
+  top: min(-8vh, -50px);
   left: 0;
   width: 100%;
-  height: 72vh;
+  height: 80vh;
   text-align: center;
   border-radius: 10px;
   display: flex;
@@ -223,7 +224,7 @@ export default {
 
 .backgroundImage {
   position: relative;
-  top: -8vh;
+  top: min(-8vh, -50px);
   left: 0;
   width: 100%;
   object-fit: cover;
@@ -321,6 +322,7 @@ export default {
   }
   .bigWelcomeGlass {
     padding: 5% !important;
+    padding-top: max(8vh, 50px) !important;
     background: rgba(0, 0, 0, 0.5) !important;
     justify-content: space-evenly;
   }
