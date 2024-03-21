@@ -5,6 +5,7 @@
         <li><a href="/studioservices">Studio Services</a></li>
         <li><a href="/pastprojects">Past Projects</a></li>
         <li><a href="/webdesign">Web Design</a></li>
+        <li><a href="/lilacrustmusic">My Music</a></li>
         <li><a href="/about">About</a></li>
     </div>
     <div id="navBar" class="navbar">
@@ -31,6 +32,9 @@
             </div>
             <div class="pageOption">
                 <a href="/webdesign" class="hover-underline-animation">Web Design</a>
+            </div>
+            <div class="pageOption">
+                <a href="/lilacrustmusic" class="hover-underline-animation">My Music</a>
             </div>
             <div class="pageOption">
                 <a href="/about" class="hover-underline-animation">About</a>
