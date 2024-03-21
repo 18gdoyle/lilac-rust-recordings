@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="albumArtContainer">
-          <img :src="albumArt" class="albumArt" width="80%" style="border-radius: 15px;"/>
+          <img alt="Album Art" :src="albumArt" class="albumArt" width="80%" style="border-radius: 15px;"/>
         </div>
       </div>
 

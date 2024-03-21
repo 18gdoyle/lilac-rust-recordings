@@ -6,7 +6,7 @@
         </div>
         <div class="glassDiv" style="color: white;">
             <div class="mobileImage">
-                <img class="slide" src="/myStudio.jpg">
+                <img alt="Lilac Rust's Studio" class="slide" src="/myStudio.jpg">
             </div>
             <div class="description" style="display: flex; flex-direction: column; justify-content: center;">
                 <h1 class="subTitle">INSTRUMENTAL PRODUCTION AND SONG WRITING</h1>
@@ -31,15 +31,15 @@
                 </div>
             </div>
             <div class="image" style="flex-direction: column; justify-content: center; align-items: center;">
-                <img src="/myStudio.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
+                <img alt="Lilac Rust's Studio" src="/myStudio.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
             </div>
         </div>
         <div class="glassDiv" style="color: white; margin: 2%;">
             <div class="image" style="flex-direction: column; justify-content: center; align-items: center;">
-                <img src="/micPic.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
+                <img alt="Microphone" src="/micPic.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
             </div>
             <div class="mobileImage">
-                <img class="slide" src="/micPic.jpg">
+                <img alt="Microphone" class="slide" src="/micPic.jpg">
             </div>
             <div class="description" style="display: flex; flex-direction: column; justify-content: center;">
                 <h1 class="subTitle">RECORDING</h1>
@@ -61,7 +61,7 @@
         </div>
         <div class="glassDiv">
             <div class="mobileImage">
-                <img class="slide" src="/mixingBoard.jpg">
+                <img alt="Mixing Board" class="slide" src="/mixingBoard.jpg">
             </div>
             <div class="description" style="display: flex; flex-direction: column; justify-content: center;">
                 <h1 class="subTitle">MIXING AND MASTERING</h1>
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="image" style="flex-direction: column; justify-content: center; align-items: center;">
-                <img src="/mixingBoard.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
+                <img alt="Mixing Board" src="/mixingBoard.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
             </div>
         </div>
         <br />

@@ -1,7 +1,7 @@
 <template>
   <div style="width: 100%;" class="pageTopMargin">
     <div class="centered bigWelcomeContainer">
-      <img class="backgroundImage" src="/lilacProfile.jpg" />
+      <img alt="Lilac Rust Brand Image" class="backgroundImage" src="/lilacProfile.jpg" />
       <div class="overImage">
         <div class="glassDiv bigWelcomeGlass">
             <h1 class="hugeWelcome">WELCOME</h1>
@@ -32,7 +32,7 @@
         <div class="instrumentalCarousel">
           <img class="slide" v-for="(image, index) in instrumentalImages" :key="index" :src="image"
             :alt="'Slide ' + (index + 1)">
-          <img class="slide" :src="instrumentalImages[0]">
+          <img alt="Slide" class="slide" :src="instrumentalImages[0]">
         </div>
       </div>
       <div class="description">
@@ -57,14 +57,14 @@
       </div>
       <div class="allImagesContainer">
         <div class="imageRow">
-          <img src="/instrumentals/whiteWizard/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
-          <img src="/instrumentals/waterviewVolumeOne/albumArt.jpg" width="25%"
+          <img alt="White Wizard Album Art" src="/instrumentals/whiteWizard/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
+          <img alt="Waterview Volume One Album Art" src="/instrumentals/waterviewVolumeOne/albumArt.jpg" width="25%"
             style="border-radius: 15px; margin: 2%;">
         </div>
         <div class="imageRow">
-          <img src="/instrumentals/popularKidsVolumeOne/albumArt.jpg" width="25%"
+          <img alt="Popular Kids Volume One Album Art" src="/instrumentals/popularKidsVolumeOne/albumArt.jpg" width="25%"
             style="border-radius: 15px; margin: 2%;">
-          <img src="/instrumentals/highExposureVolumeOne/albumArt.jpg" width="25%"
+          <img alt="High Exposure Volume One Album Art" src="/instrumentals/highExposureVolumeOne/albumArt.jpg" width="25%"
             style="border-radius: 15px; margin: 2%;">
         </div>
       </div>
@@ -72,18 +72,18 @@
     <div class="glassDiv" style="color: white;">
       <div class="allImagesContainer">
         <div class="imageRow">
-          <img src="/mixingBoard.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
-          <img src="/micPic.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
+          <img alt="Mixing Board" src="/mixingBoard.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
+          <img alt="Microphone" src="/micPic.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
         </div>
         <div class="imageRow">
-          <img src="/myStudio.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
+          <img alt="Lilac Rust's Studio" src="/myStudio.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
         </div>
       </div>
       <div class="carousel-container">
         <div class="studioServicesCarousel">
           <img class="slide" v-for="(image, index) in studioServicesImages" :key="index" :src="image"
             :alt="'Slide ' + (index + 1)">
-          <img class="slide" :src="studioServicesImages[0]">
+          <img alt="Slide" class="slide" :src="studioServicesImages[0]">
         </div>
       </div>
       <div class="description">
@@ -113,7 +113,7 @@
         <div class="pastProjectsCarousel">
           <img class="slide" v-for="(image, index) in pastProjectsImages" :key="index" :src="image"
             :alt="'Slide ' + (index + 1)">
-          <img class="slide" :src="pastProjectsImages[0]">
+          <img alt="Slide" class="slide" :src="pastProjectsImages[0]">
         </div>
       </div>
       <div class="description">
@@ -134,11 +134,11 @@
       </div>
       <div class="allImagesContainer">
         <div class="imageRow">
-          <img src="/songs/gardenOfEden/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
-          <img src="/songs/slappin/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
+          <img alt="Garden of Eden Album Art" src="/songs/gardenOfEden/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
+          <img alt="Slappin Album Art" src="/songs/slappin/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
         </div>
         <div class="imageRow">
-          <img src="/songs/onMyKnees/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
+          <img alt="On My Knees Album Art" src="/songs/onMyKnees/albumArt.jpg" width="25%" style="border-radius: 15px; margin: 2%;">
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@
   <div class="about pageTopMargin">
     <div class="glassDiv">
       <div class="imgAndText">
-        <img src="/lilacProfileWithFace.jpg" class="contactCard-img" />
+        <img alt="Lilac Rust Profile Photo" src="/lilacProfileWithFace.jpg" class="contactCard-img" />
         <p class="aboutDescription">
           Hey there!
           My name is Greg, but I go by Lilac Rust online.

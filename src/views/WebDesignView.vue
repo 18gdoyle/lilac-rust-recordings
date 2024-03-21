@@ -18,9 +18,9 @@
             <h1 class="pageSubtitle">PAST WORK</h1>
             <div class="websiteContainer">
                 <div class="imgContainer">
-                    <img src="/lilacRustWebsite.png" @click="openNewTab('https://lilacrust.com/')"
+                    <img alt="Lilac Rust's Website" src="/lilacRustWebsite.png" @click="openNewTab('https://lilacrust.com/')"
                         class="websiteImage" />
-                    <img src="/lilacRustWebsiteMobile.png" @click="openNewTab('https://lilacrust.com/')" class="websiteImageMobile" />
+                    <img alt="Lilac Rust's Website" src="/lilacRustWebsiteMobile.png" @click="openNewTab('https://lilacrust.com/')" class="websiteImageMobile" />
                 </div>
                 <div class="glassDiv">
                     <a href="https://lilacrust.com/" target="_blank"
@@ -33,9 +33,9 @@
             </div>
             <div class="websiteContainer">
                 <div class="imgContainer">
-                    <img src="/gregDoyleWebsite.png" @click="openNewTab('https://gregoryvincentdoyle.com/')"
+                    <img alt="Greg Doyle's Website" src="/gregDoyleWebsite.png" @click="openNewTab('https://gregoryvincentdoyle.com/')"
                         class="websiteImage" />
-                    <img src="/gregDoyleWebsiteMobile.png" @click="openNewTab('https://gregoryvincentdoyle.com/')" class="websiteImageMobile" />
+                    <img alt="Greg Doyle's Website" src="/gregDoyleWebsiteMobile.png" @click="openNewTab('https://gregoryvincentdoyle.com/')" class="websiteImageMobile" />
                 </div>
                 <div class="glassDiv">
                     <a href="https://gregoryvincentdoyle.com/" target="_blank"
@@ -48,9 +48,9 @@
             </div>
             <div class="websiteContainer">
                 <div class="imgContainer">
-                    <img src="/cPC.png" @click="openNewTab('https://catherines-pet-care.uk.r.appspot.com/')"
+                    <img alt="Catherine's Pet Care Website" src="/cPC.png" @click="openNewTab('https://catherines-pet-care.uk.r.appspot.com/')"
                         class="websiteImage" />
-                        <img src="/cPCMobile.png" @click="openNewTab('https://catherines-pet-care.uk.r.appspot.com/')" class="websiteImageMobile" />
+                        <img alt="Catherine's Pet Care Website" src="/cPCMobile.png" @click="openNewTab('https://catherines-pet-care.uk.r.appspot.com/')" class="websiteImageMobile" />
                 </div>
                 <div class="glassDiv">
                     <a href="https://catherines-pet-care.uk.r.appspot.com/" target="_blank"
