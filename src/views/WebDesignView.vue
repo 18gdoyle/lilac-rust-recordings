@@ -1,3 +1,6 @@
+<script setup>
+import WebDesignProject from '@/components/WebDesignProject.vue';
+</script>
 <template>
     <div class="pageTopMargin">
         <div class="centered">
@@ -15,52 +18,23 @@
                 <strong>CONTACT INFO</strong>
             </a>
             <hr class="lineBreak" />
-            <h1 class="pageSubtitle">PAST WORK</h1>
-            <div class="websiteContainer">
-                <div class="imgContainer">
-                    <img alt="Lilac Rust's Website" src="/lilacRustWebsite.png" @click="openNewTab('https://lilacrust.com/')"
-                        class="websiteImage" />
-                    <img alt="Lilac Rust's Website" src="/lilacRustWebsiteMobile.png" @click="openNewTab('https://lilacrust.com/')" class="websiteImageMobile" />
-                </div>
-                <div class="glassDiv">
-                    <a href="https://lilacrust.com/" target="_blank"
-                        class="hover-underline-animation largeLink"><strong>lilacrust.com</strong></a>
-                    <br />
-                    <p class="websiteDescription">The website linked within the same website. Website-ception. Very
-                        cool. A great example of what I can do for a musical brand.
-                    </p>
-                </div>
-            </div>
-            <div class="websiteContainer">
-                <div class="imgContainer">
-                    <img alt="Greg Doyle's Website" src="/gregDoyleWebsite.png" @click="openNewTab('https://gregoryvincentdoyle.com/')"
-                        class="websiteImage" />
-                    <img alt="Greg Doyle's Website" src="/gregDoyleWebsiteMobile.png" @click="openNewTab('https://gregoryvincentdoyle.com/')" class="websiteImageMobile" />
-                </div>
-                <div class="glassDiv">
-                    <a href="https://gregoryvincentdoyle.com/" target="_blank"
-                        class="hover-underline-animation largeLink"><strong>gregoryvincentdoyle.com</strong></a>
-                    <br />
-                    <p class="websiteDescription">
-                        A website I made for my corporate work life alter ego
-                    </p>
-                </div>
-            </div>
-            <div class="websiteContainer">
-                <div class="imgContainer">
-                    <img alt="Catherine's Pet Care Website" src="/cPC.png" @click="openNewTab('https://catherines-pet-care.uk.r.appspot.com/')"
-                        class="websiteImage" />
-                        <img alt="Catherine's Pet Care Website" src="/cPCMobile.png" @click="openNewTab('https://catherines-pet-care.uk.r.appspot.com/')" class="websiteImageMobile" />
-                </div>
-                <div class="glassDiv">
-                    <a href="https://catherines-pet-care.uk.r.appspot.com/" target="_blank"
-                        class="hover-underline-animation largeLink"><strong>catherines-pet-care.uk.r.appspot.com</strong></a>
-                    <br />
-                    <p class="websiteDescription">
-                        A website I made for a pet care business
-                    </p>
-                </div>
-            </div>
+            <h1 class="pageSubtitle">PAST PROJECTS</h1>
+            <WebDesignProject :url="'https://meganmarymusic.com/'" :displayedURL="'meganmarymusic.com'"
+                :description="`A website I made for artist Megan Mary. It's a one stop shop where fans can get quick access to her music, buy merch, and play a flying monkey game. How quirky and cute!`"
+                :desktopImage="'/meganMaryWebsite.png'" :mobileImage="'/meganMaryMobile.png'"
+                :imageAlt="`Megan Mary's Website`"></WebDesignProject>
+            <WebDesignProject :url="'https://lilacrust.com/'" :displayedURL="'lilacrust.com'"
+                :description="'The website linked within the same website. Website-ception. Very cool. A great example of what I can do for a musical brand.'"
+                :desktopImage="'/lilacRustWebsite.png'" :mobileImage="'/lilacRustWebsiteMobile.png'"
+                :imageAlt="`Lilac Rust's Website`"></WebDesignProject>
+            <WebDesignProject :url="'https://gregoryvincentdoyle.com/'" :displayedURL="'gregoryvincentdoyle.com'"
+                :description="'A website I made for my corporate work life alter ego'"
+                :desktopImage="'/gregDoyleWebsite.png'" :mobileImage="'/gregDoyleWebsiteMobile.png'"
+                :imageAlt="`Greg Doyle's Website`"></WebDesignProject>
+            <WebDesignProject :url="'https://catherines-pet-care.uk.r.appspot.com/'"
+                :displayedURL="'catherines-pet-care.uk.r.appspot.com'"
+                :description="'A website I made for a pet care business'" :desktopImage="'/cPC.png'"
+                :mobileImage="'/cPCMobile.png'" :imageAlt="`Catherine's Pet Care Website`"></WebDesignProject>
         </div>
     </div>
 </template>
@@ -95,7 +69,7 @@ export default {
 }
 
 .lineBreak {
-    margin: 5%;
+    margin: 3%;
     width: 90%;
 }
 
@@ -107,26 +81,8 @@ export default {
     text-align: center;
     font-size: x-large;
     width: 80%;
-}
-
-.websiteDescription {
-    text-align: center;
-    font-size: large;
-}
-
-.glassDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2%;
-    margin: 0;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0);
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
-}
-
-.largeLink {
-    font-size: x-large;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .glassDivsRow {
@@ -135,13 +91,6 @@ export default {
     justify-content: center;
     align-items: center;
     height: fit-content;
-}
-
-.websiteContainer {
-    padding: 2%;
-    width: 90%;
-    height: 100%;
-    flex-direction: column;
 }
 
 .centered {
@@ -153,36 +102,9 @@ export default {
     text-align: center;
 }
 
-.imgContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.websiteImageMobile {
-    display: none;
-    border-radius: 16px;
-    width: 100%;
-    cursor: pointer;
-}
-
-.websiteImage {
-    border-radius: 16px;
-    width: 100%;
-    cursor: pointer;
-}
-
 @media only screen and (max-width: 768px) {
     .pageTitle {
         font-size: 10vw;
-    }
-
-    .websiteImage {
-        display: none;
-    }
-
-    .websiteImageMobile {
-        display: block;
     }
 
     .pageDescription {
@@ -193,9 +115,13 @@ export default {
         padding: 5%;
     }
 
+    .lineBreak {
+        margin: 10%;
+    }
+
     .pageSubtitle {
-        font-size: 6vw;
-        margin-top: 15%;
+        font-size: 10vw;
+        margin-bottom: 5%;
     }
 }
 </style>
