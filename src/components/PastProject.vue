@@ -94,7 +94,7 @@ export default {
   backdrop-filter: blur(5px);
   text-align: center;
   color: #fff;
-  margin-right: 1%;
+  margin-right: 2%;
   margin-bottom: 2%;
 }
 
