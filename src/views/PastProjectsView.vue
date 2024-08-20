@@ -21,6 +21,13 @@ import PastProject from '@/components/PastProject.vue';
             <br />
             <h1 class="pageSubtitle centered">PAST PROJECTS TIMELINE</h1>
             <div class="pastProjectsRow">
+                <PastProject :title="'Megan Mary - lucky her'" :date="'June 2024'"
+                    :instagramButton="'https://www.instagram.com/meganmarymusic'"
+                    :tikTokButton="'https://www.tiktok.com/@megan..mary'"
+                    :spotifyButton="'https://open.spotify.com/track/2k06VycWChZBvXIlUOXJgg?si=c6b381c4e1c84804'"
+                    :streamingServices="'https://meganmarymusic.com/music'" :albumArt="'/songs/luckyHer/albumArt.jpeg'"
+                    :description="`Another totally huge rock track. I wrote the instrumental, recorded all the parts myself, mixed the song, and mastered the track.`">
+                </PastProject>
                 <PastProject :title="'Megan Mary - caterwaul'" :date="'April 2024'"
                     :instagramButton="'https://www.instagram.com/meganmarymusic'"
                     :tikTokButton="'https://www.tiktok.com/@megan..mary'"
