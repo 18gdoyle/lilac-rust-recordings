@@ -6,7 +6,7 @@
         <li><a href="/pastprojects">Past Projects</a></li>
         <li><a href="/webdesign">Web Design</a></li>
         <li><a href="/lilacrustmusic">My Music</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="/about">Contact Info</a></li>
     </div>
     <div id="navBar" class="navbar">
         <div class="nav-container">
@@ -222,7 +222,7 @@ export default {
     }
 
     .menu-items li {
-        margin-bottom: 1.2rem;
+        margin-bottom: 1rem;
         font-size: 1.5rem;
         font-weight: 500;
     }
