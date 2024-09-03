@@ -62,6 +62,10 @@ export default {
     text-align: center;
     color: #fff;
     font-size: large;
+    transition: .3s;
+}
+.mobileButtonLink:hover {
+  box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
 }
 
 .pageTitle {

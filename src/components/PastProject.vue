@@ -96,6 +96,10 @@ export default {
   color: #fff;
   margin-right: 2%;
   margin-bottom: 2%;
+  transition: .3s;
+}
+.socialMediaButton:hover {
+  box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
 }
 
 .socialMediaButtonLong {

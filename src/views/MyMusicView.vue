@@ -82,6 +82,10 @@
     padding-right: 5%;
     margin-top: 5%;
     overflow: hidden;
+    transition: .3s
+}
+.socialMediaButtonLong:hover {
+  box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
 }
 
 .socialMediaIcon {

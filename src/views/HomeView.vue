@@ -340,6 +340,10 @@ export default {
   backdrop-filter: blur(5px);
   text-align: center;
   color: #fff;
+  transition: .3s;
+}
+.mobileButtonLink:hover {
+  box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
 }
 
 .socialMediaIcon {
@@ -358,6 +362,10 @@ export default {
   text-align: center;
   color: #fff;
   cursor: pointer;
+  transition: .3s;
+}
+.socialMediaButton:hover {
+  box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
 }
 
 .carousel-container {

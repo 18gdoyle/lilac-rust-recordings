@@ -21,7 +21,22 @@
           <br />
           Greg, a.k.a Lilac Rust
           <br />
+          <br />
+          <div>
             <a
+              href="https://soundbetter.com/profiles/320009-lilac-rust#"
+              target="_blank"
+            >
+              <button class="transparentButton">
+                Click Here to Hire Me For a Project on SoundBetter
+              </button>
+            </a>
+          </div>
+
+          OR
+          <br />
+          Send an email to
+          <a
             class="hover-underline-animation emailLink"
             href="mailto:lilac.rust@gmail.com"
             target="_blank"
@@ -73,6 +88,26 @@
 </template>
 
 <style scoped>
+.transparentButton {
+  flex-direction: column;
+  width: 40%;
+  font-size: x-large;
+  padding: 1%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100vh;
+  background-color: #ffffff26;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+.transparentButton:hover {
+  box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
+}
 .emailLink {
   width: fit-content;
   font-size: x-large;
@@ -127,6 +162,10 @@
   text-align: center;
   color: #fff;
   cursor: pointer;
+  transition: .3s;
+}
+.socialMediaButton:hover {
+  box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
 }
 
 .contactCard-img {
@@ -147,6 +186,13 @@
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 }
 
+@media only screen and (max-width: 850px) {
+  .transparentButton {
+    padding: 5%;
+    width: 90vw;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .contactCard-img {
     width: 80%;
@@ -165,6 +211,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .transparentButton {
+    padding: 5%;
+    width: 90vw;
   }
 }
 </style>
