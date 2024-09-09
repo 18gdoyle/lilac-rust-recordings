@@ -4,7 +4,7 @@
       <img
         alt="Lilac Rust Brand Image"
         class="backgroundImage"
-        src="/movingPurple.webp"
+        src="/lilacProfile.jpg"
       />
       <div class="overImage">
         <div class="glassDiv bigWelcomeGlass">
@@ -319,7 +319,7 @@ export default {
   margin: 2%;
   color: white;
   padding: 2%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .linkContainer {
@@ -456,7 +456,7 @@ export default {
   .bigWelcomeGlass {
     padding: 5% !important;
     padding-top: max(8vh, 50px) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(0, 0, 0, 0.5) !important;
     justify-content: space-evenly;
   }
   .hugeWelcome {
