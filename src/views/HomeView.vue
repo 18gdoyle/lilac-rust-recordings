@@ -4,7 +4,7 @@
       <img
         alt="Lilac Rust Brand Image"
         class="backgroundImage"
-        src="/lilacProfile.jpg"
+        src="/movingPurple.webp"
       />
       <div class="overImage">
         <div class="glassDiv bigWelcomeGlass">
@@ -319,6 +319,7 @@ export default {
   margin: 2%;
   color: white;
   padding: 2%;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .linkContainer {
@@ -340,7 +341,7 @@ export default {
   backdrop-filter: blur(5px);
   text-align: center;
   color: #fff;
-  transition: .3s;
+  transition: 0.3s;
 }
 .mobileButtonLink:hover {
   box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
@@ -362,7 +363,7 @@ export default {
   text-align: center;
   color: #fff;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 .socialMediaButton:hover {
   box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
@@ -455,7 +456,7 @@ export default {
   .bigWelcomeGlass {
     padding: 5% !important;
     padding-top: max(8vh, 50px) !important;
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
     justify-content: space-evenly;
   }
   .hugeWelcome {
