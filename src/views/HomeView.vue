@@ -1,11 +1,6 @@
 <template>
   <div style="width: 100%" class="pageTopMargin">
     <div class="centered bigWelcomeContainer">
-      <img
-        alt="Lilac Rust Brand Image"
-        class="backgroundImage"
-        src="/lilacProfile.jpg"
-      />
       <div class="overImage">
         <div class="glassDiv bigWelcomeGlass">
           <h1 class="hugeWelcome">WELCOME</h1>
@@ -18,7 +13,7 @@
             you need! So take a look around and if you like what you see/hear,
             hit me up!
           </p>
-          <div class="iconsRow" style="display: flex">
+          <div class="iconsRow">
             <a
               class="socialMediaButton"
               href="https://www.tiktok.com/@lilac_rust"
@@ -53,6 +48,7 @@
         </div>
       </div>
     </div>
+    <div class="sectionBreak"></div>
     <div class="sectionDiv">
       <h1 class="sectionTitle">INSTRUMENTALS & BEATS</h1>
       <div class="carousel-container">
@@ -218,10 +214,7 @@ export default {
   text-align: center;
 }
 .sectionBreak {
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 20px;
 }
 .sectionDiv {
   display: flex;
@@ -231,7 +224,6 @@ export default {
 }
 .sectionTitle {
   font-size: xxx-large;
-  margin-bottom: 1%;
 }
 .welcomeDescription {
   font-size: x-large;
@@ -242,9 +234,7 @@ export default {
   justify-content: center;
   height: 100%;
   margin: 0 !important;
-  padding-top: max(8vh, 50px) !important;
   border-radius: 0;
-  backdrop-filter: blur(10px) !important;
   flex-direction: column;
   justify-content: space-evenly;
 }
@@ -254,9 +244,6 @@ export default {
 }
 
 .overImage {
-  position: absolute;
-  top: min(-8vh, -50px);
-  left: 0;
   width: 100%;
   height: 80vh;
   text-align: center;
@@ -264,9 +251,12 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 500px;
 }
 
 .iconsRow {
+  display: flex;
+  padding-top: 2%;
   width: 100%;
   gap: 2vw;
   justify-content: center;
@@ -319,7 +309,8 @@ export default {
   margin: 2%;
   color: white;
   padding: 2%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0);
+  box-shadow: none;
 }
 
 .linkContainer {
@@ -436,8 +427,12 @@ export default {
 }
 
 @media only screen and (max-width: 768px) {
+  .overImage {
+    max-height: 500px;
+  }
   .sectionTitle {
     font-size: x-large;
+    margin-bottom: 1%;
   }
   .descriptionText {
     font-size: large;
@@ -454,9 +449,6 @@ export default {
     font-size: large;
   }
   .bigWelcomeGlass {
-    padding: 5% !important;
-    padding-top: max(8vh, 50px) !important;
-    background: rgba(0, 0, 0, 0.5) !important;
     justify-content: space-evenly;
   }
   .hugeWelcome {
@@ -477,12 +469,8 @@ export default {
     background: rgba(0, 0, 0, 0);
     display: flex;
     flex-direction: column;
-  }
-
-  .glassDiv {
-    width: 100%;
-    text-align: center;
-    padding: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 
   .description {
@@ -531,10 +519,6 @@ export default {
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
-  }
-
-  .sectionBreak {
-    height: 8vh;
   }
 
   @keyframes slideAnimationThreeImages {

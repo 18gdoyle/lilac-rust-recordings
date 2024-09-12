@@ -2,7 +2,7 @@
     <div class="backgroundOverlay"></div>
     <section style="position: fixed; height: 100%; width: 100%; z-index: -10; top: 0;">
       <div id="bg-wrap">
-        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+        <svg viewBox="0 0 100 100" id="svgViewBox" preserveAspectRatio="xMidYMid slice">
           <defs>
             <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5">
               <animate attributeName="fx" dur="68s" values="0%;3%;0%" repeatCount="indefinite"></animate>
@@ -62,6 +62,15 @@
 </template>
 
 <style scoped>
+#bg-wrap {
+  height: 100vh;
+  width: 100vw;
+}
+
+#svgViewBox {
+  height: 100vh;
+  width: 100vw;
+}
 .backgroundOverlay {
   position: fixed;
   top: 0;
