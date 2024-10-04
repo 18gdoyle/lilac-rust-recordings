@@ -5,6 +5,7 @@ import PastProjectsView from '@/views/PastProjectsView.vue'
 import WebDesignView from '@/views/WebDesignView.vue'
 import AirbitInstrumentalsView from '@/views/AirbitInstrumentalsView.vue'
 import MyMusicView from '@/views/MyMusicView.vue'
+import BookingStudioTimeView from '@/views/BookingStudioTimeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -46,6 +47,11 @@ const router = createRouter({
       path: '/lilacrustmusic',
       name: 'lilacrustmusic',
       component: MyMusicView
+    },
+    {
+      path: '/booking',
+      name: 'booking',
+      component: BookingStudioTimeView
     }
   ]
 })
