@@ -3,8 +3,11 @@
 <template>
     <div class="pageTopMargin">
         <div class="calendarContainer">
-            <div v-for="day of weekArray">
-                <button type="button">{{ day }}</button>
+            <button type="button" @click="goToToday">Go To Today</button>
+            <div class="dateButtons">
+                <button type="button" @click="getPrevWeek"><i class="fa-solid fa-arrow-left"></i></button>
+                <button v-for="day of weekArray" type="button">{{ day }}</button>
+                <button type="button" @click="getNextWeek"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
     </div>
@@ -15,12 +18,13 @@
 export default {
     data() {
         return {
-            weekArray: []
+            weekArray: [],
+            googleCalendarApiKey: import.meta.env.VITE_GOOGLE_CALENDAR_API,
+            currentDate: new Date(),
         }
     },
     async mounted() {
-        this.getCurrentWeek();
-        
+        this.getWeek();
     },
     methods: {
         async getCalendarEvents(weekDatesArray) {
@@ -32,28 +36,42 @@ export default {
             const startDate = new Date(weekDatesArray[0]).toISOString();
             const endDate = new Date(weekDatesArray[weekDatesArray.length - 1]).toISOString();
 
-            return await fetch("https://www.googleapis.com/calendar/v3/calendars/cbb1d97352021b378ad48b9577deebdd5c4cca30cdbf5bd008f1f5687d4e8cd1@group.calendar.google.com/events?key=AIzaSyD7R84ZcAaY1-CZeUqWk2JrVv8dqwlxfus&timeMin=" + startDate + "&timeMax=" + endDate, requestOptions)
+            return await fetch("https://www.googleapis.com/calendar/v3/calendars/cbb1d97352021b378ad48b9577deebdd5c4cca30cdbf5bd008f1f5687d4e8cd1@group.calendar.google.com/events?key=" + this.googleCalendarApiKey + "&timeMin=" + startDate + "&timeMax=" + endDate, requestOptions)
                 .then((response) => response.text())
                 .then((result) => {return JSON.parse(result)})
                 .catch((error) => console.error(error));
         },
-        async getCurrentWeek() {
-            let today = new Date();
-            let currentDayIndex = -(today.getDay());
+        async getWeek() {
+            let currentDayIndex = -(this.currentDate.getDay());
             const weekDatesArray = [];
 
             for (let i = 0; i < 7; i++) {
-                let currentDate = new Date();
-                currentDate.setDate(today.getDate() + currentDayIndex);
+                let tempDate = new Date(this.currentDate);
+                tempDate.setDate(this.currentDate.getDate() + currentDayIndex);
 
-                let month = currentDate.getMonth() + 1;
-                let day = currentDate.getDate();
-                let year = currentDate.getFullYear();
+                let month = tempDate.getMonth() + 1;
+                let day = tempDate.getDate();
+                let year = tempDate.getFullYear();
 
                 weekDatesArray.push(`${month}/${day}/${year}`);
-                this.weekArray.push(`${month}/${day}/${year}`);
                 currentDayIndex++;
             }
+
+            this.weekArray = weekDatesArray;
+
+            //console.dir(await this.getCalendarEvents(weekDatesArray));
+        },
+        getPrevWeek() {
+            this.currentDate.setDate(this.currentDate.getDate() - 7);
+            this.getWeek()
+        },
+        getNextWeek() {
+            this.currentDate.setDate(this.currentDate.getDate() + 7);
+            this.getWeek()
+        },
+        goToToday() {
+            this.currentDate = new Date();
+            this.getWeek();
         }
     }
 }
@@ -69,5 +87,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.dateButtons {
+    display: flex;
 }
 </style>
