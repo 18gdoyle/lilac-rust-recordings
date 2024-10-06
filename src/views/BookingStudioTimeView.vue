@@ -8,7 +8,7 @@
                 <div class="calendarNavButton jumpToButton">
                     Jump to:
                     <div>
-                        <input type="date" @change="jumpToDate" :min="getActualDate()">
+                        <input type="date" @change="jumpToDate" :min="getActualDate()" style="font-size: 100%">
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
         </div>
         <div class="mobileCalendarContainer">
             <div class="buttonRow">
-                <div class="calendarNavButton jumpToButton">Jump to: <input type="date" @change="jumpToDate" :min="getActualDate()"></div>
+                <div class="calendarNavButton jumpToButton">Jump to: <input type="date" @change="jumpToDate" :min="getActualDate()" style="font-size: 100%"></div>
             </div>
             <div v-if="loadingCalendar" class="loadingDiv">
                 <div class="lds-ring">
