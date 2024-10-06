@@ -138,7 +138,7 @@ export default {
                     dayOfWeekShort: dayOfWeek.charAt(0),
                     displayDate: `${month}/${day}/${year}`,
                     displayDateShort: day,
-                    objectDate: new Date(`${year}-${month}-${day}`).toISOString().split('T')[0],
+                    objectDate: new Date(`${year}/${month}/${day}`).toISOString().split('T')[0],
                     events: {},
                     fullDateString: tempDate.toLocaleDateString('en-US', {
                         weekday: 'long',
