@@ -1,3 +1,6 @@
+<script setup>
+import SocialLinks from '@/components/SocialLinks.vue';
+</script>
 <template>
   <div style="width: 100%">
     <div class="centered bigWelcomeContainer">
@@ -14,36 +17,7 @@
             hit me up!
           </p>
           <div class="iconsRow">
-            <a
-              class="socialMediaButton"
-              href="https://www.tiktok.com/@lilac_rust"
-              target="_blank"
-              ><i class="fa-brands fa-tiktok socialMediaIcon"></i
-            ></a>
-            <a
-              class="socialMediaButton"
-              href="https://www.youtube.com/@lilacrust"
-              target="_blank"
-              ><i class="fa-brands fa-youtube socialMediaIcon"></i
-            ></a>
-            <a
-              class="socialMediaButton"
-              href="mailto:lilac.rust@gmail.com"
-              target="_blank"
-              ><i class="fa-regular fa-envelope socialMediaIcon"></i
-            ></a>
-            <a
-              class="socialMediaButton"
-              href="https://www.instagram.com/lilac_rust_music/"
-              target="_blank"
-              ><i class="fa-brands fa-instagram socialMediaIcon"></i
-            ></a>
-            <a
-              class="socialMediaButton"
-              href="https://open.spotify.com/artist/1YT4RD3frRo0r9jVY9mBB5?si=jTH5pF9NRJKeDGDx5sNNuw"
-              target="_blank"
-              ><i class="fa-brands fa-spotify socialMediaIcon"></i
-            ></a>
+            <SocialLinks></SocialLinks>
           </div>
         </div>
       </div>
@@ -52,20 +26,10 @@
       <h1 class="sectionTitle">INSTRUMENTALS & BEATS</h1>
       <div class="carousel-container">
         <div class="instrumentalCarousel">
-          <img
-            class="slide"
-            v-for="(image, index) in instrumentalImages"
-            :key="index"
-            :src="image"
-            :alt="'Slide ' + (index + 1)"
-          />
-          <img
-            class="slide"
-            v-for="(image, index) in instrumentalImages"
-            :key="index"
-            :src="image"
-            :alt="'Slide ' + (index + 1)"
-          />
+          <img class="slide" v-for="(image, index) in instrumentalImages" :key="index" :src="image"
+            :alt="'Slide ' + (index + 1)" />
+          <img class="slide" v-for="(image, index) in instrumentalImages" :key="index" :src="image"
+            :alt="'Slide ' + (index + 1)" />
           <img alt="Slide" class="slide" :src="instrumentalImages[0]" />
         </div>
       </div>
@@ -88,27 +52,12 @@
       <h1 class="sectionTitle">STUDIO SERVICES</h1>
       <div class="carousel-container">
         <div class="studioServicesCarousel">
-          <img
-            class="slide"
-            v-for="(image, index) in studioServicesImages"
-            :key="index"
-            :src="image"
-            :alt="'Slide ' + (index + 1)"
-          />
-          <img
-            class="slide"
-            v-for="(image, index) in studioServicesImages"
-            :key="index"
-            :src="image"
-            :alt="'Slide ' + (index + 1)"
-          />
-          <img
-            class="slide"
-            v-for="(image, index) in studioServicesImages"
-            :key="index"
-            :src="image"
-            :alt="'Slide ' + (index + 1)"
-          />
+          <img class="slide" v-for="(image, index) in studioServicesImages" :key="index" :src="image"
+            :alt="'Slide ' + (index + 1)" />
+          <img class="slide" v-for="(image, index) in studioServicesImages" :key="index" :src="image"
+            :alt="'Slide ' + (index + 1)" />
+          <img class="slide" v-for="(image, index) in studioServicesImages" :key="index" :src="image"
+            :alt="'Slide ' + (index + 1)" />
           <img alt="Slide" class="slide" :src="studioServicesImages[0]" />
         </div>
       </div>
@@ -134,27 +83,12 @@
       <h1 class="sectionTitle">PAST PROJECTS</h1>
       <div class="carousel-container">
         <div class="pastProjectsCarousel">
-          <img
-            class="slide"
-            v-for="(image, index) in pastProjectsImages"
-            :key="index"
-            :src="image"
-            :alt="'Slide ' + (index + 1)"
-          />
-          <img
-            class="slide"
-            v-for="(image, index) in pastProjectsImages"
-            :key="index"
-            :src="image"
-            :alt="'Slide ' + (index + 1)"
-          />
-          <img
-            class="slide"
-            v-for="(image, index) in pastProjectsImages"
-            :key="index"
-            :src="image"
-            :alt="'Slide ' + (index + 1)"
-          />
+          <img class="slide" v-for="(image, index) in pastProjectsImages" :key="index" :src="image"
+            :alt="'Slide ' + (index + 1)" />
+          <img class="slide" v-for="(image, index) in pastProjectsImages" :key="index" :src="image"
+            :alt="'Slide ' + (index + 1)" />
+          <img class="slide" v-for="(image, index) in pastProjectsImages" :key="index" :src="image"
+            :alt="'Slide ' + (index + 1)" />
           <img alt="Slide" class="slide" :src="pastProjectsImages[0]" />
         </div>
       </div>
@@ -203,13 +137,26 @@ export default {
 </script>
 
 <style scoped>
+.social-link {
+  font-size: 40px;
+  color: #fff;
+  margin: 0 20px;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: rgb(215, 151, 233);
+}
+
 .descriptionText {
   font-size: x-large;
   text-align: center;
 }
+
 .sectionBreak {
   height: 20px;
 }
+
 .sectionDiv {
   display: flex;
   position: relative;
@@ -219,12 +166,15 @@ export default {
   padding-top: 2%;
   padding-bottom: 2%;
 }
+
 .darkSection {
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, .5);
 }
+
 .sectionTitle {
   font-size: xxx-large;
 }
+
 .welcomeDescription {
   font-size: x-large;
 }
@@ -236,7 +186,7 @@ export default {
   margin: 0 !important;
   border-radius: 0;
   flex-direction: column;
-  justify-content: space-evenly;
+  gap: 10px;
 }
 
 .bigWelcomeContainer {
@@ -245,7 +195,6 @@ export default {
 
 .overImage {
   width: 100%;
-  height: 80vh;
   text-align: center;
   border-radius: 10px;
   display: flex;
@@ -256,9 +205,7 @@ export default {
 
 .iconsRow {
   display: flex;
-  padding-top: 2%;
   width: 100%;
-  gap: 2vw;
   justify-content: center;
 }
 
@@ -309,7 +256,7 @@ export default {
 .glassDiv {
   margin: 2%;
   color: white;
-  padding: 2%;
+  padding: 20px;
   background: rgba(0, 0, 0, 0);
   box-shadow: none;
 }
@@ -335,6 +282,7 @@ export default {
   color: #fff;
   transition: 0.3s;
 }
+
 .mobileButtonLink:hover {
   box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
 }
@@ -357,6 +305,7 @@ export default {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .socialMediaButton:hover {
   box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
 }
@@ -431,30 +380,38 @@ export default {
   .overImage {
     max-height: 500px;
   }
+
   .sectionTitle {
     font-size: x-large;
     margin-bottom: 1%;
   }
+
   .descriptionText {
     font-size: large;
   }
+
   .socialMediaIcon {
     font-size: 200%;
     margin: auto;
   }
+
   .socialMediaButton {
     max-height: 50px;
     max-width: 50px;
   }
+
   .welcomeDescription {
     font-size: large;
   }
+
   .bigWelcomeGlass {
     justify-content: space-evenly;
   }
+
   .hugeWelcome {
     font-size: 300%;
   }
+
   .mobileButtonLink {
     padding: 4%;
     gap: 2vw;
@@ -464,14 +421,11 @@ export default {
   .glassDiv {
     width: 100%;
     margin: 0%;
-    padding: 0%;
     margin-top: 0%;
     border-radius: 0;
     background: rgba(0, 0, 0, 0);
     display: flex;
     flex-direction: column;
-    padding-left: 3%;
-    padding-right: 3%;
   }
 
   .description {

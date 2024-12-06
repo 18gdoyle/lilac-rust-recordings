@@ -1,6 +1,6 @@
 <template>
     <div style="position: relative; justify-content: center; display: flex; flex-direction: column; align-items: center;">
-        <img alt="Lilac Rust Profile Image" src="/lilacProfile.jpg" class="profileImage">
+        <img alt="Lilac Rust Profile Image" src="/lilacProfileWithFace.jpg" class="profileImage">
         <div class="buttonsContainer">
             <a class="socialMediaButtonLong"
                 href="https://open.spotify.com/artist/1YT4RD3frRo0r9jVY9mBB5?si=jTH5pF9NRJKeDGDx5sNNuw" target="_blank">
@@ -38,6 +38,7 @@
                 <i class="fa-brands fa-soundcloud socialMediaIcon"></i>
             </a>
         </div>
+        <br />
     </div>
 </template>
 

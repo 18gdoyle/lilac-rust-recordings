@@ -14,12 +14,12 @@
                 class="fa-brands fa-instagram socialMediaIcon"></i></a>
             <a v-if="spotifyButton !== undefined" class="socialMediaButton" :href="spotifyButton" target="_blank"><i
                 class="fa-brands fa-spotify socialMediaIcon"></i></a>
-            <a v-if="streamingServices !== undefined" class="socialMediaButton" :href="streamingServices" target="_blank"><i 
-              class="fa-solid fa-globe socialMediaIcon"></i></a>
+            <a v-if="streamingServices !== undefined" class="socialMediaButton" :href="streamingServices"
+              target="_blank"><i class="fa-solid fa-globe socialMediaIcon"></i></a>
           </div>
         </div>
         <div class="albumArtContainer">
-          <img alt="Album Art" :src="albumArt" class="albumArt" width="80%" style="border-radius: 15px;"/>
+          <img alt="Album Art" :src="albumArt" class="albumArt" width="80%" style="border-radius: 15px;" />
         </div>
       </div>
 
@@ -60,6 +60,10 @@ export default {
   color: var(--color-text);
 }
 
+.iconsRow {
+  gap: 15px;
+}
+
 .glassDiv {
   width: 50%;
 }
@@ -79,27 +83,14 @@ export default {
   justify-content: center;
 }
 
-.socialMediaIcon {
-  font-size: 200%;
-  margin: auto;
+.socialMediaButton {
+  font-size: 30px;
+  color: #fff;
+  transition: color 0.3s ease;
 }
 
-.socialMediaButton {
-  height: 5vh;
-  width: 5vh;
-  display: flex;
-  justify-content: center;
-  border-radius: 100vh;
-  background-color: #ffffff26;
-  backdrop-filter: blur(5px);
-  text-align: center;
-  color: #fff;
-  margin-right: 2%;
-  margin-bottom: 2%;
-  transition: .3s;
-}
 .socialMediaButton:hover {
-  box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
+  color: rgb(215, 151, 233);
 }
 
 .socialMediaButtonLong {
@@ -131,7 +122,7 @@ export default {
 
 .projectInfo h4 {
   color: var(--color-text);
-  padding-bottom: 2%;
+  padding-bottom: 10px;
 }
 
 .iframePadding {
@@ -152,10 +143,8 @@ export default {
   }
 
   .socialMediaButton {
-    height: 8vh;
-    width: 8vh;
-    max-height: 50px;
-    max-width: 50px;
+    font-size: 30px;
+    margin: 0 15px;
   }
 
   .glassDiv {
@@ -173,7 +162,6 @@ export default {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 1vh
   }
 
   .albumArtContainer {
@@ -181,8 +169,8 @@ export default {
   }
 
   .albumArt {
-    width: 100%;
-    margin-bottom: 2%;
+    width: 98%;
+    margin-bottom: 15px;
   }
 
   .projectInfo {
@@ -193,6 +181,10 @@ export default {
     align-items: center;
   }
 
+  .projectInfo h4 {
+    padding-bottom: 0;
+  }
+
   .iconsRow {
     width: 100%;
     gap: 2vw;
@@ -201,6 +193,7 @@ export default {
 
   .projectInfo h1 {
     line-height: 1;
+    padding-bottom: 10px;
   }
 
   .socialMediaButtonLong {
