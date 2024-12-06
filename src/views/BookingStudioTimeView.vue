@@ -1,7 +1,7 @@
 <script setup>
 </script>
 <template>
-    <div class="pageTopMargin">
+    <div>
         <br />
         <div class="calendarContainer">
             <div class="buttonRow">

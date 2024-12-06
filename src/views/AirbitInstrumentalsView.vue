@@ -13,8 +13,7 @@ import LoadingWheel from '@/components/LoadingWheel.vue';
 <style scoped>
     .instrumentalsPage {
         position: relative;
-        margin-top: max(8vh, 50px);
-        height: min(92vh, calc(100vh - 50px));
+        height: calc(100vh - 75px);
         overflow: hidden;
         z-index: 5;
     }

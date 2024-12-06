@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 100%" class="pageTopMargin">
+  <div style="width: 100%">
     <div class="centered bigWelcomeContainer">
       <div class="overImage">
         <div class="glassDiv bigWelcomeGlass">
@@ -22,7 +22,7 @@
             ></a>
             <a
               class="socialMediaButton"
-              href="https://www.youtube.com/@lilacrust8805"
+              href="https://www.youtube.com/@lilacrust"
               target="_blank"
               ><i class="fa-brands fa-youtube socialMediaIcon"></i
             ></a>
@@ -48,8 +48,7 @@
         </div>
       </div>
     </div>
-    <div class="sectionBreak"></div>
-    <div class="sectionDiv">
+    <div class="sectionDiv darkSection">
       <h1 class="sectionTitle">INSTRUMENTALS & BEATS</h1>
       <div class="carousel-container">
         <div class="instrumentalCarousel">
@@ -85,7 +84,6 @@
         </div>
       </div>
     </div>
-    <div class="sectionBreak"></div>
     <div class="sectionDiv">
       <h1 class="sectionTitle">STUDIO SERVICES</h1>
       <div class="carousel-container">
@@ -132,8 +130,7 @@
         </div>
       </div>
     </div>
-    <div class="sectionBreak"></div>
-    <div class="sectionDiv">
+    <div class="sectionDiv darkSection">
       <h1 class="sectionTitle">PAST PROJECTS</h1>
       <div class="carousel-container">
         <div class="pastProjectsCarousel">
@@ -174,9 +171,6 @@
         </div>
       </div>
     </div>
-    <br />
-    <br />
-    <br />
   </div>
 </template>
 
@@ -218,9 +212,15 @@ export default {
 }
 .sectionDiv {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.darkSection {
+  background-color: rgba(0,0,0,.5);
 }
 .sectionTitle {
   font-size: xxx-large;
@@ -268,7 +268,7 @@ export default {
 
 .backgroundImage {
   position: relative;
-  top: min(-8vh, -50px);
+  top: 75px;
   left: 0;
   width: 100%;
   object-fit: cover;
@@ -297,6 +297,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 
 .imageRow {
@@ -519,6 +520,11 @@ export default {
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
+  }
+
+  .sectionDiv {
+    padding-top: 8%;
+    padding-bottom: 8%;
   }
 
   @keyframes slideAnimationThreeImages {

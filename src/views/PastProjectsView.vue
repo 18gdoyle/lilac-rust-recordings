@@ -2,7 +2,7 @@
 import PastProject from '@/components/PastProject.vue';
 </script>
 <template>
-    <div id="pastProjectsPage" class="pageTopMargin">
+    <div id="pastProjectsPage">
         <div class="pastProjects">
             <div class="pastProjectSpotifyDiv centered">
                 <br />
@@ -72,7 +72,7 @@ import PastProject from '@/components/PastProject.vue';
                     :spotifyIframe="'https://open.spotify.com/embed/album/4fwViAsmYPMIrdrGjRNTNH?utm_source=generator'"
                     :instagramButton="'https://www.instagram.com/lilac_rust_music/'"
                     :tikTokButton="'https://www.tiktok.com/@lilac_rust'"
-                    :youtubeButton="'https://www.youtube.com/@lilacrust8805'"
+                    :youtubeButton="'https://www.youtube.com/@lilacrust'"
                     :streamingServices="'https://li.sten.to/lilac_rust'"
                     :albumArt="'/instrumentals/whiteWizard/albumArt.jpg'"
                     :description="`Believe it or not, I also do scoring for film, tv, and video games. The track WHITE WIZARD - CINEMATIC VERSION is a song I composed for a currently unreleased indie video game. So if you need music for your game/tv show/film, hit me up. <a class='hover-underline-animation' href='mailto:lilac.rust@gmail.com'>lilac.rust@gmail.com</a>`">
@@ -91,7 +91,7 @@ import PastProject from '@/components/PastProject.vue';
                     :spotifyIframe="'https://open.spotify.com/embed/album/0sWEVOS6QN8Pw5qzskjDqr?utm_source=generator'"
                     :instagramButton="'https://www.instagram.com/lilac_rust_music/'"
                     :tikTokButton="'https://www.tiktok.com/@lilac_rust'"
-                    :youtubeButton="'https://www.youtube.com/@lilacrust8805'"
+                    :youtubeButton="'https://www.youtube.com/@lilacrust'"
                     :streamingServices="'https://li.sten.to/lilac_rust'"
                     :albumArt="'/instrumentals/waterviewVolumeOne/albumArt.jpg'"
                     :description="'Kind of like a lofi hip hop beats tape, but not really. Some of my favorite beats I\'ve ever done are on here. All of the instrumentals on this EP are for sale. Click HERE to browse the full selection.'">
@@ -100,7 +100,7 @@ import PastProject from '@/components/PastProject.vue';
                     :spotifyIframe="'https://open.spotify.com/embed/album/7rG8bBy8k8FcPfiICOEUUr?utm_source=generator'"
                     :instagramButton="'https://www.instagram.com/lilac_rust_music/'"
                     :tikTokButton="'https://www.tiktok.com/@lilac_rust'"
-                    :youtubeButton="'https://www.youtube.com/@lilacrust8805'"
+                    :youtubeButton="'https://www.youtube.com/@lilacrust'"
                     :streamingServices="'https://li.sten.to/lilac_rust'"
                     :albumArt="'/instrumentals/popularKidsVolumeOne/albumArt.jpg'"
                     :description="'Another instrumental tape by yours truly. These have more of a pop vibe going for them. Great tracks for singers. All of the instrumentals on this EP are for sale. Click HERE to browse the full selection.'">
@@ -111,7 +111,7 @@ import PastProject from '@/components/PastProject.vue';
                     :spotifyIframe="'https://open.spotify.com/embed/album/1mPKZ6s1sGYxXUQvj4j3Nz?utm_source=generator'"
                     :instagramButton="'https://www.instagram.com/lilac_rust_music/'"
                     :tikTokButton="'https://www.tiktok.com/@lilac_rust'"
-                    :youtubeButton="'https://www.youtube.com/@lilacrust8805'"
+                    :youtubeButton="'https://www.youtube.com/@lilacrust'"
                     :streamingServices="'https://li.sten.to/lilac_rust'"
                     :albumArt="'/instrumentals/highExposureVolumeOne/albumArt.jpg'"
                     :description="'My first beat tape. A lot of hard hitting rap beats on this thing. All of the instrumentals on this EP are for sale. Click HERE to browse the full selection.'">
@@ -155,6 +155,7 @@ import PastProject from '@/components/PastProject.vue';
 #pastProjectsPage {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .pageDescription {

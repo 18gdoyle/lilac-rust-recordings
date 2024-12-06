@@ -11,13 +11,7 @@
   </div>
   <div id="navBar" class="navbar">
     <div class="nav-container">
-      <input
-        @click="showOrHideMobileNav"
-        class="checkbox"
-        type="checkbox"
-        name=""
-        id=""
-      />
+      <input @click="showOrHideMobileNav" class="checkbox" type="checkbox" name="" id="" />
       <div class="hamburger-lines">
         <span class="line line1"></span>
         <span class="line line2"></span>
@@ -25,12 +19,7 @@
       </div>
     </div>
     <div id="title">
-      <a
-        href="/"
-        class="hover-underline-animation"
-        v-on:click.ctrl="$router.push('/instrumentalsparse')"
-        >Lilac Rust</a
-      >
+      <a href="/" class="pageTitle" v-on:click.ctrl="$router.push('/instrumentalsparse')">Lilac Rust</a>
     </div>
   </div>
 </template>
@@ -51,12 +40,20 @@ export default {
 </script>
 
 <style scoped>
+.pageTitle {
+  transition: all .4s ease;
+}
+
+.pageTitle:hover {
+  color: rgb(215, 151, 233);
+}
+
 #navBar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: max(8vh, 50px);
+  height: 75px;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
@@ -130,35 +127,35 @@ a {
 
 .nav-container .hamburger-lines .line1 {
   transform-origin: 0% 0%;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .nav-container .hamburger-lines .line2 {
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.1s ease-in-out;
 }
 
 .nav-container .hamburger-lines .line3 {
   transform-origin: 0% 100%;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
-.nav-container input[type="checkbox"]:checked ~ .menu-items {
+.nav-container input[type="checkbox"]:checked~.menu-items {
   transform: translateX(0);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
   transform: rotate(45deg);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
   transform: scaleY(0);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
   transform: rotate(-45deg);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .logo {
+.nav-container input[type="checkbox"]:checked~.logo {
   display: none;
 }
 
@@ -166,7 +163,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: max(8vh, 50px);
+  padding-top: 75px;
   background: rgba(0, 0, 0, 0.7);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
@@ -176,7 +173,7 @@ a {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   z-index: 10;
 }
 
@@ -186,10 +183,19 @@ a {
   font-weight: 500;
 }
 
+.menu-items li a {
+  transition: all .4s ease;
+}
+
+.menu-items li a:hover {
+  color: rgb(215, 151, 233);
+}
+
 @media (max-width: 850px) {
   #title {
     padding-right: 5%;
   }
+
   .menu-items {
     width: 60vw;
   }

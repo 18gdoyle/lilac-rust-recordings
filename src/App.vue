@@ -2,14 +2,24 @@
 import { RouterView } from 'vue-router'
 import NavBar from '@/components/NavBar.vue'
 import MovingGradient from '@/components/MovingGradient.vue';
+import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
   <NavBar />
   <MovingGradient></MovingGradient>
-  <RouterView />
+  <div class="navBarMargin"></div>
+  <div class="pageContainer">
+    <RouterView />
+  </div>
+  <Footer></Footer>
 </template>
 
 <style scoped>
-
+.navBarMargin {
+  height: 75px;
+}
+.pageContainer {
+  min-height: calc(100vh - 225px);
+}
 </style>

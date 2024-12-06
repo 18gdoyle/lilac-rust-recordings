@@ -1,5 +1,5 @@
 <template>
-    <div class="pageTopMargin">
+    <div style="position: relative; justify-content: center; display: flex; flex-direction: column; align-items: center;">
         <img alt="Lilac Rust Profile Image" src="/lilacProfile.jpg" class="profileImage">
         <div class="buttonsContainer">
             <a class="socialMediaButtonLong"
@@ -44,7 +44,7 @@
 <style scoped>
 .buttonsContainer {
     width: 50%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .siteTitle {

@@ -1,10 +1,11 @@
 <template>
-    <div class="pageTopMargin">
+    <div>
         <br />
-        <div style="display: flex; align-items: center; justify-content: center;">
+        <div style="display: flex; align-items: center; justify-content: center; position: relative;">
             <h1 class="pageTitle">STUDIO SERVICES</h1>
         </div>
-        <div class="glassDiv" style="color: white;">
+        <br />
+        <div class="glassDiv clear" style="color: white;">
             <div class="mobileImage">
                 <img alt="Lilac Rust's Studio" class="slide" src="/myStudio.jpg">
             </div>
@@ -34,7 +35,7 @@
                 <img alt="Lilac Rust's Studio" src="/myStudio.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
             </div>
         </div>
-        <div class="glassDiv" style="color: white; margin: 2%;">
+        <div class="glassDiv" style="color: white;">
             <div class="image" style="flex-direction: column; justify-content: center; align-items: center;">
                 <img alt="Microphone" src="/micPic.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
             </div>
@@ -59,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div class="glassDiv">
+        <div class="glassDiv clear">
             <div class="mobileImage">
                 <img alt="Mixing Board" class="slide" src="/mixingBoard.jpg">
             </div>
@@ -90,7 +91,6 @@
                 <img alt="Mixing Board" src="/mixingBoard.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
             </div>
         </div>
-        <br />
     </div>
 </template>
 
@@ -123,7 +123,15 @@
 }
 
 .glassDiv {
-    padding: 2%
+    width: 100%;
+    margin: 0;
+    border-radius: 0px;
+    padding: 2%;
+    box-shadow: none;
+}
+
+.clear {
+    background-color: rgba(0,0,0,0);
 }
 
 .mobileButtonLink {
@@ -134,7 +142,7 @@
     align-items: center;
     gap: 1vw;
     border-radius: 100vh;
-    background-color: #ffffff26;
+    background-color: rgba(255,255,255,.2);
     backdrop-filter: blur(5px);
     text-align: center;
     color: #fff;
@@ -166,7 +174,6 @@
     }
 
     .glassDiv {
-        background-color: rgba(0, 0, 0, 0);
         flex-direction: column;
         box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
         padding: 2%;

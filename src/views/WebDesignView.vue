@@ -2,7 +2,7 @@
 import WebDesignProject from '@/components/WebDesignProject.vue';
 </script>
 <template>
-    <div class="pageTopMargin">
+    <div style="position: relative;">
         <div class="centered">
             <br />
             <h1 class="pageTitle">WEB DESIGN</h1>
@@ -19,18 +19,23 @@ import WebDesignProject from '@/components/WebDesignProject.vue';
             </a>
             <hr class="lineBreak" />
             <h1 class="pageSubtitle">PAST PROJECTS</h1>
-            <WebDesignProject :url="'https://meganmarymusic.com/'" :displayedURL="'meganmarymusic.com'"
-                :description="`A website I made for artist Megan Mary. It's a one stop shop where fans can get quick access to her music, buy merch, and play a flying monkey game. How quirky and cute!`"
-                :desktopImage="'/meganMaryWebsite.png'" :mobileImage="'/meganMaryMobile.png'"
-                :imageAlt="`Megan Mary's Website`"></WebDesignProject>
+            <br />
+            <div class="darkSection">
+                <WebDesignProject :url="'https://meganmarymusic.com/'" :displayedURL="'meganmarymusic.com'"
+                    :description="`A website I made for artist Megan Mary. It's a one stop shop where fans can get quick access to her music, buy merch, and play a flying monkey game. How quirky and cute!`"
+                    :desktopImage="'/meganMaryWebsite.png'" :mobileImage="'/meganMaryMobile.png'"
+                    :imageAlt="`Megan Mary's Website`"></WebDesignProject>
+            </div>
             <WebDesignProject :url="'https://lilacrust.com/'" :displayedURL="'lilacrust.com'"
                 :description="'The website linked within the same website. Website-ception. Very cool. A great example of what I can do for a musical brand.'"
                 :desktopImage="'/lilacRustWebsite.png'" :mobileImage="'/lilacRustWebsiteMobile.png'"
                 :imageAlt="`Lilac Rust's Website`"></WebDesignProject>
-            <WebDesignProject :url="'https://gregoryvincentdoyle.com/'" :displayedURL="'gregoryvincentdoyle.com'"
-                :description="'A website I made for my corporate work life alter ego'"
-                :desktopImage="'/gregDoyleWebsite.png'" :mobileImage="'/gregDoyleWebsiteMobile.png'"
-                :imageAlt="`Greg Doyle's Website`"></WebDesignProject>
+            <div class="darkSection">
+                <WebDesignProject :url="'https://gregoryvincentdoyle.com/'" :displayedURL="'gregoryvincentdoyle.com'"
+                    :description="'A website I made for my corporate work life alter ego'"
+                    :desktopImage="'/gregDoyleWebsite.png'" :mobileImage="'/gregDoyleWebsiteMobile.png'"
+                    :imageAlt="`Greg Doyle's Website`"></WebDesignProject>
+            </div>
             <WebDesignProject :url="'https://catherines-pet-care.uk.r.appspot.com/'"
                 :displayedURL="'catherines-pet-care.uk.r.appspot.com'"
                 :description="'A website I made for a pet care business'" :desktopImage="'/cPC.png'"
@@ -64,8 +69,18 @@ export default {
     font-size: large;
     transition: .3s;
 }
+
+.darkSection {
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .mobileButtonLink:hover {
-  box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
 }
 
 .pageTitle {

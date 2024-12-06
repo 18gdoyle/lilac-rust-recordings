@@ -1,5 +1,5 @@
 <template>
-  <div class="about pageTopMargin">
+  <div class="about">
     <div class="glassDiv">
       <div class="imgAndText">
         <img
@@ -44,46 +44,7 @@
           >
         </div>
       </div>
-      <br />
-      <div class="iconsRow">
-        <a
-          class="socialMediaButton"
-          href="https://www.tiktok.com/@lilac_rust"
-          target="_blank"
-          ><i class="fa-brands fa-tiktok socialMediaIcon"></i
-        ></a>
-        <a
-          class="socialMediaButton"
-          href="mailto:lilac.rust@gmail.com"
-          target="_blank"
-          ><i class="fa-regular fa-envelope socialMediaIcon"></i
-        ></a>
-        <a
-          class="socialMediaButton"
-          href="https://www.instagram.com/lilac_rust_music/"
-          target="_blank"
-          ><i class="fa-brands fa-instagram socialMediaIcon"></i
-        ></a>
-      </div>
-      <br />
-      <div class="iconsRow">
-        <a
-          class="socialMediaButton"
-          href="https://www.youtube.com/@lilacrust8805"
-          target="_blank"
-          ><i class="fa-brands fa-youtube socialMediaIcon"></i
-        ></a>
-        <a
-          class="socialMediaButton"
-          href="https://open.spotify.com/artist/1YT4RD3frRo0r9jVY9mBB5?si=jTH5pF9NRJKeDGDx5sNNuw"
-          target="_blank"
-          ><i class="fa-brands fa-spotify socialMediaIcon"></i
-        ></a>
-      </div>
-      <br />
     </div>
-    <br />
-    <br />
   </div>
 </template>
 
@@ -177,7 +138,7 @@
 }
 
 .glassDiv {
-  margin: 2%;
+  margin: 0;
   padding: 2%;
   justify-content: center;
   align-items: center;
