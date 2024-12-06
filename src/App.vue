@@ -19,7 +19,17 @@ import Footer from '@/components/Footer.vue';
 .navBarMargin {
   height: 75px;
 }
+
 .pageContainer {
   min-height: calc(100vh - 225px);
+}
+
+@media (max-width: 850px) {
+  .navBarMargin {
+    height: 60px;
+  }
+  .pageContainer {
+    min-height: calc(100vh - 210px);
+  }
 }
 </style>

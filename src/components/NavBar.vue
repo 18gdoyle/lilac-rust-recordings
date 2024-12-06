@@ -199,5 +199,9 @@ a {
   .menu-items {
     width: 60vw;
   }
+
+  #navBar {
+    height: 60px;
+  }
 }
 </style>
