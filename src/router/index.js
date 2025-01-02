@@ -49,10 +49,10 @@ const router = createRouter({
       component: MyMusicView
     },
     {
-      path: '/booking',
-      name: 'booking',
-      component: BookingStudioTimeView
-    }
+      path: '/:pathMatch(.*)*',
+      name: 'home',
+      component: HomeView
+    },
   ]
 })
 
