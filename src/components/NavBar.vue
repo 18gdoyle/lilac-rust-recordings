@@ -2,7 +2,7 @@
   <div class="menu-items">
     <li><a href="/">Home</a></li>
     <li><a href="/instrumentals">Instrumentals</a></li>
-    <li><a href="/studioservices">Studio Services</a></li>
+    <li><a href="/studioservices">Services</a></li>
     <li><a href="/pastprojects">Past Projects</a></li>
     <li><a href="/webdesign">Web Design</a></li>
     <li><a href="/lilacrustmusic">My Music</a></li>

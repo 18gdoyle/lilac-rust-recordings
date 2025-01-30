@@ -49,7 +49,7 @@ import SocialLinks from '@/components/SocialLinks.vue';
       </div>
     </div>
     <div class="sectionDiv">
-      <h1 class="sectionTitle">STUDIO SERVICES</h1>
+      <h1 class="sectionTitle">SERVICES</h1>
       <div class="carousel-container">
         <div class="studioServicesCarousel">
           <img class="slide" v-for="(image, index) in studioServicesImages" :key="index" :src="image"
@@ -137,16 +137,6 @@ export default {
 </script>
 
 <style scoped>
-.social-link {
-  font-size: 40px;
-  color: #fff;
-  margin: 0 20px;
-  transition: color 0.3s ease;
-}
-
-.social-link:hover {
-  color: rgb(215, 151, 233);
-}
 
 .descriptionText {
   font-size: x-large;
@@ -280,11 +270,11 @@ export default {
   backdrop-filter: blur(5px);
   text-align: center;
   color: #fff;
-  transition: 0.3s;
+  transition: all 0.3s;
 }
 
 .mobileButtonLink:hover {
-  box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
+  transform: scale(110%);
 }
 
 .socialMediaIcon {
@@ -341,6 +331,11 @@ export default {
   flex-shrink: 0;
   padding: 2%;
   border-radius: 50px;
+  transition: all .3s;
+}
+
+.slide:hover {
+  transform: scale(110%);
 }
 
 @keyframes slideAnimationThreeImagesReverse {

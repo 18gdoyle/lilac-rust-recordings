@@ -67,7 +67,7 @@ export default {
     text-align: center;
     color: #fff;
     font-size: large;
-    transition: .3s;
+    transition: all .3s;
 }
 
 .darkSection {
@@ -80,7 +80,7 @@ export default {
 }
 
 .mobileButtonLink:hover {
-    box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
+    transform: scale(110%);
 }
 
 .pageTitle {

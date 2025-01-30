@@ -2,7 +2,7 @@
     <div>
         <br />
         <div style="display: flex; align-items: center; justify-content: center; position: relative;">
-            <h1 class="pageTitle">STUDIO SERVICES</h1>
+            <h1 class="pageTitle">SERVICES</h1>
         </div>
         <br />
         <div class="glassDiv clear" style="color: white;">
@@ -25,6 +25,11 @@
                         Browse Instrumentals
                         <i class="fa-solid fa-caret-right"></i>
                     </a>
+                    <a href="https://lilacrust.infinity.airbit.com/services/90" target="_blank" class="mobileButtonLink"
+                        style="font-size: large; width: fit-content;">
+                        Get Quote
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
                     <a href="/about" class="mobileButtonLink" style="font-size: large; width: fit-content;">
                         Contact Me
                         <i class="fa-solid fa-caret-right"></i>
@@ -32,10 +37,11 @@
                 </div>
             </div>
             <div class="image" style="flex-direction: column; justify-content: center; align-items: center;">
-                <img alt="Lilac Rust's Studio" src="/myStudio.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
+                <img alt="Lilac Rust's Studio" src="/myStudio.jpg" width="100%"
+                    style="border-radius: 15px; margin: 2%;">
             </div>
         </div>
-        <div class="glassDiv" style="color: white;">
+        <div class="glassDiv" style="color: white; display: none;">
             <div class="image" style="flex-direction: column; justify-content: center; align-items: center;">
                 <img alt="Microphone" src="/micPic.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
             </div>
@@ -60,7 +66,10 @@
                 </div>
             </div>
         </div>
-        <div class="glassDiv clear">
+        <div class="glassDiv">
+            <div class="image" style="flex-direction: column; justify-content: center; align-items: center;">
+                <img alt="Mixing Board" src="/mixingBoard.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
+            </div>
             <div class="mobileImage">
                 <img alt="Mixing Board" class="slide" src="/mixingBoard.jpg">
             </div>
@@ -81,6 +90,41 @@
                         Past Projects
                         <i class="fa-solid fa-caret-right"></i>
                     </a>
+                    <a href="https://lilacrust.infinity.airbit.com/services/89" target="_blank" class="mobileButtonLink"
+                        style="font-size: large; width: fit-content;">
+                        Get Quote
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <a href="/about" class="mobileButtonLink" style="font-size: large; width: fit-content;">
+                        Contact Me
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="glassDiv clear">
+            <div class="mobileImage">
+                <img alt="Code" class="slide" src="/code.jpg">
+            </div>
+            <div class="description" style="display: flex; flex-direction: column; justify-content: center;">
+                <h1 class="subTitle">WEB DESIGN</h1>
+                <div style="font-size: medium;">
+                    If you've been making and releasing music for as long as I have, then you understand the importance
+                    of
+                    having your own website. A centralized location where listeners can find new music, learn about
+                    upcoming gigs, and buy merch. If you're ready to take the next step with your music career, creating
+                    a
+                    professional website is a great place to start. If this sounds like something you're ready to do,
+                    hit me up.
+                </div>
+                <br />
+                <hr />
+                <br />
+                <div class="linkContainer">
+                    <a href="/webdesign" class="mobileButtonLink" style="font-size: large; width: fit-content;">
+                        Past Web Design Projects
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
                     <a href="/about" class="mobileButtonLink" style="font-size: large; width: fit-content;">
                         Contact Me
                         <i class="fa-solid fa-caret-right"></i>
@@ -88,7 +132,7 @@
                 </div>
             </div>
             <div class="image" style="flex-direction: column; justify-content: center; align-items: center;">
-                <img alt="Mixing Board" src="/mixingBoard.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
+                <img alt="Code" src="/code.jpg" width="100%" style="border-radius: 15px; margin: 2%;">
             </div>
         </div>
     </div>
@@ -112,6 +156,11 @@
     display: flex;
     width: 30%;
     padding: 2%;
+    transition: all .3s;
+}
+
+.image:hover {
+    transform: scale(105%);
 }
 
 .linkContainer {
@@ -131,7 +180,7 @@
 }
 
 .clear {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .mobileButtonLink {
@@ -142,16 +191,17 @@
     align-items: center;
     gap: 1vw;
     border-radius: 100vh;
-    background-color: rgba(255,255,255,.2);
+    background-color: rgba(255, 255, 255, .2);
     backdrop-filter: blur(5px);
     text-align: center;
     color: #fff;
     margin-right: 1%;
     margin-bottom: 2%;
-    transition: .3s;
+    transition: all .3s;
 }
+
 .mobileButtonLink:hover {
-  box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
+    transform: scale(110%);
 }
 
 @media only screen and (max-width: 768px) {

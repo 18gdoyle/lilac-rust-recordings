@@ -54,11 +54,12 @@ export default {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
-    transition: color 0.3s ease;
+    transition: all 0.3s;
 }
 
 .footer-link:hover {
     color: rgb(215, 151, 233);
+    transform: scale(120%);
 }
 
 .footer-social {

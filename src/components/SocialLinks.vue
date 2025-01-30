@@ -22,11 +22,12 @@
     font-size: 40px;
     color: #fff;
     margin: 0 20px;
-    transition: color 0.3s ease;
+    transition: all 0.3s;
 }
 
 .social-link:hover {
     color: rgb(215, 151, 233);
+    transform: scale(120%);
 }
 
 @media only screen and (max-width: 768px) {

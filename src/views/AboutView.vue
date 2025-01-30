@@ -2,11 +2,13 @@
   <div class="about">
     <div class="glassDiv">
       <div class="imgAndText">
-        <img
-          alt="Lilac Rust Profile Photo"
-          src="/lilacProfileWithFace.jpg"
-          class="contactCard-img"
-        />
+        <img alt="Lilac Rust Profile Photo" src="/lilacProfileWithFace.jpg" class="contactCard-img" />
+        <div class="emailLinkDiv">
+          <i class="fa-regular fa-envelope email" aria-hidden="true"></i>
+          <a class="hover-underline-animation emailLink" href="mailto:lilac.rust@gmail.com"
+            target="_blank">lilac.rust@gmail.com</a>
+          <i class="fa-regular fa-envelope email" aria-hidden="true"></i>
+        </div>
         <div class="aboutDescription">
           Hey there! My name is Greg, but I go by Lilac Rust online. I'm a
           multi-instrumentalist music producer and audio engineer. I've been
@@ -14,34 +16,12 @@
           acoustic ballads to trap bangers, cinematic atmospheres to indie funk.
           I can produce instrumentals for a myriad of genres, as well as record,
           mix, master, really whatever you need! Chances are, if you are doing
-          something related to music, I can probably help you out. Just hit me
-          up using one of the links below and we'll chat.
+          something related to music, I can probably help you out.
           <br />
           ~
           <br />
           Greg, a.k.a Lilac Rust
-          <br />
-          <br />
-          <div>
-            <a
-              href="https://soundbetter.com/profiles/320009-lilac-rust#"
-              target="_blank"
-            >
-              <button class="transparentButton">
-                Click Here to Hire Me For a Project on SoundBetter
-              </button>
-            </a>
-          </div>
 
-          OR
-          <br />
-          Send an email to
-          <a
-            class="hover-underline-animation emailLink"
-            href="mailto:lilac.rust@gmail.com"
-            target="_blank"
-            >lilac.rust@gmail.com</a
-          >
         </div>
       </div>
     </div>
@@ -49,6 +29,13 @@
 </template>
 
 <style scoped>
+.email {
+  font-size: 40px;
+  color: #fff;
+  margin: 0 20px;
+  transition: all 0.3s;
+}
+
 .transparentButton {
   flex-direction: column;
   width: 40%;
@@ -66,14 +53,24 @@
   margin-bottom: 5px;
   transition: 0.3s;
 }
+
 .transparentButton:hover {
   box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
 }
+
 .emailLink {
   width: fit-content;
   font-size: x-large;
   display: inline;
 }
+
+.emailLinkDiv {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .centered {
   display: flex;
   width: 100%;
@@ -125,6 +122,7 @@
   cursor: pointer;
   transition: .3s;
 }
+
 .socialMediaButton:hover {
   box-shadow: 0 0 15px 5px rgb(255, 255, 255, 0.5);
 }
@@ -135,6 +133,11 @@
   display: inline;
   width: 20%;
   box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2);
+  transition: all .3s;
+}
+
+.contactCard-img:hover {
+  transform: scale(105%);
 }
 
 .glassDiv {
