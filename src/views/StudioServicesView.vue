@@ -23,16 +23,13 @@
                 <div class="linkContainer">
                     <a href="/instrumentals" class="mobileButtonLink" style="font-size: large; width: fit-content;">
                         Browse Instrumentals
-                        <i class="fa-solid fa-caret-right"></i>
                     </a>
                     <a href="https://lilacrust.infinity.airbit.com/services/90" target="_blank" class="mobileButtonLink"
                         style="font-size: large; width: fit-content;">
                         Get Quote
-                        <i class="fa-solid fa-caret-right"></i>
                     </a>
                     <a href="/about" class="mobileButtonLink" style="font-size: large; width: fit-content;">
                         Contact Me
-                        <i class="fa-solid fa-caret-right"></i>
                     </a>
                 </div>
             </div>
@@ -61,7 +58,6 @@
                 <div class="linkContainer">
                     <a href="/about" class="mobileButtonLink" style="font-size: large; width: fit-content;">
                         Contact Me
-                        <i class="fa-solid fa-caret-right"></i>
                     </a>
                 </div>
             </div>
@@ -88,16 +84,13 @@
                 <div class="linkContainer">
                     <a href="/pastprojects" class="mobileButtonLink" style="font-size: large; width: fit-content;">
                         Past Projects
-                        <i class="fa-solid fa-caret-right"></i>
                     </a>
                     <a href="https://lilacrust.infinity.airbit.com/services/89" target="_blank" class="mobileButtonLink"
                         style="font-size: large; width: fit-content;">
                         Get Quote
-                        <i class="fa-solid fa-caret-right"></i>
                     </a>
                     <a href="/about" class="mobileButtonLink" style="font-size: large; width: fit-content;">
                         Contact Me
-                        <i class="fa-solid fa-caret-right"></i>
                     </a>
                 </div>
             </div>
@@ -123,11 +116,13 @@
                 <div class="linkContainer">
                     <a href="/webdesign" class="mobileButtonLink" style="font-size: large; width: fit-content;">
                         Past Web Design Projects
-                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <a href="https://lilacrust.infinity.airbit.com/services/94" target="_blank" class="mobileButtonLink"
+                        style="font-size: large; width: fit-content;">
+                        Get Quote
                     </a>
                     <a href="/about" class="mobileButtonLink" style="font-size: large; width: fit-content;">
                         Contact Me
-                        <i class="fa-solid fa-caret-right"></i>
                     </a>
                 </div>
             </div>

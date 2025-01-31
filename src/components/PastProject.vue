@@ -83,10 +83,18 @@ export default {
   justify-content: center;
 }
 
+.albumArt {
+  transition: all .3s;
+}
+
+.albumArt:hover {
+  transform: scale(105%);
+}
+
 .socialMediaButton {
   font-size: 30px;
   color: #fff;
-  transition: color 0.3s ease;
+  transition: all 0.3s;
 }
 
 .socialMediaButton:hover {
