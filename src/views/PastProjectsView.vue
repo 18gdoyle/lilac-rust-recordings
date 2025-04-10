@@ -33,6 +33,8 @@ import PastProject from '@/components/PastProject.vue';
                     :tikTokButton="'https://www.tiktok.com/@lilac_rust'"
                     :spotifyButton="'https://open.spotify.com/album/2zqmqIgb9y2jKVPkDsOk3u?si=3W6ui6TITsmWSKqkU2AVFA'"
                     :streamingServices="'https://lilacrust.com/lilacrustmusic'" :albumArt="'/songs/bigBuckBackshots/albumArt.png'"
+                    :descriptionButtonLink="'https://store.steampowered.com/app/3388940/Big_Buck_Backshots/'"
+                    :descriptionButtonText="'Check out Big Buck Backshots on Steam'"
                     :description="`Electronic soundtrack I did for a video game my friend made. Pretty silly stuff here.`">
                 </PastProject>
             </div>

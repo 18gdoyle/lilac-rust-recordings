@@ -26,6 +26,10 @@
       <div class="whiteGlassDiv" v-if="description !== undefined">
         <p class="fromTitle">From Lilac</p>
         <p v-html="description" class="note"></p>
+        <div class="descriptionButton" v-if="descriptionButtonLink">
+          <a class="mobileButtonLink" :href="descriptionButtonLink" target="_blank">{{
+            descriptionButtonText }}</a>
+        </div>
       </div>
       <div class="whiteGlassDiv" style="margin-top: 2%;" v-if="review !== undefined">
         <p class="fromTitle">From the Artist</p>
@@ -48,7 +52,9 @@ export default {
     streamingServices: String,
     description: String,
     review: String,
-    albumArt: String
+    albumArt: String,
+    descriptionButtonLink: String,
+    descriptionButtonText: String
   }
 }
 </script>
@@ -145,7 +151,41 @@ export default {
   padding: 2%;
 }
 
+.descriptionButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.mobileButtonLink {
+  font-size: large;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100vh;
+  background-color: #1a191999;
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s;
+  width: 50%;
+}
+
+.mobileButtonLink:hover {
+  transform: scale(110%);
+}
+
 @media only screen and (max-width: 768px) {
+  .mobileButtonLink {
+    width: 100%;
+  }
+
+  .mobileButtonLink:hover {
+    transform: scale(100%);
+  }
+
   .socialMediaButtonLong {
     padding: 50%;
   }
