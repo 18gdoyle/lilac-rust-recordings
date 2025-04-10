@@ -24,7 +24,7 @@
       </div>
 
       <div class="whiteGlassDiv" v-if="description !== undefined">
-        <p class="fromTitle">From Lilac</p>
+        <p class="fromTitle">From Greg</p>
         <p v-html="description" class="note"></p>
         <div class="descriptionButton" v-if="descriptionButtonLink">
           <a class="mobileButtonLink" :href="descriptionButtonLink" target="_blank">{{
