@@ -13,7 +13,11 @@
           something related to music, I can probably help you out.
           <br />
           <br />
-          Greg a.k.a Lilac Rust
+          Greg, a.k.a Lilac Rust
+          <div class="emailLinkDiv">
+            <a class="hover-underline-animation emailLink" href="mailto:lilac.rust@gmail.com"
+              target="_blank">lilac.rust@gmail.com</a>
+          </div>
         </div>
       </div>
     </div>
