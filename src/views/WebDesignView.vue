@@ -21,25 +21,23 @@ import WebDesignProject from '@/components/WebDesignProject.vue';
             <h1 class="pageSubtitle">PAST PROJECTS</h1>
             <br />
             <div class="darkSection">
-                <WebDesignProject :url="'https://meganmarymusic.com/'" :displayedURL="'meganmarymusic.com'"
-                    :description="`A website I made for artist Megan Mary. It's a one stop shop where fans can get quick access to her music, buy merch, and play a flying monkey game. How quirky and cute!`"
-                    :desktopImage="'/meganMaryWebsite.png'" :mobileImage="'/meganMaryMobile.png'"
-                    :imageAlt="`Megan Mary's Website`"></WebDesignProject>
+                <WebDesignProject :url="'https://lilacrust.com/'" :displayedURL="'lilacrust.com'"
+                    :description="'The website linked within the same website. Website-ception. Very cool. A great example of what I can do for a musical brand.'"
+                    :desktopImage="'/lilacRustWebsite.png'" :mobileImage="'/lilacRustWebsiteMobile.png'"
+                    :imageAlt="`Lilac Rust's Website`"></WebDesignProject>
             </div>
-            <WebDesignProject :url="'https://lilacrust.com/'" :displayedURL="'lilacrust.com'"
-                :description="'The website linked within the same website. Website-ception. Very cool. A great example of what I can do for a musical brand.'"
-                :desktopImage="'/lilacRustWebsite.png'" :mobileImage="'/lilacRustWebsiteMobile.png'"
-                :imageAlt="`Lilac Rust's Website`"></WebDesignProject>
-            <div class="darkSection">
+            <div class="lightSection">
                 <WebDesignProject :url="'https://gregoryvincentdoyle.com/'" :displayedURL="'gregoryvincentdoyle.com'"
                     :description="'A website I made for my corporate work life alter ego'"
                     :desktopImage="'/gregDoyleWebsite.png'" :mobileImage="'/gregDoyleWebsiteMobile.png'"
                     :imageAlt="`Greg Doyle's Website`"></WebDesignProject>
             </div>
-            <WebDesignProject :url="'https://catherines-pet-care.uk.r.appspot.com/'"
-                :displayedURL="'catherines-pet-care.uk.r.appspot.com'"
-                :description="'A website I made for a pet care business'" :desktopImage="'/cPC.png'"
-                :mobileImage="'/cPCMobile.png'" :imageAlt="`Catherine's Pet Care Website`"></WebDesignProject>
+            <div class="darkSection">
+                <WebDesignProject :url="'https://catherines-pet-care.uk.r.appspot.com/'"
+                    :displayedURL="'catherines-pet-care.uk.r.appspot.com'"
+                    :description="'A website I made for a pet care business'" :desktopImage="'/cPC.png'"
+                    :mobileImage="'/cPCMobile.png'" :imageAlt="`Catherine's Pet Care Website`"></WebDesignProject>
+            </div>
         </div>
     </div>
 </template>
@@ -70,8 +68,16 @@ export default {
     transition: all .3s;
 }
 
+.lightSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .darkSection {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
     width: 100%;
     display: flex;
     flex-direction: column;
