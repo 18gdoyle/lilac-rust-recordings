@@ -21,28 +21,28 @@ import PastProject from '@/components/PastProject.vue';
             <br />
             <h1 class="pageSubtitle centered">PAST PROJECTS TIMELINE</h1>
             <div class="pastProjectsRow">
-                <PastProject :title="'Megan Mary - lucky her'" :date="'June 2024'"
-                    :instagramButton="'https://www.instagram.com/meganmarymusic'"
-                    :tikTokButton="'https://www.tiktok.com/@megan..mary'"
-                    :spotifyButton="'https://open.spotify.com/track/2k06VycWChZBvXIlUOXJgg?si=c6b381c4e1c84804'"
-                    :streamingServices="'https://meganmarymusic.com/music'" :albumArt="'/songs/luckyHer/albumArt.jpeg'"
-                    :description="`Another totally huge rock track. I wrote the instrumental, recorded all the parts myself, mixed the song, and mastered the track.`">
+                <PastProject :title="'Lilac Rust x Megan Mary - Dark Nights'" :date="'April 2025'"
+                    :instagramButton="'https://www.instagram.com/lilac_rust_music/'"
+                    :tikTokButton="'https://www.tiktok.com/@lilac_rust'"
+                    :spotifyButton="'https://open.spotify.com/album/614FS39u80TXGLrom1zZHK?si=BDQ9B-j2SU-x7RpmdNhJdw'"
+                    :streamingServices="'https://lilacrust.com/lilacrustmusic'" :albumArt="'/songs/darkNights/albumArt.jpg'"
+                    :description="`Just a couple totally huge rock tracks. I wrote, recorded, mixed, and mastered all the tracks on this thing. However, Megan's performance is really what brings this record to the next level`">
                 </PastProject>
-                <PastProject :title="'Megan Mary - caterwaul'" :date="'April 2024'"
-                    :instagramButton="'https://www.instagram.com/meganmarymusic'"
-                    :tikTokButton="'https://www.tiktok.com/@megan..mary'"
-                    :spotifyButton="'https://open.spotify.com/track/5bVHNqUYiP19wnzOpBUwwJ?si=0f57b01b0ddc40a5'"
-                    :streamingServices="'https://meganmarymusic.com/music'" :albumArt="'/songs/caterwaul/albumArt.jpg'"
-                    :description="`Just a totally huge rock track. I wrote the instrumental, recorded all the parts myself, mixed the song, and mastered the track.`">
+                <PastProject :title="'Lilac Rust - Big Buck Backshots: Original Game Soundtrack'" :date="'February 2025'"
+                    :instagramButton="'https://www.instagram.com/lilac_rust_music/'"
+                    :tikTokButton="'https://www.tiktok.com/@lilac_rust'"
+                    :spotifyButton="'https://open.spotify.com/album/2zqmqIgb9y2jKVPkDsOk3u?si=3W6ui6TITsmWSKqkU2AVFA'"
+                    :streamingServices="'https://lilacrust.com/lilacrustmusic'" :albumArt="'/songs/bigBuckBackshots/albumArt.png'"
+                    :description="`Electronic soundtrack I did for a video game my friend made. Pretty silly stuff here.`">
                 </PastProject>
             </div>
             <div class="pastProjectsRow">
-                <PastProject :title="'Megan Mary - Mountains'" :date="'April 2024'"
-                    :instagramButton="'https://www.instagram.com/meganmarymusic'"
-                    :tikTokButton="'https://www.tiktok.com/@megan..mary'"
-                    :spotifyButton="'https://open.spotify.com/album/70hYy7nSB11aOC6o5eRx0z?si=AlyBJULWTWmWq3IlsvFKGA'"
-                    :streamingServices="'https://meganmarymusic.com/music'" :albumArt="'/songs/mountains/albumArt.jpg'"
-                    :description="`Went with that lo-fi bedroom sound for this one. The instrumental (which I wrote and recorded myself) is pretty sparse, which gives plenty of space for Megan's vocals to shine. Beautiful stuff. I also mixed and mastered this track.`">
+                <PastProject :title="'Lilac Rust - SONGS FOR THE SOUNDS A CLOCK MAKES'" :date="'August 2024'"
+                    :instagramButton="'https://www.instagram.com/lilac_rust_music/'"
+                    :tikTokButton="'https://www.tiktok.com/@lilac_rust'"
+                    :spotifyButton="'https://open.spotify.com/album/3TQALCUvSqMHdxrTAQzeqM?si=0gxgcokHRsGcueaZXoQksw'"
+                    :streamingServices="'https://lilacrust.com/lilacrustmusic'" :albumArt="'/songs/songsForTheSoundsAClockMakes/albumArt.jpg'"
+                    :description="`Chill ambient tracks I made. v cool`">
                 </PastProject>
                 <PastProject :title="`Lilac Rust - RYAN'S ROAD RAGE`" :date="'March 2024'"
                     :spotifyButton="'https://open.spotify.com/album/2h7c1uTMoawUBVypkAaeE6?si=TPUT-S0aS2ibYX0TySdX5w'"
@@ -60,7 +60,6 @@ import PastProject from '@/components/PastProject.vue';
                     :description="`I was really lucky to get to work on Funky Lamp's debut album. I did all the mixing and mastering, and also got to do some keys for the record. I've been working with them since they started, and it's been really cool to watch them evolve as a band.`">
                 </PastProject>
                 <PastProject :title="'Funky Lamp - On My Knees'" :date="'December 2023'"
-                    :spotifyIframe="'https://open.spotify.com/embed/album/233oHAtm4vs707QfKppDp7?utm_source=generator'"
                     :instagramButton="'https://www.instagram.com/funkylamppgh'"
                     :spotifyButton="'https://open.spotify.com/artist/3JnvdCfcYZJtPtJSahlsLw'"
                     :streamingServices="'https://linktr.ee/funkylamp'" :albumArt="'/songs/onMyKnees/albumArt.jpg'"
@@ -69,16 +68,14 @@ import PastProject from '@/components/PastProject.vue';
             </div>
             <div class="pastProjectsRow">
                 <PastProject :title="'Lilac Rust - WHITE WIZARD'" :date="'April 2023'"
-                    :spotifyIframe="'https://open.spotify.com/embed/album/4fwViAsmYPMIrdrGjRNTNH?utm_source=generator'"
                     :instagramButton="'https://www.instagram.com/lilac_rust_music/'"
                     :tikTokButton="'https://www.tiktok.com/@lilac_rust'"
                     :youtubeButton="'https://www.youtube.com/@lilacrust'"
-                    :streamingServices="'https://li.sten.to/lilac_rust'"
+                    :streamingServices="'https://lilacrust.com/lilacrustmusic'"
                     :albumArt="'/instrumentals/whiteWizard/albumArt.jpg'"
-                    :description="`Believe it or not, I also do scoring for film, tv, and video games. The track WHITE WIZARD - CINEMATIC VERSION is a song I composed for a currently unreleased indie video game. So if you need music for your game/tv show/film, hit me up. <a class='hover-underline-animation' href='mailto:lilac.rust@gmail.com'>lilac.rust@gmail.com</a>`">
+                    :description="`Believe it or not, I also do scoring for film, tv, and video games. So if you need music for that sort of thing, hit me up.`">
                 </PastProject>
                 <PastProject :title="'Funky Lamp - Garden of Eden'" :date="'April 2022'"
-                    :spotifyIframe="'https://open.spotify.com/embed/album/0XRfT1WcQRLcVThtMf4DGO?utm_source=generator'"
                     :instagramButton="'https://www.instagram.com/funkylamppgh'"
                     :spotifyButton="'https://open.spotify.com/artist/3JnvdCfcYZJtPtJSahlsLw'"
                     :streamingServices="'https://linktr.ee/funkylamp'" :albumArt="'/songs/gardenOfEden/albumArt.jpg'"
@@ -88,36 +85,32 @@ import PastProject from '@/components/PastProject.vue';
             </div>
             <div class="pastProjectsRow">
                 <PastProject :title="'Lilac Rust - Waterview (Volume II)'" :date="'September 2021'"
-                    :spotifyIframe="'https://open.spotify.com/embed/album/0sWEVOS6QN8Pw5qzskjDqr?utm_source=generator'"
                     :instagramButton="'https://www.instagram.com/lilac_rust_music/'"
                     :tikTokButton="'https://www.tiktok.com/@lilac_rust'"
                     :youtubeButton="'https://www.youtube.com/@lilacrust'"
-                    :streamingServices="'https://li.sten.to/lilac_rust'"
+                    :streamingServices="'https://lilacrust.com/lilacrustmusic'"
                     :albumArt="'/instrumentals/waterviewVolumeOne/albumArt.jpg'"
-                    :description="'Kind of like a lofi hip hop beats tape, but not really. Some of my favorite beats I\'ve ever done are on here. All of the instrumentals on this EP are for sale. Click HERE to browse the full selection.'">
+                    :description="'Kind of like a lofi hip hop beats tape, but not really. Some of my favorite beats I\'ve ever done are on here.'">
                 </PastProject>
                 <PastProject :title="'Lilac Rust - Popular Kids (Volume I)'" :date="'January 2021'"
-                    :spotifyIframe="'https://open.spotify.com/embed/album/7rG8bBy8k8FcPfiICOEUUr?utm_source=generator'"
                     :instagramButton="'https://www.instagram.com/lilac_rust_music/'"
                     :tikTokButton="'https://www.tiktok.com/@lilac_rust'"
                     :youtubeButton="'https://www.youtube.com/@lilacrust'"
-                    :streamingServices="'https://li.sten.to/lilac_rust'"
+                    :streamingServices="'https://lilacrust.com/lilacrustmusic'"
                     :albumArt="'/instrumentals/popularKidsVolumeOne/albumArt.jpg'"
-                    :description="'Another instrumental tape by yours truly. These have more of a pop vibe going for them. Great tracks for singers. All of the instrumentals on this EP are for sale. Click HERE to browse the full selection.'">
+                    :description="'Another instrumental tape by yours truly. These have more of a pop vibe going for them. Great tracks for singers.'">
                 </PastProject>
             </div>
             <div class="pastProjectsRow">
                 <PastProject :title="'Lilac Rust - High Exposure (Volume I)'" :date="'September 2020'"
-                    :spotifyIframe="'https://open.spotify.com/embed/album/1mPKZ6s1sGYxXUQvj4j3Nz?utm_source=generator'"
                     :instagramButton="'https://www.instagram.com/lilac_rust_music/'"
                     :tikTokButton="'https://www.tiktok.com/@lilac_rust'"
                     :youtubeButton="'https://www.youtube.com/@lilacrust'"
-                    :streamingServices="'https://li.sten.to/lilac_rust'"
+                    :streamingServices="'https://lilacrust.com/lilacrustmusic'"
                     :albumArt="'/instrumentals/highExposureVolumeOne/albumArt.jpg'"
-                    :description="'My first beat tape. A lot of hard hitting rap beats on this thing. All of the instrumentals on this EP are for sale. Click HERE to browse the full selection.'">
+                    :description="'My first beat tape. A lot of hard hitting rap beats on this thing.'">
                 </PastProject>
                 <PastProject :title="'Greggy D - Slappin'" :date="'September 2019'"
-                    :spotifyIframe="'https://open.spotify.com/embed/album/6W8t1p6z6e8sqhug6a0UkL?utm_source=generator'"
                     :instagramButton="'https://www.instagram.com/greggy_deez_nutz/'"
                     :spotifyButton="'https://open.spotify.com/artist/5UImaUI5fuzslO7pEtYOF6?si=ByVt_vmlTpiLtPm3TRlDAA'"
                     :albumArt="'songs/slappin/albumArt.jpg'"

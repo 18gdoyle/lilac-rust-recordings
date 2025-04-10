@@ -3,12 +3,6 @@
     <div class="glassDiv">
       <div class="imgAndText">
         <img alt="Lilac Rust Profile Photo" src="/lilacProfileWithFace.jpg" class="contactCard-img" />
-        <div class="emailLinkDiv">
-          <i class="fa-regular fa-envelope email" aria-hidden="true"></i>
-          <a class="hover-underline-animation emailLink" href="mailto:lilac.rust@gmail.com"
-            target="_blank">lilac.rust@gmail.com</a>
-          <i class="fa-regular fa-envelope email" aria-hidden="true"></i>
-        </div>
         <div class="aboutDescription">
           Hey there! My name is Greg, but I go by Lilac Rust online. I'm a
           multi-instrumentalist music producer and audio engineer. I've been
@@ -18,10 +12,8 @@
           mix, master, really whatever you need! Chances are, if you are doing
           something related to music, I can probably help you out.
           <br />
-          ~
           <br />
-          Greg, a.k.a Lilac Rust
-
+          Greg a.k.a Lilac Rust
         </div>
       </div>
     </div>

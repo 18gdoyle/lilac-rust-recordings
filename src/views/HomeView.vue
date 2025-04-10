@@ -125,10 +125,10 @@ export default {
         "/micPic.jpg",
       ],
       pastProjectsImages: [
-        "/songs/luckyHer/albumArt.jpeg",
-        "/songs/mountains/albumArt.jpg",
+        "/songs/darkNights/albumArt.jpg",
+        "/songs/songsForTheSoundsAClockMakes/albumArt.jpg",
         "/songs/inLightOfChanges/albumArt.png",
-        "/songs/gardenOfEden/albumArt.jpg",
+        "/songs/bigBuckBackshots/albumArt.png",
         "/songs/slappin/albumArt.jpg",
       ],
     };
