@@ -8,6 +8,10 @@
     <a href="mailto:lilac.rust@gmail.com" class="social-link" target="_blank" rel="noopener noreferrer">
         <i class="fa-regular fa-envelope"></i>
     </a>
+    <a href="https://lilacrust.bandcamp.com" class="social-link"
+        target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-bandcamp"></i>
+    </a>
     <a href="https://www.youtube.com/@lilacrust" class="social-link" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-youtube"></i>
     </a>

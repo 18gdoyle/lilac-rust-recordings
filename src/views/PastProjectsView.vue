@@ -9,9 +9,9 @@ import PastProject from '@/components/PastProject.vue';
                 <h1 class="pageTitle">PAST PROJECTS</h1>
                 <p class="pageDescription">A collection of songs that I wrote, recorded, produced, mixed, and/or
                     mastered.</p>
-                <div style="width: 100%; height: 50vh">
+                <div style="width: 100%; height: 50vh; min-height: 355px;">
                     <iframe class="spotifyIframe"
-                        src="https://open.spotify.com/embed/playlist/0ulTgeAmBJgjt9y959z2px?utm_source=generator"
+                        src="https://open.spotify.com/embed/playlist/0ulTgeAmBJgjt9y959z2px?utm_source=generator&theme=0"
                         width="100%" height="100%" frameBorder="0" allowfullscreen="false"
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy">
