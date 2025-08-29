@@ -3,6 +3,9 @@ import { RouterView } from 'vue-router'
 import NavBar from '@/components/NavBar.vue'
 import MovingGradient from '@/components/MovingGradient.vue';
 import Footer from '@/components/Footer.vue';
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
 </script>
 
 <template>
@@ -12,7 +15,7 @@ import Footer from '@/components/Footer.vue';
   <div class="pageContainer">
     <RouterView />
   </div>
-  <Footer></Footer>
+  <Footer v-if="route.path !== '/instrumentals'"></Footer>
 </template>
 
 <style scoped>
@@ -28,6 +31,7 @@ import Footer from '@/components/Footer.vue';
   .navBarMargin {
     height: 60px;
   }
+
   .pageContainer {
     min-height: calc(100vh - 210px);
   }

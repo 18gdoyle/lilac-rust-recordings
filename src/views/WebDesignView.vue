@@ -32,12 +32,6 @@ import WebDesignProject from '@/components/WebDesignProject.vue';
                     :desktopImage="'/gregDoyleWebsite.png'" :mobileImage="'/gregDoyleWebsiteMobile.png'"
                     :imageAlt="`Greg Doyle's Website`"></WebDesignProject>
             </div>
-            <div class="darkSection">
-                <WebDesignProject :url="'https://catherines-pet-care.uk.r.appspot.com/'"
-                    :displayedURL="'catherines-pet-care.uk.r.appspot.com'"
-                    :description="'A website I made for a pet care business'" :desktopImage="'/cPC.png'"
-                    :mobileImage="'/cPCMobile.png'" :imageAlt="`Catherine's Pet Care Website`"></WebDesignProject>
-            </div>
         </div>
     </div>
 </template>
