@@ -199,6 +199,7 @@ export default {
 }
 
 .buttonTitle {
+  text-align: center;
   font-size: x-large;
 }
 
