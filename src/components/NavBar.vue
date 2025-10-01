@@ -1,7 +1,12 @@
 <template>
   <div class="menu-items">
     <li><a href="/"><i class="fa-solid fa-house icon"></i> Home</a></li>
-    <li><a href="/instrumentals"><i class="fa-solid fa-headphones icon"></i> Instrumentals</a></li>
+    <li>
+      <a href="https://airbit.com/lilacrust" target="_blank">
+        <i class="fa-solid fa-headphones icon"></i>
+        Instrumentals
+      </a>
+    </li>
     <li><a href="/studioservices"><i class="fa-solid fa-sliders icon"></i> Services</a></li>
     <li><a href="/pastprojects"><i class="fa-solid fa-compact-disc icon"></i> Past Projects</a></li>
     <li><a href="/webdesign"><i class="fa-solid fa-code icon"></i> Web Design</a></li>
@@ -42,6 +47,7 @@ export default {
 .icon {
   width: 32px;
 }
+
 .pageTitle {
   transition: all .4s ease;
 }

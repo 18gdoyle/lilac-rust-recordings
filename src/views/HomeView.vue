@@ -9,7 +9,7 @@ import SocialLinks from '@/components/SocialLinks.vue';
           <div class="buttonRowsContainer">
             <div style="display: flex;" class="buttonsRow">
               <div class="bigButton">
-                <a href="/instrumentals" style="width: 100%;">
+                <a href="https://airbit.com/lilacrust" target="_blank" style="width: 100%;">
                   <button style="width: 100%;">
                     <i class="fa-solid fa-headphones bigButtonIcon"></i>
                   </button>
@@ -86,7 +86,7 @@ import SocialLinks from '@/components/SocialLinks.vue';
         </div>
         <br />
         <div class="mediumButton">
-          <a href="/instrumentals" style="width: 100%;">
+          <a href="https://airbit.com/lilacrust" target="_blank" style="width: 100%;">
             <button style="width: 100%;">
               <i class="fa-solid fa-headphones mediumButtonIcon"></i>
             </button>

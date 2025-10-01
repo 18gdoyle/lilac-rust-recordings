@@ -22,7 +22,7 @@
                 <br />
                 <div class="linkContainer">
                     <div class="mediumButton">
-                        <a href="/instrumentals" style="width: 100%;">
+                        <a href="https://airbit.com/lilacrust" target="_blank" style="width: 100%;">
                             <button style="width: 100%;">
                                 <i class="fa-solid fa-headphones mediumButtonIcon"></i>
                             </button>
