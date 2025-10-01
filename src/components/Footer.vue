@@ -21,12 +21,13 @@ export default {
 <style scoped>
 /* Footer styling */
 .footer {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     color: #fff;
     padding: 20px 0;
     text-align: center;
     position: relative;
     height: 150px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .footer-content {

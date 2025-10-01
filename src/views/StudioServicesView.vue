@@ -21,16 +21,31 @@
                 <hr />
                 <br />
                 <div class="linkContainer">
-                    <a href="/instrumentals" class="mobileButtonLink" style="font-size: large; width: fit-content;">
-                        Browse Instrumentals
-                    </a>
-                    <a href="https://lilacrust.infinity.airbit.com/services/90" target="_blank" class="mobileButtonLink"
-                        style="font-size: large; width: fit-content;">
-                        Get Quote
-                    </a>
-                    <a href="/about" class="mobileButtonLink" style="font-size: large; width: fit-content;">
-                        Contact Me
-                    </a>
+                    <div class="mediumButton">
+                        <a href="/instrumentals" style="width: 100%;">
+                            <button style="width: 100%;">
+                                <i class="fa-solid fa-headphones mediumButtonIcon"></i>
+                            </button>
+                        </a>
+                        <div class="buttonTitle">Browse Beats</div>
+                    </div>
+                    <div class="mediumButton">
+                        <a href="https://lilacrust.infinity.airbit.com/services/90" target="_blank"
+                            style="width: 100%;">
+                            <button style="width: 100%;">
+                                <i class="fa-solid fa-money-check-dollar mediumButtonIcon"></i>
+                            </button>
+                        </a>
+                        <div class="buttonTitle">Get Quote</div>
+                    </div>
+                    <div class="mediumButton">
+                        <a href="/about" style="width: 100%;">
+                            <button style="width: 100%;">
+                                <i class="fa-solid fa-address-card mediumButtonIcon"></i>
+                            </button>
+                        </a>
+                        <div class="buttonTitle">Contact Me</div>
+                    </div>
                 </div>
             </div>
             <div class="image" style="flex-direction: column; justify-content: center; align-items: center;">
@@ -82,16 +97,31 @@
                 <hr />
                 <br />
                 <div class="linkContainer">
-                    <a href="/pastprojects" class="mobileButtonLink" style="font-size: large; width: fit-content;">
-                        Past Projects
-                    </a>
-                    <a href="https://lilacrust.infinity.airbit.com/services/89" target="_blank" class="mobileButtonLink"
-                        style="font-size: large; width: fit-content;">
-                        Get Quote
-                    </a>
-                    <a href="/about" class="mobileButtonLink" style="font-size: large; width: fit-content;">
-                        Contact Me
-                    </a>
+                    <div class="mediumButton">
+                        <a href="/pastprojects" style="width: 100%;">
+                            <button style="width: 100%;">
+                                <i class="fa-solid fa-compact-disc mediumButtonIcon"></i>
+                            </button>
+                        </a>
+                        <div class="buttonTitle">Past Projects</div>
+                    </div>
+                    <div class="mediumButton">
+                        <a href="https://lilacrust.infinity.airbit.com/services/89" target="_blank"
+                            style="width: 100%;">
+                            <button style="width: 100%;">
+                                <i class="fa-solid fa-money-check-dollar mediumButtonIcon"></i>
+                            </button>
+                        </a>
+                        <div class="buttonTitle">Get Quote</div>
+                    </div>
+                    <div class="mediumButton">
+                        <a href="/about" style="width: 100%;">
+                            <button style="width: 100%;">
+                                <i class="fa-solid fa-address-card mediumButtonIcon"></i>
+                            </button>
+                        </a>
+                        <div class="buttonTitle">Contact Me</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -114,16 +144,31 @@
                 <hr />
                 <br />
                 <div class="linkContainer">
-                    <a href="/webdesign" class="mobileButtonLink" style="font-size: large; width: fit-content;">
-                        Past Web Design Projects
-                    </a>
-                    <a href="https://lilacrust.infinity.airbit.com/services/94" target="_blank" class="mobileButtonLink"
-                        style="font-size: large; width: fit-content;">
-                        Get Quote
-                    </a>
-                    <a href="/about" class="mobileButtonLink" style="font-size: large; width: fit-content;">
-                        Contact Me
-                    </a>
+                    <div class="mediumButton">
+                        <a href="/webdesign" style="width: 100%;">
+                            <button style="width: 100%;">
+                                <i class="fa-solid fa-code mediumButtonIcon"></i>
+                            </button>
+                        </a>
+                        <div class="buttonTitle">Past Web Design Projects</div>
+                    </div>
+                    <div class="mediumButton">
+                        <a href="https://lilacrust.infinity.airbit.com/services/94" target="_blank"
+                            style="width: 100%;">
+                            <button style="width: 100%;">
+                                <i class="fa-solid fa-money-check-dollar mediumButtonIcon"></i>
+                            </button>
+                        </a>
+                        <div class="buttonTitle">Get Quote</div>
+                    </div>
+                    <div class="mediumButton">
+                        <a href="/about" style="width: 100%;">
+                            <button style="width: 100%;">
+                                <i class="fa-solid fa-address-card mediumButtonIcon"></i>
+                            </button>
+                        </a>
+                        <div class="buttonTitle">Contact Me</div>
+                    </div>
                 </div>
             </div>
             <div class="image" style="flex-direction: column; justify-content: center; align-items: center;">
@@ -134,6 +179,24 @@
 </template>
 
 <style scoped>
+.mediumButton {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    height: 50%;
+}
+
+.mediumButtonIcon {
+    font-size: 50px;
+}
+
+.buttonTitle {
+    text-align: center;
+    font-size: large;
+}
+
 .pageTitle {
     font-size: 4vw;
 }
@@ -160,6 +223,7 @@
 
 .linkContainer {
     display: flex;
+    gap: 15px;
 }
 
 .slide {
@@ -172,10 +236,14 @@
     border-radius: 0px;
     padding: 2%;
     box-shadow: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .clear {
     background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
 
 .mobileButtonLink {
@@ -200,6 +268,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .mediumButtonIcon {
+        font-size: 40px;
+    }
+
     .mobileButtonLink {
         padding: 5%;
         gap: 2vw;
@@ -231,9 +303,6 @@
     .linkContainer {
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        gap: 2vh;
     }
 
     .pageTitle {

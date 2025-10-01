@@ -14,9 +14,14 @@ import WebDesignProject from '@/components/WebDesignProject.vue';
                 up.
             </p>
             <br />
-            <a href="/about" class="mobileButtonLink">
-                <strong>CONTACT INFO</strong>
-            </a>
+            <div class="mediumButton">
+                <a href="/about" style="width: 100%;">
+                    <button style="width: 100%;">
+                        <i class="fa-solid fa-address-card mediumButtonIcon"></i>
+                    </button>
+                </a>
+                <div class="buttonTitle">Contact Info</div>
+            </div>
             <hr class="lineBreak" />
             <h1 class="pageSubtitle">PAST PROJECTS</h1>
             <br />
@@ -47,6 +52,25 @@ export default {
 </script>
 
 <style scoped>
+.mediumButton {
+    margin-top: 10px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    height: 50%;
+}
+
+.mediumButtonIcon {
+    font-size: 50px;
+}
+
+.buttonTitle {
+    text-align: center;
+    font-size: large;
+}
+
 .mobileButtonLink {
     padding: 1%;
     display: flex;
@@ -122,6 +146,9 @@ export default {
 }
 
 @media only screen and (max-width: 768px) {
+    .mediumButton {
+        width: 40%;
+    }
     .pageTitle {
         font-size: 10vw;
     }

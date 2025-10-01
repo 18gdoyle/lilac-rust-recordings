@@ -26,10 +26,17 @@
       <div class="whiteGlassDiv" v-if="description !== undefined">
         <p class="fromTitle">From Greg</p>
         <p v-html="description" class="note"></p>
-        <div class="descriptionButton" v-if="descriptionButtonLink">
-          <a class="mobileButtonLink" :href="descriptionButtonLink" target="_blank">{{
-            descriptionButtonText }}</a>
+        <div v-if="descriptionButtonLink" style="width: 100%;display: flex; justify-content: center;">
+          <div class="mediumButton">
+            <a :href="descriptionButtonLink" target="_blank" style="width: 100%;">
+              <button style="width: 100%;">
+                <i class="fa-brands fa-steam mediumButtonIcon"></i>
+              </button>
+            </a>
+            <div class="buttonTitle">{{ descriptionButtonText }}</div>
+          </div>
         </div>
+
       </div>
       <div class="whiteGlassDiv" style="margin-top: 2%;" v-if="review !== undefined">
         <p class="fromTitle">From the Artist</p>
@@ -60,6 +67,25 @@ export default {
 </script>
 
 <style scoped>
+.mediumButton {
+  margin-top: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  height: 50%;
+}
+
+.mediumButtonIcon {
+  font-size: 50px;
+}
+
+.buttonTitle {
+  text-align: center;
+  font-size: large;
+}
+
 .fromTitle {
   font-size: large;
   font-weight: bold;

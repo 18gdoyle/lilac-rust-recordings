@@ -6,16 +6,60 @@ import SocialLinks from '@/components/SocialLinks.vue';
     <div class="centered bigWelcomeContainer">
       <div class="overImage">
         <div class="glassDiv bigWelcomeGlass">
-          <h1 class="hugeWelcome">WELCOME</h1>
-          <p class="welcomeDescription">
-            My name is Lilac. I'm a multi-instrumentalist music producer and
-            audio engineer. I've been making music for almost 10 years now and
-            I've produced everything from acoustic ballads to trap bangers,
-            cinematic atmospheres to indie funk. I can produce instrumentals for
-            a myriad of genres, as well as record, mix, master, really whatever
-            you need! So take a look around and if you like what you see/hear,
-            hit me up!
-          </p>
+          <div class="buttonRowsContainer">
+            <div style="display: flex;" class="buttonsRow">
+              <div class="bigButton">
+                <a href="/instrumentals" style="width: 100%;">
+                  <button style="width: 100%;">
+                    <i class="fa-solid fa-headphones bigButtonIcon"></i>
+                  </button>
+                </a>
+                <div class="buttonTitle">Beats</div>
+              </div>
+              <div class="bigButton">
+                <a href="/studioservices" style="width: 100%;">
+                  <button style="width: 100%;">
+                    <i class="fa-solid fa-sliders bigButtonIcon"></i>
+                  </button>
+                </a>
+                <div class="buttonTitle">Services</div>
+              </div>
+              <div class="bigButton">
+                <a href="/pastprojects" style="width: 100%;">
+                  <button style="width: 100%;">
+                    <i class="fa-solid fa-compact-disc bigButtonIcon"></i>
+                  </button>
+                </a>
+                <div class="buttonTitle">Past Projects</div>
+              </div>
+            </div>
+            <div style="display: flex;" class="buttonsRow">
+              <div class="bigButton">
+                <a href="/webdesign" style="width: 100%;">
+                  <button style="width: 100%;">
+                    <i class="fa-solid fa-code bigButtonIcon"></i>
+                  </button>
+                </a>
+                <div class="buttonTitle">Web Design</div>
+              </div>
+              <div class="bigButton">
+                <a href="/lilacrustmusic" style="width: 100%;">
+                  <button style="width: 100%;">
+                    <i class="fa-solid fa-music bigButtonIcon"></i>
+                  </button>
+                </a>
+                <div class="buttonTitle">My Music</div>
+              </div>
+              <div class="bigButton">
+                <a href="/about" style="width: 100%;">
+                  <button style="width: 100%;">
+                    <i class="fa-solid fa-address-card bigButtonIcon"></i>
+                  </button>
+                </a>
+                <div class="buttonTitle">Contact Info</div>
+              </div>
+            </div>
+          </div>
           <div class="iconsRow">
             <SocialLinks></SocialLinks>
           </div>
@@ -41,10 +85,13 @@ import SocialLinks from '@/components/SocialLinks.vue';
           something that will be perfect for your next project.
         </div>
         <br />
-        <div class="linkContainer">
-          <a href="/instrumentals" class="mobileButtonLink">
-            Click Here to Browse Instrumentals
+        <div class="mediumButton">
+          <a href="/instrumentals" style="width: 100%;">
+            <button style="width: 100%;">
+              <i class="fa-solid fa-headphones mediumButtonIcon"></i>
+            </button>
           </a>
+          <div class="buttonTitle">Browse Beats</div>
         </div>
       </div>
     </div>
@@ -72,10 +119,13 @@ import SocialLinks from '@/components/SocialLinks.vue';
           mastering process.
         </div>
         <br />
-        <div class="linkContainer">
-          <a href="/studioservices" class="mobileButtonLink">
-            Click Here for More Info
+        <div class="mediumButton">
+          <a href="/studioservices" style="width: 100%;">
+            <button style="width: 100%;">
+              <i class="fa-solid fa-circle-info mediumButtonIcon"></i>
+            </button>
           </a>
+          <div class="buttonTitle">Learn More</div>
         </div>
       </div>
     </div>
@@ -98,10 +148,13 @@ import SocialLinks from '@/components/SocialLinks.vue';
           listen.
         </div>
         <br />
-        <div class="linkContainer">
-          <a href="/pastprojects" class="mobileButtonLink">
-            Click Here to Hear My Past Projects
+        <div class="mediumButton">
+          <a href="/pastprojects" style="width: 100%;">
+            <button style="width: 100%;">
+              <i class="fa-solid fa-compact-disc mediumButtonIcon"></i>
+            </button>
           </a>
+          <div class="buttonTitle">Browse Past Projects</div>
         </div>
       </div>
     </div>
@@ -137,6 +190,49 @@ export default {
 </script>
 
 <style scoped>
+.buttonRowsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.buttonTitle {
+  font-size: x-large;
+}
+
+.mediumButtonIcon {
+  font-size: 50px;
+}
+
+.mediumButton {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  height: 50%;
+}
+
+.bigButtonIcon {
+  font-size: 80px;
+}
+
+.bigButton {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  height: 50%;
+}
+
+.buttonsRow {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
 
 .descriptionText {
   font-size: x-large;
@@ -158,7 +254,9 @@ export default {
 }
 
 .darkSection {
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .sectionTitle {
@@ -372,6 +470,26 @@ export default {
 }
 
 @media only screen and (max-width: 768px) {
+  .buttonTitle {
+    font-size: large;
+  }
+
+  .bigButtonIcon {
+    font-size: 60px;
+  }
+
+  .buttonRowsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .buttonsRow {
+    width: 100%;
+  }
+
   .overImage {
     max-height: 500px;
   }
@@ -401,6 +519,7 @@ export default {
 
   .bigWelcomeGlass {
     justify-content: space-evenly;
+    margin-bottom: 10px;
   }
 
   .hugeWelcome {
@@ -421,6 +540,8 @@ export default {
     background: rgba(0, 0, 0, 0);
     display: flex;
     flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .description {

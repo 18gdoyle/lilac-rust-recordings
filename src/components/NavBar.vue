@@ -1,12 +1,12 @@
 <template>
   <div class="menu-items">
-    <li><a href="/">Home</a></li>
-    <li><a href="/instrumentals">Instrumentals</a></li>
-    <li><a href="/studioservices">Services</a></li>
-    <li><a href="/pastprojects">Past Projects</a></li>
-    <li><a href="/webdesign">Web Design</a></li>
-    <li><a href="/lilacrustmusic">My Music</a></li>
-    <li><a href="/about">Contact Info</a></li>
+    <li><a href="/"><i class="fa-solid fa-house icon"></i> Home</a></li>
+    <li><a href="/instrumentals"><i class="fa-solid fa-headphones icon"></i> Instrumentals</a></li>
+    <li><a href="/studioservices"><i class="fa-solid fa-sliders icon"></i> Services</a></li>
+    <li><a href="/pastprojects"><i class="fa-solid fa-compact-disc icon"></i> Past Projects</a></li>
+    <li><a href="/webdesign"><i class="fa-solid fa-code icon"></i> Web Design</a></li>
+    <li><a href="/lilacrustmusic"><i class="fa-solid fa-music bigButtonIcon icon"></i> My Music</a></li>
+    <li><a href="/about"><i class="fa-solid fa-address-card bigButtonIcon icon"></i> Contact Info</a></li>
   </div>
   <div id="navBar" class="navbar">
     <div class="nav-container">
@@ -39,6 +39,9 @@ export default {
 </script>
 
 <style scoped>
+.icon {
+  width: 32px;
+}
 .pageTitle {
   transition: all .4s ease;
 }
@@ -53,12 +56,13 @@ export default {
   left: 0;
   width: 100%;
   height: 75px;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
   z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 #title {
@@ -162,18 +166,20 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 75px;
-  background: rgba(0, 0, 0, 0.7);
+  margin-top: 75px;
+  padding-top: 10px;
+  background: rgba(0, 0, 0, 0.3);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(25px);
   height: 100vh;
-  width: 20vw;
+  width: 30vw;
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
   padding-left: 20px;
   transition: transform 0.2s ease-in-out;
   z-index: 10;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .menu-items li {
@@ -197,6 +203,7 @@ a {
 
   .menu-items {
     width: 60vw;
+    margin-top: 60px;
   }
 
   #navBar {
