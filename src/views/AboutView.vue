@@ -94,7 +94,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, .3);
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 }
 
@@ -111,6 +111,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .glassDiv {
+    background: rgba(0, 0, 0, 0);
+  }
+
   .contactCard-img {
     width: 100%;
   }
