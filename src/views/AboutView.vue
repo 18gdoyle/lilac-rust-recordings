@@ -96,6 +96,7 @@
   flex-direction: column;
   background: rgba(0, 0, 0, .3);
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .imageAndButtons {
@@ -113,6 +114,7 @@
 @media only screen and (max-width: 768px) {
   .glassDiv {
     background: rgba(0, 0, 0, 0);
+    border: none;
   }
 
   .contactCard-img {
@@ -133,6 +135,9 @@
 
   .aboutDescription {
     font-size: large;
+    background: rgba(255, 255, 255, .2);
+    padding: 10px;
+    border-radius: 16px;
   }
 }
 </style>
