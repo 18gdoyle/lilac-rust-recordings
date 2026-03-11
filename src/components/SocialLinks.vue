@@ -1,24 +1,39 @@
 <template>
-    <a href="https://www.tiktok.com/@lilac_rust" class="social-link" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-tiktok"></i>
-    </a>
-    <a href="https://www.instagram.com/lilac_rust_music/" class="social-link" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
-    <a href="mailto:lilac.rust@gmail.com" class="social-link" target="_blank" rel="noopener noreferrer">
-        <i class="fa-regular fa-envelope"></i>
-    </a>
-    <a href="https://lilacrust.bandcamp.com" class="social-link"
-        target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-bandcamp"></i>
-    </a>
-    <a href="https://www.youtube.com/@lilacrust" class="social-link" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-youtube"></i>
-    </a>
-    <a href="https://open.spotify.com/artist/1YT4RD3frRo0r9jVY9mBB5?si=jTH5pF9NRJKeDGDx5sNNuw" class="social-link"
-        target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-spotify"></i>
-    </a>
+    <div>
+        <div>
+            <a href="https://www.tiktok.com/@lilac_rust" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://www.instagram.com/lilac_rust_music/" class="social-link" target="_blank"
+                rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://lilacrust.bandcamp.com" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-bandcamp"></i>
+            </a>
+            <a href="https://www.youtube.com/@lilacrust" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://open.spotify.com/artist/1YT4RD3frRo0r9jVY9mBB5?si=jTH5pF9NRJKeDGDx5sNNuw"
+                class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-spotify"></i>
+            </a>
+        </div>
+        <div>
+            <a href="https://wa.me/16102338733" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="sms:6102338733" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-comment"></i>
+            </a>
+            <a href="tel:6102338733" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="mailto:lilac.rust@gmail.com" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </div>
 </template>
 
 <style scoped>

@@ -4,7 +4,7 @@ import SocialLinks from '@/components/SocialLinks.vue';
 <template>
     <footer class="footer">
         <div class="footer-content">
-            <p class="footer-text">&copy; 2025 Lilac Rust. All Rights Reserved.</p>
+            <p class="footer-text">&copy; 2026 Lilac Rust. All Rights Reserved.</p>
             <div class="footer-social">
                 <SocialLinks></SocialLinks>
             </div>
