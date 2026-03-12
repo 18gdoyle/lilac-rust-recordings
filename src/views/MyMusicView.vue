@@ -154,7 +154,7 @@
     font-size: 200%;
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 850px) {
     .mediumButtonIcon {
         font-size: 40px;
     }

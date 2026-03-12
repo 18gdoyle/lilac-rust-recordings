@@ -267,7 +267,7 @@
     transform: scale(110%);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
     .mediumButtonIcon {
         font-size: 40px;
     }

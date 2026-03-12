@@ -470,7 +470,7 @@ export default {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
   .buttonTitle {
     font-size: large;
   }

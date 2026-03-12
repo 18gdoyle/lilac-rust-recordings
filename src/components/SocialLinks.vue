@@ -49,7 +49,7 @@
     transform: scale(120%);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
     .social-link {
         font-size: 30px;
         margin: 0 15px;

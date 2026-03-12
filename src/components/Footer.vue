@@ -26,7 +26,7 @@ export default {
     padding: 20px 0;
     text-align: center;
     position: relative;
-    height: 150px;
+    height: 180px;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
@@ -66,5 +66,11 @@ export default {
 .footer-social {
     margin-top: 10px;
     width: 100%;
+}
+
+@media (max-width: 850px) {
+    .footer {
+        height: 150px;
+    }
 }
 </style>

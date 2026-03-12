@@ -145,7 +145,7 @@ export default {
     text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
     .mediumButton {
         width: 40%;
     }

@@ -24,7 +24,7 @@ const route = useRoute()
 }
 
 .pageContainer {
-  min-height: calc(100vh - 225px);
+  min-height: calc(100vh - 255px);
 }
 
 @media (max-width: 850px) {

@@ -111,7 +111,7 @@
   padding: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
   .glassDiv {
     background: rgba(0, 0, 0, 0);
     border: none;

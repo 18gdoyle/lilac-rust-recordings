@@ -12,7 +12,7 @@ import PastProject from '@/components/PastProject.vue';
                 <div style="width: 100%; height: 50vh; min-height: 355px;">
                     <iframe class="spotifyIframe"
                         src="https://open.spotify.com/embed/playlist/0ulTgeAmBJgjt9y959z2px?utm_source=generator&theme=0"
-                        width="100%" height="100%" frameBorder="0" allowfullscreen="false"
+                        width="100%" height="100%" frameBorder="0"
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy">
                     </iframe>

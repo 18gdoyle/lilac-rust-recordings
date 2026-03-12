@@ -82,7 +82,7 @@ export default {
     font-size: large;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
     .websiteImage {
         display: none;
     }

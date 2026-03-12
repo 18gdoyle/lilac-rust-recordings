@@ -489,7 +489,7 @@ export default {
     text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
     .jumpToButton {
         width: 100%;
         gap: 1vh;
